@@ -1,0 +1,17 @@
+C++
+---
+https://learn.microsoft.com/en-us/cpp
+https://www.w3schools.com/cpp
+https://www.geeksforgeeks.org/cpp-tutorial
+https://www.tutorialspoint.com/cplusplus
+https://www.javatpoint.com/cpp-tutorial
+https://cplusplus.com/doc/tutorial/
+https://www.scaler.com/topics/cpp/
+
+https://quickref.me/cpp.html
+https://www.codewithharry.com/blogpost/cpp-cheatsheet/
+https://hackingcpp.com/cpp/cheat_sheets.html
+https://www.geeksforgeeks.org/cpp-cheatsheet/
+https://github.com/mortennobel/cpp-cheatsheet
+https://hackr.io/blog/cpp-cheat-sheet-pdf
+https://www.geeksforgeeks.org/c-cpp-tricky-programs/
