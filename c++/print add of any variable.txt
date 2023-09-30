@@ -1,0 +1,55 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  int val=105;
+  int *ptr;
+  ptr=&val;
+  cout<<"value of val is:"<<val<<endl;
+  cout<<"value of ptr is:"<<ptr<<endl;
+  cout<<"value of *ptr is:"<<*ptr<<endl;
+  return 0;
+}
+
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+ int value=5;
+ int *ptr=&value;
+ cout<<value<<endl;
+ cout<<*ptr<<endl;
+ return 0;
+}
+
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+ int value=5;
+ int *ptr=&value;
+ cout<<value<<endl;
+ cout<<*ptr<<endl;
+ cout<<ptr<<endl;
+ return 0;
+}
+
+*******************************************************************************/
+#include <iostream>
+using namespace std;
+int main()
+{
+    int value=20;
+    int *ptr=&value;
+    cout<<value<<endl;
+    cout<<*ptr<<endl;
+    return 0;
+}

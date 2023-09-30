@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout<<"hello\n";
+    cout<<"nature\n";
+}
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout<<"hello"<<endl;
+    cout<<"nature"<<endl;
+}

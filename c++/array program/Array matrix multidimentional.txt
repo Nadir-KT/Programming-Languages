@@ -1,0 +1,75 @@
+(1) #include <iostream>
+
+using namespace std;
+
+int main()
+{
+   string letters[2][4] = {
+  { "A", "B", "C", "D" },
+  { "E", "F", "G", "H" }
+};
+  for (int j = 0; j < 4; j++) {
+    cout << letters[0][j];
+ }
+ cout <<"\n";
+ for (int j = 0; j < 4; j++) {
+    cout << letters[1][j];
+ }
+}
+output:ABCD
+       EFGH
+2
+(2) #include <iostream>
+
+using namespace std;
+
+int main()
+{
+   string letters[2][4] = {
+  { "A", "B", "C", "D" },
+  { "E", "F", "G", "H" }
+};
+  for (int j = 0; j < 4; j++) {
+    cout << letters[0][j];
+  }
+}
+Output:ABCD
+
+3)#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  string letters[2][4] = {
+  { "A", "B", "C", "D" },
+  { "E", "F", "G", "H" }
+};
+
+cout << letters[0][2];
+}
+Output:C
+
+cout << letters[0][2]; 
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+string letters[2][2][2] = {
+  {
+    { "A", "B" },
+    { "C", "D" }
+  },
+  {
+    { "E", "F" },
+    { "G", "H" }
+  }
+};
+
+cout << letters[0][2][3]; 
+}
+output:H
