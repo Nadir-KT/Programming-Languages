@@ -1,5 +1,0 @@
-oop..1) Check for two link class and object related 
-     2) oop related all program done one by one 
-     3) Study RL78 Datasheet
-     4) IOT (Web Tech)
-     5) RTOS & Linux
