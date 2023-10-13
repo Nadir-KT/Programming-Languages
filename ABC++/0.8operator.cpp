@@ -6,7 +6,4 @@ int main()
     cout<<(x>3 && x<10)<<endl;
     cout<<(x>3 || x<4)<<endl;
     cout<<(!(x>3 && x<10))<<endl;
-    cout<<(x>3 && x<10)<<endl;
-    cout<<(x>3 || x<4)<<endl;
-    cout<<(!(x>3 && x<10))<<endl;
 }
