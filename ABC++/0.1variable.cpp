@@ -13,4 +13,17 @@ int main()
     cout<<c<<endl;
     c=a/b;
     cout<<c;
+    float d, e, f, g; //local variable
+    d=1.5; //initialization
+    e=3.5;
+    g=d+e;
+    cout<<g<<endl;
+    g=d-e;
+    cout<<g<<endl;
+    g=d*e;
+    cout<<g<<endl;
+    g=d/e;
+    cout<<g<<endl;
+    string name="Pooja more";
+    cout<<name;
 }
