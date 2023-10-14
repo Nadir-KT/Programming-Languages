@@ -1,18 +1,21 @@
 #include <iostream>
+
 using namespace std;
 int main()
 {
-    int test[3][3]=
+    int mat[3][3]=
     {
-        {5,10,0},{0,15,20},{30,0,10}
+        {0,2,9},
+        {2,3,0},
+        {9,7,0}
     };
     for(int i=0; i<3; ++i)
     {
         for(int j=0; j<3; ++j)
         {
-            cout<<test[i][j]<<" ";
+            cout<<mat[i][j]<<" ";
         }
-        cout<<endl;
-    }
+        
+            cout<<endl;
+        }
 }
-    
