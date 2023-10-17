@@ -22,3 +22,4 @@ list of topics, concepts, and components for any programming language in a struc
 18. Abstraction - Exposing only essential details and hiding complexity.
 19. Paradigms - Programming styles like procedural, object-oriented, functional, etc.
 20. File I/O - Reading and writing data from and to external files in a programming language.
+21. Macros
