@@ -13,12 +13,20 @@ int main ()
     {    
     cout<<"Fail";    
     }    
-    else if (num >= 50 && num < 60)    
+    else if (num >= 50 && num <=60)    
      {    
      cout<<"D Grade";    
      }    
-     else if (num >= 60 && num < 70)    
+     else if (num >= 60 && num <= 70)    
      {    
     cout<<"C Grade";    
-     }    
+     } 
+     else if (num >= 80 && num <= 88)    
+     {    
+    cout<<"B Grade";
+     }
+     else if (num >= 89 && num <= 100)    
+     {    
+    cout<<"A Grade";    
+     }   
 }
