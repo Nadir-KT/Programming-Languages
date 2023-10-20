@@ -5,6 +5,3 @@ int main()
     cout<<"hello world"; //print the "hello world"
     return 0; //end of main function
 }
-
-Multi-line comments  /*  */
-single line comment //

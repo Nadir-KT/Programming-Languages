@@ -13,8 +13,9 @@ class car //create a class
 };
 int main()
 {
-    car c1("bmw", 1992); //create car obj & call the constructor
-    cout<<c1.brand<<" "<<c1.year<<"\n"; //print
+    car c1("BWM", 1992); //create car obj & call the constructor with different value
+    cout<<"Brand name: "<<c1.brand<<endl; //print value
+    cout<<"Year: "<<c1.year<<"\n"; //printvalue
 }
 
 

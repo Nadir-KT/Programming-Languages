@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    int r=2, c=3, sum[2][3], i, j;
+    int r=2, c=3, sum[2][3], i, i1;
     int a[2][3] = { {1,5,9}, {3,2,8}};
     int b[2][3] = { {6,3,8}, {1,5,2}};
     cout<<"The first matrix is:"<<endl;

@@ -1,9 +1,13 @@
-
-*******************************************************************************/
 #include <iostream>
 using namespace std;
 int main()
 {
+    float pi=3.14;
+    float r,cir;
+    cout<<"enter the radius of circle:";
+    cin>>r;
+    cir=r*r*3.14;
+    cout<<"area of circle is:"<<cir<<endl;
     int a=4;
     int c;
     c=a++;
