@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="6308948749254553048">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\5 Inheritance\17.cpp" line="1" column="0"/>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;fun&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;fun&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/17.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\5 Inheritance\17.cpp" line="20" column="10" info="Function in derived class"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\5 Inheritance\17.cpp" line="9" column="18" info="Virtual function in base class"/>
+            <symbol>fun</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="Derived" file="H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/17.cpp" line="15" col="1" hash="6520854858523808264"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="fun" lineNumber="20"/>
+    <functiondecl functionName="main" lineNumber="22"/>
+    <functioncall functionName="Base"/>
+    <functioncall functionName="Derived"/>
+    <functioncall functionName="d"/>
+    <functioncall functionName="fun"/>
+  </FileInfo>
+</analyzerinfo>

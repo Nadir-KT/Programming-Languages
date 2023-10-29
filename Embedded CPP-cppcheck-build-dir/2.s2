@@ -1,0 +1,4 @@
+Number
+print
+operator++
+main call:[ob1,print] noreturn:[print]

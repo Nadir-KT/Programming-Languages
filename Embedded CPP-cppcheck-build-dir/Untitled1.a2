@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="12833294120082111619">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\2 Classes and objects\Untitled1.cpp" line="1" column="0"/>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: z" verbose="Unused variable: z" cwe="563" file0="H:/Software_Development/GitHub/Embedded_CPP/2 Classes and objects/Untitled1.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\2 Classes and objects\Untitled1.cpp" line="9" column="13"/>
+            <symbol>z</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="sum" lineNumber="3"/>
+    <functiondecl functionName="main" lineNumber="7"/>
+    <functioncall functionName="sum"/>
+  </FileInfo>
+</analyzerinfo>

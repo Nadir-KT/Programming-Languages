@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="9260786472331495969">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\1 C++\Untitled13.cpp" line="1" column="0"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="main" lineNumber="4"/>
+    <functiondecl functionName="print" lineNumber="9"/>
+    <functioncall functionName="print"/>
+  </FileInfo>
+</analyzerinfo>

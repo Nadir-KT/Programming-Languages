@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="3242440402952767594">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\2 Classes and objects\Untitled4.cpp" line="1" column="0"/>
+        </error>
+        <error id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: p" verbose="Mismatching allocation and deallocation: p" cwe="762" file0="H:/Software_Development/GitHub/Embedded_CPP/2 Classes and objects/Untitled4.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\2 Classes and objects\Untitled4.cpp" line="10" column="12"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\2 Classes and objects\Untitled4.cpp" line="5" column="14"/>
+            <symbol>p</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="main" lineNumber="3"/>
+  </FileInfo>
+</analyzerinfo>

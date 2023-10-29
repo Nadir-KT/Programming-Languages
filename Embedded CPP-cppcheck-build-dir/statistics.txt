@@ -1,0 +1,7 @@
+[28.10.2023]
+1698490701859
+cppcheck-error:12
+cppcheck-warning:5
+cppcheck-style:65
+cppcheck-performance:5
+cppcheck-portability:0

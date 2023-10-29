@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="5569343206715205083">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\5 Inheritance\11.cpp" line="1" column="0"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected." cwe="398" file0="H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/11.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\5 Inheritance\11.cpp" line="22" column="21"/>
+        </error>
+  <FileInfo check="Class">
+<class name="Base" file="H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/11.cpp" line="3" col="1" hash="1908492966856433723"/>
+<class name="Derived" file="H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/11.cpp" line="11" col="1" hash="2421609353456772026"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="baseFun" lineNumber="6"/>
+    <functiondecl functionName="derivedFun" lineNumber="14"/>
+    <functiondecl functionName="main" lineNumber="19"/>
+    <functioncall functionName="baseFun"/>
+  </FileInfo>
+</analyzerinfo>

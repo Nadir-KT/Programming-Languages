@@ -1,0 +1,3 @@
+subscript global:[i]
+operator[] call:[exit] noreturn:[exit]
+main call:[ss]

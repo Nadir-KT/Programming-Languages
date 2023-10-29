@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="7101999865273652251">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\5 Inheritance\7.cpp" line="1" column="0"/>
+        </error>
+  <FileInfo check="Class">
+<class name="array &lt; int &gt;" file="H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/7.cpp" line="4" col="1" hash="4531921183680843003"/>
+<class name="array &lt; char &gt;" file="H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/7.cpp" line="4" col="1" hash="7662080052756822972"/>
+<class name="array &lt; double &gt;" file="H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/7.cpp" line="4" col="1" hash="2322863349243877129"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="main" lineNumber="22"/>
+    <functiondecl functionName="read" lineNumber="11"/>
+    <functiondecl functionName="display" lineNumber="16"/>
+    <functiondecl functionName="read" lineNumber="11"/>
+    <functiondecl functionName="display" lineNumber="16"/>
+    <functiondecl functionName="read" lineNumber="11"/>
+    <functiondecl functionName="display" lineNumber="16"/>
+    <functioncall functionName="display"/>
+    <functioncall functionName="read"/>
+  </FileInfo>
+</analyzerinfo>

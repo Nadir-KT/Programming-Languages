@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="10848948141102199145">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\3 Classes and objects\1.cpp" line="1" column="0"/>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;s&apos; can be declared as reference to const" verbose="Parameter &apos;s&apos; can be declared as reference to const" cwe="398" file0="H:/Software_Development/GitHub/Embedded_CPP/3 Classes and objects/1.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\3 Classes and objects\1.cpp" line="11" column="22" info="Parameter &apos;s&apos; can be declared as reference to const"/>
+            <symbol>s</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="sample1" file="H:/Software_Development/GitHub/Embedded_CPP/3 Classes and objects/1.cpp" line="4" col="1" hash="422287116975437453"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="H:/Software_Development/GitHub/Embedded_CPP/3 Classes and objects/1.cpp:11:5" my-argnr="1" my-argname="s" file="H:/Software_Development/GitHub/Embedded_CPP/3 Classes and objects/1.cpp" line="13" col="11" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="print" lineNumber="27"/>
+    <functiondecl functionName="main" lineNumber="39"/>
+    <functioncall functionName="print"/>
+    <functioncall functionName="s1"/>
+    <functioncall functionName="s2"/>
+    <functioncall functionName="sample1"/>
+  </FileInfo>
+</analyzerinfo>

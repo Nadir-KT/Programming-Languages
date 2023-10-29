@@ -1,0 +1,6 @@
+box
+set_dimension
+show_data
+box
+box
+main call:[set_dimension,show_data]

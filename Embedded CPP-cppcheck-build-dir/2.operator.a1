@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="12966254422072076364">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="1" column="0"/>
+        </error>
+        <error id="incorrectLogicOperator" severity="warning" msg="Logical disjunction always evaluates to true: p &gt; 3 || p &lt; 4." verbose="Logical disjunction always evaluates to true: p &gt; 3 || p &lt; 4. Are these conditions necessary? Did you intend to use &amp;&amp; instead? Are the numbers correct? Are you comparing the correct variables?" cwe="571" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/2.operator.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="32" column="16"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;p&gt;3&apos; is always true" verbose="Condition &apos;p&gt;3&apos; is always true" cwe="571" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/2.operator.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="31" column="13" info="Condition &apos;p&gt;3&apos; is always true"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="23" column="5" info="Compound assignment &apos;|=&apos;, assigned value is 7"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="5" column="41" info="Assignment &apos;p=5&apos;, assigned value is 5"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;p&lt;10&apos; is always true" verbose="Condition &apos;p&lt;10&apos; is always true" cwe="571" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/2.operator.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="31" column="20" info="Condition &apos;p&lt;10&apos; is always true"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="23" column="5" info="Compound assignment &apos;|=&apos;, assigned value is 7"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="5" column="41" info="Assignment &apos;p=5&apos;, assigned value is 5"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;p&gt;3&apos; is always true" verbose="Condition &apos;p&gt;3&apos; is always true" cwe="571" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/2.operator.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="33" column="15" info="Condition &apos;p&gt;3&apos; is always true"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="23" column="5" info="Compound assignment &apos;|=&apos;, assigned value is 7"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="5" column="41" info="Assignment &apos;p=5&apos;, assigned value is 5"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;p&lt;10&apos; is always true" verbose="Condition &apos;p&lt;10&apos; is always true" cwe="571" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/2.operator.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="33" column="22" info="Condition &apos;p&lt;10&apos; is always true"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="23" column="5" info="Compound assignment &apos;|=&apos;, assigned value is 7"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="5" column="41" info="Assignment &apos;p=5&apos;, assigned value is 5"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;x&gt;y&apos; is always true" verbose="Condition &apos;x&gt;y&apos; is always true" cwe="571" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/2.operator.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="34" column="13" info="Condition &apos;x&gt;y&apos; is always true"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="7" column="7" info="x is incremented&apos;, new value is 6"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="5" column="11" info="Assignment &apos;x=5&apos;, assigned value is 5"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;x&lt;y&apos; is always false" verbose="Condition &apos;x&lt;y&apos; is always false" cwe="570" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/2.operator.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="35" column="13" info="Condition &apos;x&lt;y&apos; is always false"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="7" column="7" info="x is incremented&apos;, new value is 6"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="5" column="11" info="Assignment &apos;x=5&apos;, assigned value is 5"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;x==y&apos; is always false" verbose="Condition &apos;x==y&apos; is always false" cwe="570" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/2.operator.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="36" column="13" info="Condition &apos;x==y&apos; is always false"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="7" column="7" info="x is incremented&apos;, new value is 6"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="5" column="11" info="Assignment &apos;x=5&apos;, assigned value is 5"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;x!=y&apos; is always true" verbose="Condition &apos;x!=y&apos; is always true" cwe="571" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/2.operator.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="37" column="13" info="Condition &apos;x!=y&apos; is always true"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="7" column="7" info="x is incremented&apos;, new value is 6"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="5" column="11" info="Assignment &apos;x=5&apos;, assigned value is 5"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;x&lt;=y&apos; is always false" verbose="Condition &apos;x&lt;=y&apos; is always false" cwe="570" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/2.operator.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="38" column="13" info="Condition &apos;x&lt;=y&apos; is always false"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="7" column="7" info="x is incremented&apos;, new value is 6"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="5" column="11" info="Assignment &apos;x=5&apos;, assigned value is 5"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;x&gt;=y&apos; is always true" verbose="Condition &apos;x&gt;=y&apos; is always true" cwe="571" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/2.operator.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="39" column="13" info="Condition &apos;x&gt;=y&apos; is always true"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="7" column="7" info="x is incremented&apos;, new value is 6"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\2.operator.cpp" line="5" column="11" info="Assignment &apos;x=5&apos;, assigned value is 5"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="main" lineNumber="3"/>
+  </FileInfo>
+</analyzerinfo>

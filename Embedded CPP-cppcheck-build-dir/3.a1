@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="2669055088023634469">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\3 Classes and objects\3.cpp" line="1" column="0"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;box::length&apos; is not initialized in the constructor." verbose="Member variable &apos;box::length&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="H:/Software_Development/GitHub/Embedded_CPP/3 Classes and objects/3.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\3 Classes and objects\3.cpp" line="13" column="5"/>
+            <symbol>box::length</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;box::height&apos; is not initialized in the constructor." verbose="Member variable &apos;box::height&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="H:/Software_Development/GitHub/Embedded_CPP/3 Classes and objects/3.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\3 Classes and objects\3.cpp" line="13" column="5"/>
+            <symbol>box::height</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;box&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;box&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="H:/Software_Development/GitHub/Embedded_CPP/3 Classes and objects/3.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\3 Classes and objects\3.cpp" line="15" column="9"/>
+            <symbol>box</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;sample&apos; can be declared as reference to const" verbose="Parameter &apos;sample&apos; can be declared as reference to const" cwe="398" file0="H:/Software_Development/GitHub/Embedded_CPP/3 Classes and objects/3.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\3 Classes and objects\3.cpp" line="36" column="14" info="Parameter &apos;sample&apos; can be declared as reference to const"/>
+            <symbol>sample</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="box" file="H:/Software_Development/GitHub/Embedded_CPP/3 Classes and objects/3.cpp" line="5" col="1" hash="1210440758885141700"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="H:/Software_Development/GitHub/Embedded_CPP/3 Classes and objects/3.cpp:36:5" my-argnr="1" my-argname="sample" file="H:/Software_Development/GitHub/Embedded_CPP/3 Classes and objects/3.cpp" line="38" col="18" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="set_dimension" lineNumber="19"/>
+    <functiondecl functionName="show_data" lineNumber="27"/>
+    <functiondecl functionName="main" lineNumber="50"/>
+    <functioncall functionName="box"/>
+    <functioncall functionName="set_dimension"/>
+    <functioncall functionName="show_data"/>
+  </FileInfo>
+</analyzerinfo>

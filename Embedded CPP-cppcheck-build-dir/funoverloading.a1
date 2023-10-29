@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="14764819523419068056">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\10.function\funoverloading.cpp" line="1" column="0"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;s1&apos; should be passed by const reference." verbose="Parameter &apos;s1&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/10.function/funoverloading.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\10.function\funoverloading.cpp" line="11" column="20"/>
+            <symbol>s1</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;s2&apos; should be passed by const reference." verbose="Parameter &apos;s2&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/10.function/funoverloading.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\10.function\funoverloading.cpp" line="11" column="31"/>
+            <symbol>s2</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="pfun" lineNumber="3"/>
+    <functiondecl functionName="pfun" lineNumber="7"/>
+    <functiondecl functionName="pfun" lineNumber="11"/>
+    <functiondecl functionName="main" lineNumber="15"/>
+    <functioncall functionName="pfun"/>
+  </FileInfo>
+</analyzerinfo>

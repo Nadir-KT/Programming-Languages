@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="16381341414892103266">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\3 Classes and objects\5.cpp" line="1" column="0"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;sample1&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;sample1&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="H:/Software_Development/GitHub/Embedded_CPP/3 Classes and objects/5.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\3 Classes and objects\5.cpp" line="16" column="5"/>
+            <symbol>sample1</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="sample1" file="H:/Software_Development/GitHub/Embedded_CPP/3 Classes and objects/5.cpp" line="3" col="1" hash="14377082081216197696"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="print" lineNumber="24"/>
+    <functiondecl functionName="main" lineNumber="37"/>
+    <functioncall functionName="c2"/>
+    <functioncall functionName="c4"/>
+    <functioncall functionName="print"/>
+    <functioncall functionName="sample1"/>
+  </FileInfo>
+</analyzerinfo>

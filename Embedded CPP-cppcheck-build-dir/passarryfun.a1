@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="16122347211926402116">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\13.array program\passarryfun.cpp" line="1" column="0"/>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &apos;mynum&apos; can be declared as const array" verbose="Parameter &apos;mynum&apos; can be declared as const array" cwe="398" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/13.array program/passarryfun.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\13.array program\passarryfun.cpp" line="3" column="16" info="Parameter &apos;mynum&apos; can be declared as const array"/>
+            <symbol>mynum</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="H:/Software_Development/GitHub/Embedded_CPP/c++/13.array program/passarryfun.cpp:3:6" call-funcname="myfun" call-argnr="1" file="H:/Software_Development/GitHub/Embedded_CPP/c++/13.array program/passarryfun.cpp" line="13" col="10" call-argexpr="mynum" call-argvaluetype="7" call-argvalue="8"/>  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="myfun" lineNumber="3"/>
+    <functiondecl functionName="main" lineNumber="10"/>
+    <functioncall functionName="myfun"/>
+  </FileInfo>
+</analyzerinfo>

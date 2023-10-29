@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="17320793992526194615">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\10.function\function with argumet and array.cpp" line="1" column="0"/>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &apos;mark&apos; can be declared as const array" verbose="Parameter &apos;mark&apos; can be declared as const array" cwe="398" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/10.function/function with argumet and array.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\10.function\function with argumet and array.cpp" line="3" column="21" info="Parameter &apos;mark&apos; can be declared as const array"/>
+            <symbol>mark</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="H:/Software_Development/GitHub/Embedded_CPP/c++/10.function/function with argumet and array.cpp:3:6" call-funcname="myfunction" call-argnr="1" file="H:/Software_Development/GitHub/Embedded_CPP/c++/10.function/function with argumet and array.cpp" line="14" col="15" call-argexpr="mark" call-argvaluetype="7" call-argvalue="20"/>  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="myfunction" lineNumber="3"/>
+    <functiondecl functionName="main" lineNumber="11"/>
+    <functioncall functionName="myfunction"/>
+  </FileInfo>
+</analyzerinfo>
