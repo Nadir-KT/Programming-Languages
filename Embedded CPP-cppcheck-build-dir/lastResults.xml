@@ -2,620 +2,620 @@
 <results version="2">
     <cppcheck version="2.12.0"/>
     <errors>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="classmethod.cpp" line="1"/>
         </error>
-        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &amp;#039;student&amp;#039;" verbose="The one definition rule is violated, different classes/structs have the same name &amp;#039;student&amp;#039;" cwe="758" sinceDate="M/d/yyyy">
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &amp;#039;student&amp;#039;" verbose="The one definition rule is violated, different classes/structs have the same name &amp;#039;student&amp;#039;" cwe="758" sinceDate="dd-MMM-yy">
             <location file="classmethod.cpp" line="3" info=""/>
             <location file="2 Classes and objects\Untitled10.cpp" line="4" info=""/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="1 C++\Untitled0.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="1 C++\Untitled1.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="1 C++\Untitled13.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="1 C++\Untitled14.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="1 C++\Untitled15.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="1 C++\Untitled16.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="1 C++\Untitled2.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="1 C++\Untitled3.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="1 C++\Untitled4.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="1 C++\Untitled5.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="1 C++\Untitled6.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="1 C++\Untitled7.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="1 C++\Untitled8.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="1 C++\bool.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="1 C++\bool2.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="1 C++\bool3.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="1 C++\bool4.cpp" line="1"/>
         </error>
-        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;a&amp;#039; is always true" verbose="Condition &amp;#039;a&amp;#039; is always true" cwe="571" file0="1 C++/bool4.cpp" sinceDate="M/d/yyyy">
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;a&amp;#039; is always true" verbose="Condition &amp;#039;a&amp;#039; is always true" cwe="571" file0="1 C++/bool4.cpp" sinceDate="dd-MMM-yy">
             <location file="1 C++\bool4.cpp" line="6" info="Condition &amp;#039;a&amp;#039; is always true"/>
             <location file="1 C++\bool4.cpp" line="5" info="Assignment &amp;#039;a=true&amp;#039;, assigned value is 1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="2 Classes and objects\Untitled0.cpp" line="1"/>
         </error>
-        <error id="unusedVariable" severity="style" msg="Unused variable: z" verbose="Unused variable: z" cwe="563" file0="2 Classes and objects/Untitled0.cpp" sinceDate="M/d/yyyy">
+        <error id="unusedVariable" severity="style" msg="Unused variable: z" verbose="Unused variable: z" cwe="563" file0="2 Classes and objects/Untitled0.cpp" sinceDate="dd-MMM-yy">
             <location file="2 Classes and objects\Untitled0.cpp" line="5"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="2 Classes and objects\Untitled1.cpp" line="1"/>
         </error>
-        <error id="unusedVariable" severity="style" msg="Unused variable: z" verbose="Unused variable: z" cwe="563" file0="2 Classes and objects/Untitled1.cpp" sinceDate="M/d/yyyy">
+        <error id="unusedVariable" severity="style" msg="Unused variable: z" verbose="Unused variable: z" cwe="563" file0="2 Classes and objects/Untitled1.cpp" sinceDate="dd-MMM-yy">
             <location file="2 Classes and objects\Untitled1.cpp" line="9"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="2 Classes and objects\Untitled10.cpp" line="2"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="2 Classes and objects\Untitled2.cpp" line="2"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="2 Classes and objects\Untitled3.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="2 Classes and objects\Untitled4.cpp" line="1"/>
         </error>
-        <error id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: p" verbose="Mismatching allocation and deallocation: p" cwe="762" file0="2 Classes and objects/Untitled4.cpp" sinceDate="M/d/yyyy">
+        <error id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: p" verbose="Mismatching allocation and deallocation: p" cwe="762" file0="2 Classes and objects/Untitled4.cpp" sinceDate="dd-MMM-yy">
             <location file="2 Classes and objects\Untitled4.cpp" line="10" info=""/>
             <location file="2 Classes and objects\Untitled4.cpp" line="5" info=""/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="2 Classes and objects\Untitled5.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="2 Classes and objects\Untitled6.cpp" line="1"/>
         </error>
-        <error id="noConstructor" severity="style" msg="The class &amp;#039;sample1&amp;#039; does not declare a constructor although it has private member variables which likely require initialization." verbose="The class &amp;#039;sample1&amp;#039; does not declare a constructor although it has private member variables which likely require initialization. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="2 Classes and objects/Untitled6.cpp" sinceDate="M/d/yyyy">
+        <error id="noConstructor" severity="style" msg="The class &amp;#039;sample1&amp;#039; does not declare a constructor although it has private member variables which likely require initialization." verbose="The class &amp;#039;sample1&amp;#039; does not declare a constructor although it has private member variables which likely require initialization. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="2 Classes and objects/Untitled6.cpp" sinceDate="dd-MMM-yy">
             <location file="2 Classes and objects\Untitled6.cpp" line="3"/>
         </error>
-        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &amp;#039;sample1&amp;#039;" verbose="The one definition rule is violated, different classes/structs have the same name &amp;#039;sample1&amp;#039;" cwe="758" sinceDate="M/d/yyyy">
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &amp;#039;sample1&amp;#039;" verbose="The one definition rule is violated, different classes/structs have the same name &amp;#039;sample1&amp;#039;" cwe="758" sinceDate="dd-MMM-yy">
             <location file="2 Classes and objects\Untitled6.cpp" line="3" info=""/>
             <location file="3 Classes and objects\1.cpp" line="4" info=""/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="2 Classes and objects\Untitled7.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="2 Classes and objects\Untitled8.cpp" line="1"/>
         </error>
-        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;student&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;student&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="2 Classes and objects/Untitled8.cpp" sinceDate="M/d/yyyy">
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;student&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;student&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="2 Classes and objects/Untitled8.cpp" sinceDate="dd-MMM-yy">
             <location file="2 Classes and objects\Untitled8.cpp" line="8"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="2 Classes and objects\Untitled9.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="2 Classes and objects\class1.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="3 Classes and objects\1.cpp" line="1"/>
         </error>
-        <error id="constParameterReference" severity="style" msg="Parameter &amp;#039;s&amp;#039; can be declared as reference to const" verbose="Parameter &amp;#039;s&amp;#039; can be declared as reference to const" cwe="398" file0="3 Classes and objects/1.cpp" sinceDate="M/d/yyyy">
+        <error id="constParameterReference" severity="style" msg="Parameter &amp;#039;s&amp;#039; can be declared as reference to const" verbose="Parameter &amp;#039;s&amp;#039; can be declared as reference to const" cwe="398" file0="3 Classes and objects/1.cpp" sinceDate="dd-MMM-yy">
             <location file="3 Classes and objects\1.cpp" line="11"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="3 Classes and objects\2.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="3 Classes and objects\3.cpp" line="1"/>
         </error>
-        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;box::length&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;box::length&amp;#039; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="3 Classes and objects/3.cpp" sinceDate="M/d/yyyy">
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;box::length&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;box::length&amp;#039; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="3 Classes and objects/3.cpp" sinceDate="dd-MMM-yy">
             <location file="3 Classes and objects\3.cpp" line="13"/>
         </error>
-        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;box::height&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;box::height&amp;#039; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="3 Classes and objects/3.cpp" sinceDate="M/d/yyyy">
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;box::height&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;box::height&amp;#039; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="3 Classes and objects/3.cpp" sinceDate="dd-MMM-yy">
             <location file="3 Classes and objects\3.cpp" line="13"/>
         </error>
-        <error id="noOperatorEq" severity="warning" msg="Class &amp;#039;box&amp;#039; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &amp;#039;box&amp;#039; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="3 Classes and objects/3.cpp" sinceDate="M/d/yyyy">
+        <error id="noOperatorEq" severity="warning" msg="Class &amp;#039;box&amp;#039; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &amp;#039;box&amp;#039; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="3 Classes and objects/3.cpp" sinceDate="dd-MMM-yy">
             <location file="3 Classes and objects\3.cpp" line="15"/>
         </error>
-        <error id="constParameterReference" severity="style" msg="Parameter &amp;#039;sample&amp;#039; can be declared as reference to const" verbose="Parameter &amp;#039;sample&amp;#039; can be declared as reference to const" cwe="398" file0="3 Classes and objects/3.cpp" sinceDate="M/d/yyyy">
+        <error id="constParameterReference" severity="style" msg="Parameter &amp;#039;sample&amp;#039; can be declared as reference to const" verbose="Parameter &amp;#039;sample&amp;#039; can be declared as reference to const" cwe="398" file0="3 Classes and objects/3.cpp" sinceDate="dd-MMM-yy">
             <location file="3 Classes and objects\3.cpp" line="36"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="3 Classes and objects\4.cpp" line="1"/>
         </error>
-        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;one&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;one&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="3 Classes and objects/4.cpp" sinceDate="M/d/yyyy">
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;one&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;one&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="3 Classes and objects/4.cpp" sinceDate="dd-MMM-yy">
             <location file="3 Classes and objects\4.cpp" line="9"/>
         </error>
-        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;two&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;two&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="3 Classes and objects/4.cpp" sinceDate="M/d/yyyy">
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;two&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;two&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="3 Classes and objects/4.cpp" sinceDate="dd-MMM-yy">
             <location file="3 Classes and objects\4.cpp" line="20"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="3 Classes and objects\5.cpp" line="1"/>
         </error>
-        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;sample1&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;sample1&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="3 Classes and objects/5.cpp" sinceDate="M/d/yyyy">
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;sample1&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;sample1&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="3 Classes and objects/5.cpp" sinceDate="dd-MMM-yy">
             <location file="3 Classes and objects\5.cpp" line="16"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="3 Classes and objects\6.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="4 Operator Overloading\1.cpp" line="1"/>
         </error>
-        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;complex&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;complex&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="4 Operator Overloading/1.cpp" sinceDate="M/d/yyyy">
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;complex&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;complex&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="4 Operator Overloading/1.cpp" sinceDate="dd-MMM-yy">
             <location file="4 Operator Overloading\1.cpp" line="7"/>
         </error>
-        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &amp;#039;complex&amp;#039;" verbose="The one definition rule is violated, different classes/structs have the same name &amp;#039;complex&amp;#039;" cwe="758" sinceDate="M/d/yyyy">
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &amp;#039;complex&amp;#039;" verbose="The one definition rule is violated, different classes/structs have the same name &amp;#039;complex&amp;#039;" cwe="758" sinceDate="dd-MMM-yy">
             <location file="4 Operator Overloading\1.cpp" line="3" info=""/>
             <location file="4 Operator Overloading\4.cpp" line="4" info=""/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="4 Operator Overloading\2.cpp" line="1"/>
         </error>
-        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;Number&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;Number&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="4 Operator Overloading/2.cpp" sinceDate="M/d/yyyy">
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;Number&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;Number&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="4 Operator Overloading/2.cpp" sinceDate="dd-MMM-yy">
             <location file="4 Operator Overloading\2.cpp" line="9"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="4 Operator Overloading\3.cpp" line="1"/>
         </error>
-        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;subscript&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;subscript&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="4 Operator Overloading/3.cpp" sinceDate="M/d/yyyy">
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;subscript&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;subscript&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="4 Operator Overloading/3.cpp" sinceDate="dd-MMM-yy">
             <location file="4 Operator Overloading\3.cpp" line="11"/>
         </error>
-        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;ss[10]&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;ss[10]&amp;#039; is assigned a value that is never used." cwe="563" file0="4 Operator Overloading/3.cpp" sinceDate="M/d/yyyy">
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;ss[10]&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;ss[10]&amp;#039; is assigned a value that is never used." cwe="563" file0="4 Operator Overloading/3.cpp" sinceDate="dd-MMM-yy">
             <location file="4 Operator Overloading\3.cpp" line="34"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="4 Operator Overloading\4.cpp" line="1"/>
         </error>
-        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;complex&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;complex&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="4 Operator Overloading/4.cpp" sinceDate="M/d/yyyy">
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;complex&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;complex&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="4 Operator Overloading/4.cpp" sinceDate="dd-MMM-yy">
             <location file="4 Operator Overloading\4.cpp" line="9"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="4 Operator Overloading\5.cpp" line="1"/>
         </error>
-        <error id="noConstructor" severity="style" msg="The class &amp;#039;A&amp;#039; does not declare a constructor although it has private member variables which likely require initialization." verbose="The class &amp;#039;A&amp;#039; does not declare a constructor although it has private member variables which likely require initialization. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="4 Operator Overloading/5.cpp" sinceDate="M/d/yyyy">
+        <error id="noConstructor" severity="style" msg="The class &amp;#039;A&amp;#039; does not declare a constructor although it has private member variables which likely require initialization." verbose="The class &amp;#039;A&amp;#039; does not declare a constructor although it has private member variables which likely require initialization. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="4 Operator Overloading/5.cpp" sinceDate="dd-MMM-yy">
             <location file="4 Operator Overloading\5.cpp" line="3"/>
         </error>
-        <error id="noConstructor" severity="style" msg="The class &amp;#039;B&amp;#039; does not declare a constructor although it has private member variables which likely require initialization." verbose="The class &amp;#039;B&amp;#039; does not declare a constructor although it has private member variables which likely require initialization. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="4 Operator Overloading/5.cpp" sinceDate="M/d/yyyy">
+        <error id="noConstructor" severity="style" msg="The class &amp;#039;B&amp;#039; does not declare a constructor although it has private member variables which likely require initialization." verbose="The class &amp;#039;B&amp;#039; does not declare a constructor although it has private member variables which likely require initialization. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="4 Operator Overloading/5.cpp" sinceDate="dd-MMM-yy">
             <location file="4 Operator Overloading\5.cpp" line="27"/>
         </error>
-        <error id="duplInheritedMember" severity="warning" msg="The class &amp;#039;B&amp;#039; defines member function with name &amp;#039;operatorchar*&amp;#039; also defined in its parent class &amp;#039;A&amp;#039;." verbose="The class &amp;#039;B&amp;#039; defines member function with name &amp;#039;operatorchar*&amp;#039; also defined in its parent class &amp;#039;A&amp;#039;." cwe="398" file0="4 Operator Overloading/5.cpp" sinceDate="M/d/yyyy">
+        <error id="duplInheritedMember" severity="warning" msg="The class &amp;#039;B&amp;#039; defines member function with name &amp;#039;operatorchar*&amp;#039; also defined in its parent class &amp;#039;A&amp;#039;." verbose="The class &amp;#039;B&amp;#039; defines member function with name &amp;#039;operatorchar*&amp;#039; also defined in its parent class &amp;#039;A&amp;#039;." cwe="398" file0="4 Operator Overloading/5.cpp" sinceDate="dd-MMM-yy">
             <location file="4 Operator Overloading\5.cpp" line="46" info="Derived function &amp;#039;B::operatorchar*&amp;#039;"/>
             <location file="4 Operator Overloading\5.cpp" line="22" info="Parent function &amp;#039;A::operatorchar*&amp;#039;"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\1.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\10.cpp" line="1"/>
         </error>
-        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &amp;#039;Derived&amp;#039;" verbose="The one definition rule is violated, different classes/structs have the same name &amp;#039;Derived&amp;#039;" cwe="758" sinceDate="M/d/yyyy">
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &amp;#039;Derived&amp;#039;" verbose="The one definition rule is violated, different classes/structs have the same name &amp;#039;Derived&amp;#039;" cwe="758" sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\15.cpp" line="11"/>
         </error>
-        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &amp;#039;Base&amp;#039;" verbose="The one definition rule is violated, different classes/structs have the same name &amp;#039;Base&amp;#039;" cwe="758" sinceDate="M/d/yyyy">
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &amp;#039;Base&amp;#039;" verbose="The one definition rule is violated, different classes/structs have the same name &amp;#039;Base&amp;#039;" cwe="758" sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\10.cpp" line="3" info=""/>
             <location file="5 Inheritance\8.cpp" line="4" info=""/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\11.cpp" line="1"/>
         </error>
-        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected." cwe="398" file0="5 Inheritance/11.cpp" sinceDate="M/d/yyyy">
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected." cwe="398" file0="5 Inheritance/11.cpp" sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\11.cpp" line="22"/>
         </error>
-        <error id="unusedFunction" severity="style" msg="The function &amp;#039;derivedFun&amp;#039; is never used." verbose="The function &amp;#039;derivedFun&amp;#039; is never used." cwe="561" sinceDate="M/d/yyyy">
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;derivedFun&amp;#039; is never used." verbose="The function &amp;#039;derivedFun&amp;#039; is never used." cwe="561" sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\11.cpp" line="14"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\12.cpp" line="4"/>
         </error>
-        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &amp;#039;ClassB&amp;#039;" verbose="The one definition rule is violated, different classes/structs have the same name &amp;#039;ClassB&amp;#039;" cwe="758" sinceDate="M/d/yyyy">
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &amp;#039;ClassB&amp;#039;" verbose="The one definition rule is violated, different classes/structs have the same name &amp;#039;ClassB&amp;#039;" cwe="758" sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\13.cpp" line="12"/>
         </error>
-        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &amp;#039;ClassC&amp;#039;" verbose="The one definition rule is violated, different classes/structs have the same name &amp;#039;ClassC&amp;#039;" cwe="758" sinceDate="M/d/yyyy">
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &amp;#039;ClassC&amp;#039;" verbose="The one definition rule is violated, different classes/structs have the same name &amp;#039;ClassC&amp;#039;" cwe="758" sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\13.cpp" line="17"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\13.cpp" line="4"/>
         </error>
-        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;obj.a&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;obj.a&amp;#039; is reassigned a value before the old one has been used." cwe="563" file0="5 Inheritance/13.cpp" sinceDate="M/d/yyyy">
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;obj.a&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;obj.a&amp;#039; is reassigned a value before the old one has been used." cwe="563" file0="5 Inheritance/13.cpp" sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\13.cpp" line="30" info="obj.a is overwritten"/>
             <location file="5 Inheritance\13.cpp" line="29" info="obj.a is assigned"/>
         </error>
-        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;obj.a&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;obj.a&amp;#039; is assigned a value that is never used." cwe="563" file0="5 Inheritance/13.cpp" sinceDate="M/d/yyyy">
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;obj.a&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;obj.a&amp;#039; is assigned a value that is never used." cwe="563" file0="5 Inheritance/13.cpp" sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\13.cpp" line="30"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;bits/stdc++.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;bits/stdc++.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;bits/stdc++.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;bits/stdc++.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\14.cpp" line="2"/>
         </error>
-        <error id="duplInheritedMember" severity="warning" msg="The class &amp;#039;derived&amp;#039; defines member function with name &amp;#039;show&amp;#039; also defined in its parent class &amp;#039;base&amp;#039;." verbose="The class &amp;#039;derived&amp;#039; defines member function with name &amp;#039;show&amp;#039; also defined in its parent class &amp;#039;base&amp;#039;." cwe="398" file0="5 Inheritance/14.cpp" sinceDate="M/d/yyyy">
+        <error id="duplInheritedMember" severity="warning" msg="The class &amp;#039;derived&amp;#039; defines member function with name &amp;#039;show&amp;#039; also defined in its parent class &amp;#039;base&amp;#039;." verbose="The class &amp;#039;derived&amp;#039; defines member function with name &amp;#039;show&amp;#039; also defined in its parent class &amp;#039;base&amp;#039;." cwe="398" file0="5 Inheritance/14.cpp" sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\14.cpp" line="17" info="Derived function &amp;#039;derived::show&amp;#039;"/>
             <location file="5 Inheritance\14.cpp" line="9" info="Parent function &amp;#039;base::show&amp;#039;"/>
         </error>
-        <error id="missingOverride" severity="style" msg="The function &amp;#039;print&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." verbose="The function &amp;#039;print&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." file0="5 Inheritance/14.cpp" sinceDate="M/d/yyyy">
+        <error id="missingOverride" severity="style" msg="The function &amp;#039;print&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." verbose="The function &amp;#039;print&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." file0="5 Inheritance/14.cpp" sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\14.cpp" line="15" info="Function in derived class"/>
             <location file="5 Inheritance\14.cpp" line="7" info="Virtual function in base class"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\15.cpp" line="1"/>
         </error>
-        <error id="noConstructor" severity="style" msg="The class &amp;#039;Base&amp;#039; does not declare a constructor although it has private member variables which likely require initialization." verbose="The class &amp;#039;Base&amp;#039; does not declare a constructor although it has private member variables which likely require initialization. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="5 Inheritance/15.cpp" sinceDate="M/d/yyyy">
+        <error id="noConstructor" severity="style" msg="The class &amp;#039;Base&amp;#039; does not declare a constructor although it has private member variables which likely require initialization." verbose="The class &amp;#039;Base&amp;#039; does not declare a constructor although it has private member variables which likely require initialization. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="5 Inheritance/15.cpp" sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\15.cpp" line="3"/>
         </error>
-        <error id="noConstructor" severity="style" msg="The class &amp;#039;Derived&amp;#039; does not declare a constructor although it has private member variables which likely require initialization." verbose="The class &amp;#039;Derived&amp;#039; does not declare a constructor although it has private member variables which likely require initialization. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="5 Inheritance/15.cpp" sinceDate="M/d/yyyy">
+        <error id="noConstructor" severity="style" msg="The class &amp;#039;Derived&amp;#039; does not declare a constructor although it has private member variables which likely require initialization." verbose="The class &amp;#039;Derived&amp;#039; does not declare a constructor although it has private member variables which likely require initialization. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="5 Inheritance/15.cpp" sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\15.cpp" line="11"/>
         </error>
-        <error id="missingOverride" severity="style" msg="The function &amp;#039;fun&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." verbose="The function &amp;#039;fun&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." file0="5 Inheritance/15.cpp" sinceDate="M/d/yyyy">
+        <error id="missingOverride" severity="style" msg="The function &amp;#039;fun&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." verbose="The function &amp;#039;fun&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." file0="5 Inheritance/15.cpp" sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\15.cpp" line="15" info="Function in derived class"/>
             <location file="5 Inheritance\15.cpp" line="7" info="Virtual function in base class"/>
         </error>
-        <error id="unusedStructMember" severity="style" msg="class member &amp;#039;Derived::y&amp;#039; is never used." verbose="class member &amp;#039;Derived::y&amp;#039; is never used." cwe="563" file0="5 Inheritance/15.cpp" sinceDate="M/d/yyyy">
+        <error id="unusedStructMember" severity="style" msg="class member &amp;#039;Derived::y&amp;#039; is never used." verbose="class member &amp;#039;Derived::y&amp;#039; is never used." cwe="563" file0="5 Inheritance/15.cpp" sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\15.cpp" line="13"/>
         </error>
-        <error id="unusedFunction" severity="style" msg="The function &amp;#039;getX&amp;#039; is never used." verbose="The function &amp;#039;getX&amp;#039; is never used." cwe="561" sinceDate="M/d/yyyy">
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;getX&amp;#039; is never used." verbose="The function &amp;#039;getX&amp;#039; is never used." cwe="561" sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\15.cpp" line="8"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\16.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\17.cpp" line="1"/>
         </error>
-        <error id="missingOverride" severity="style" msg="The function &amp;#039;fun&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." verbose="The function &amp;#039;fun&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." file0="5 Inheritance/17.cpp" sinceDate="M/d/yyyy">
+        <error id="missingOverride" severity="style" msg="The function &amp;#039;fun&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." verbose="The function &amp;#039;fun&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." file0="5 Inheritance/17.cpp" sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\17.cpp" line="20" info="Function in derived class"/>
             <location file="5 Inheritance\17.cpp" line="9" info="Virtual function in base class"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\2.cpp" line="1"/>
         </error>
-        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &amp;#039;car&amp;#039;" verbose="The one definition rule is violated, different classes/structs have the same name &amp;#039;car&amp;#039;" cwe="758" sinceDate="M/d/yyyy">
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &amp;#039;car&amp;#039;" verbose="The one definition rule is violated, different classes/structs have the same name &amp;#039;car&amp;#039;" cwe="758" sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\2.cpp" line="10" info=""/>
             <location file="5 Inheritance\3.cpp" line="19" info=""/>
         </error>
-        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &amp;#039;vehicle&amp;#039;" verbose="The one definition rule is violated, different classes/structs have the same name &amp;#039;vehicle&amp;#039;" cwe="758" sinceDate="M/d/yyyy">
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &amp;#039;vehicle&amp;#039;" verbose="The one definition rule is violated, different classes/structs have the same name &amp;#039;vehicle&amp;#039;" cwe="758" sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\4.cpp" line="3"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\3.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\4.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\5.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\6.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\7.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\8.cpp" line="1"/>
         </error>
-        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;Base&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;Base&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="5 Inheritance/8.cpp" sinceDate="M/d/yyyy">
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;Base&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;Base&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="5 Inheritance/8.cpp" sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\8.cpp" line="9"/>
         </error>
-        <error id="missingOverride" severity="style" msg="The function &amp;#039;display&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." verbose="The function &amp;#039;display&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." file0="5 Inheritance/8.cpp" sinceDate="M/d/yyyy">
+        <error id="missingOverride" severity="style" msg="The function &amp;#039;display&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." verbose="The function &amp;#039;display&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." file0="5 Inheritance/8.cpp" sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\8.cpp" line="19" info="Function in derived class"/>
             <location file="5 Inheritance\8.cpp" line="10" info="Virtual function in base class"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\9.cpp" line="1"/>
         </error>
-        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;Base&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;Base&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="5 Inheritance/9.cpp" sinceDate="M/d/yyyy">
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;Base&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;Base&amp;#039; has a constructor with 1 argument that is not explicit. Such, so called &amp;quot;Converting constructors&amp;quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="5 Inheritance/9.cpp" sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\9.cpp" line="9"/>
         </error>
-        <error id="missingOverride" severity="style" msg="The function &amp;#039;display&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." verbose="The function &amp;#039;display&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." file0="5 Inheritance/9.cpp" sinceDate="M/d/yyyy">
+        <error id="missingOverride" severity="style" msg="The function &amp;#039;display&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." verbose="The function &amp;#039;display&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." file0="5 Inheritance/9.cpp" sinceDate="dd-MMM-yy">
             <location file="5 Inheritance\9.cpp" line="18" info="Function in derived class"/>
             <location file="5 Inheritance\9.cpp" line="10" info="Virtual function in base class"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="6 Templates\1.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\0.syntax and comment.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\1.9breakloop.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\1.variable.cpp" line="1"/>
         </error>
-        <error id="unusedVariable" severity="style" msg="Unused variable: n" verbose="Unused variable: n" cwe="563" file0="c++/1.variable.cpp" sinceDate="M/d/yyyy">
+        <error id="unusedVariable" severity="style" msg="Unused variable: n" verbose="Unused variable: n" cwe="563" file0="c++/1.variable.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\1.variable.cpp" line="29"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\10.constructor.cpp" line="1"/>
         </error>
-        <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;brand&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;brand&amp;#039; a value by passing the value to the constructor in the initialization list." cwe="398" file0="c++/10.constructor.cpp" sinceDate="M/d/yyyy">
+        <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;brand&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;brand&amp;#039; a value by passing the value to the constructor in the initialization list." cwe="398" file0="c++/10.constructor.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\10.constructor.cpp" line="10"/>
         </error>
-        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;x&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;x&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="c++/10.constructor.cpp" sinceDate="M/d/yyyy">
+        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;x&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;x&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="c++/10.constructor.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\10.constructor.cpp" line="8"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\11.INC &amp;amp; DEC post, prefix.cpp" line="1"/>
         </error>
-        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;pi&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;pi&amp;#039; is assigned a value that is never used." cwe="563" file0="c++/11.INC &amp;amp; DEC post, prefix.cpp" sinceDate="M/d/yyyy">
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;pi&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;pi&amp;#039; is assigned a value that is never used." cwe="563" file0="c++/11.INC &amp;amp; DEC post, prefix.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\11.INC &amp;amp; DEC post, prefix.cpp" line="5"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\12.Accessspecifire.cpp" line="1"/>
         </error>
-        <error id="noConstructor" severity="style" msg="The class &amp;#039;student&amp;#039; does not declare a constructor although it has private member variables which likely require initialization." verbose="The class &amp;#039;student&amp;#039; does not declare a constructor although it has private member variables which likely require initialization. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="c++/12.Accessspecifire.cpp" sinceDate="M/d/yyyy">
+        <error id="noConstructor" severity="style" msg="The class &amp;#039;student&amp;#039; does not declare a constructor although it has private member variables which likely require initialization." verbose="The class &amp;#039;student&amp;#039; does not declare a constructor although it has private member variables which likely require initialization. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="c++/12.Accessspecifire.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\12.Accessspecifire.cpp" line="3"/>
         </error>
-        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;s1.x&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;s1.x&amp;#039; is assigned a value that is never used." cwe="563" file0="c++/12.Accessspecifire.cpp" sinceDate="M/d/yyyy">
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;s1.x&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;s1.x&amp;#039; is assigned a value that is never used." cwe="563" file0="c++/12.Accessspecifire.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\12.Accessspecifire.cpp" line="13"/>
         </error>
-        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;s1.y&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;s1.y&amp;#039; is assigned a value that is never used." cwe="563" file0="c++/12.Accessspecifire.cpp" sinceDate="M/d/yyyy">
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;s1.y&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;s1.y&amp;#039; is assigned a value that is never used." cwe="563" file0="c++/12.Accessspecifire.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\12.Accessspecifire.cpp" line="14"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\14.macros.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\14.macros.cpp" line="3"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\15.single inheritance.cpp" line="1"/>
         </error>
-        <error id="syntaxError" severity="error" msg="Unmatched &amp;#039;}&amp;#039;. Configuration: &amp;#039;&amp;#039;." verbose="Unmatched &amp;#039;}&amp;#039;. Configuration: &amp;#039;&amp;#039;." file0="c++/15.single inheritance.cpp" sinceDate="M/d/yyyy">
+        <error id="syntaxError" severity="error" msg="Unmatched &amp;#039;}&amp;#039;. Configuration: &amp;#039;&amp;#039;." verbose="Unmatched &amp;#039;}&amp;#039;. Configuration: &amp;#039;&amp;#039;." file0="c++/15.single inheritance.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\15.single inheritance.cpp" line="11"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\2.operator.cpp" line="1"/>
         </error>
-        <error id="incorrectLogicOperator" severity="warning" msg="Logical disjunction always evaluates to true: p &amp;gt; 3 || p &amp;lt; 4." verbose="Logical disjunction always evaluates to true: p &amp;gt; 3 || p &amp;lt; 4. Are these conditions necessary? Did you intend to use &amp;amp;&amp;amp; instead? Are the numbers correct? Are you comparing the correct variables?" cwe="571" file0="c++/2.operator.cpp" sinceDate="M/d/yyyy">
+        <error id="incorrectLogicOperator" severity="warning" msg="Logical disjunction always evaluates to true: p &amp;gt; 3 || p &amp;lt; 4." verbose="Logical disjunction always evaluates to true: p &amp;gt; 3 || p &amp;lt; 4. Are these conditions necessary? Did you intend to use &amp;amp;&amp;amp; instead? Are the numbers correct? Are you comparing the correct variables?" cwe="571" file0="c++/2.operator.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\2.operator.cpp" line="32"/>
         </error>
-        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;p&amp;gt;3&amp;#039; is always true" verbose="Condition &amp;#039;p&amp;gt;3&amp;#039; is always true" cwe="571" file0="c++/2.operator.cpp" sinceDate="M/d/yyyy">
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;p&amp;gt;3&amp;#039; is always true" verbose="Condition &amp;#039;p&amp;gt;3&amp;#039; is always true" cwe="571" file0="c++/2.operator.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\2.operator.cpp" line="31" info="Condition &amp;#039;p&amp;gt;3&amp;#039; is always true"/>
             <location file="c++\2.operator.cpp" line="23" info="Compound assignment &amp;#039;|=&amp;#039;, assigned value is 7"/>
             <location file="c++\2.operator.cpp" line="5" info="Assignment &amp;#039;p=5&amp;#039;, assigned value is 5"/>
         </error>
-        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;p&amp;lt;10&amp;#039; is always true" verbose="Condition &amp;#039;p&amp;lt;10&amp;#039; is always true" cwe="571" file0="c++/2.operator.cpp" sinceDate="M/d/yyyy">
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;p&amp;lt;10&amp;#039; is always true" verbose="Condition &amp;#039;p&amp;lt;10&amp;#039; is always true" cwe="571" file0="c++/2.operator.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\2.operator.cpp" line="31" info="Condition &amp;#039;p&amp;lt;10&amp;#039; is always true"/>
             <location file="c++\2.operator.cpp" line="23" info="Compound assignment &amp;#039;|=&amp;#039;, assigned value is 7"/>
             <location file="c++\2.operator.cpp" line="5" info="Assignment &amp;#039;p=5&amp;#039;, assigned value is 5"/>
         </error>
-        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;p&amp;gt;3&amp;#039; is always true" verbose="Condition &amp;#039;p&amp;gt;3&amp;#039; is always true" cwe="571" file0="c++/2.operator.cpp" sinceDate="M/d/yyyy">
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;p&amp;gt;3&amp;#039; is always true" verbose="Condition &amp;#039;p&amp;gt;3&amp;#039; is always true" cwe="571" file0="c++/2.operator.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\2.operator.cpp" line="33" info="Condition &amp;#039;p&amp;gt;3&amp;#039; is always true"/>
             <location file="c++\2.operator.cpp" line="23" info="Compound assignment &amp;#039;|=&amp;#039;, assigned value is 7"/>
             <location file="c++\2.operator.cpp" line="5" info="Assignment &amp;#039;p=5&amp;#039;, assigned value is 5"/>
         </error>
-        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;p&amp;lt;10&amp;#039; is always true" verbose="Condition &amp;#039;p&amp;lt;10&amp;#039; is always true" cwe="571" file0="c++/2.operator.cpp" sinceDate="M/d/yyyy">
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;p&amp;lt;10&amp;#039; is always true" verbose="Condition &amp;#039;p&amp;lt;10&amp;#039; is always true" cwe="571" file0="c++/2.operator.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\2.operator.cpp" line="33" info="Condition &amp;#039;p&amp;lt;10&amp;#039; is always true"/>
             <location file="c++\2.operator.cpp" line="23" info="Compound assignment &amp;#039;|=&amp;#039;, assigned value is 7"/>
             <location file="c++\2.operator.cpp" line="5" info="Assignment &amp;#039;p=5&amp;#039;, assigned value is 5"/>
         </error>
-        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;x&amp;gt;y&amp;#039; is always true" verbose="Condition &amp;#039;x&amp;gt;y&amp;#039; is always true" cwe="571" file0="c++/2.operator.cpp" sinceDate="M/d/yyyy">
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;x&amp;gt;y&amp;#039; is always true" verbose="Condition &amp;#039;x&amp;gt;y&amp;#039; is always true" cwe="571" file0="c++/2.operator.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\2.operator.cpp" line="34" info="Condition &amp;#039;x&amp;gt;y&amp;#039; is always true"/>
             <location file="c++\2.operator.cpp" line="7" info="x is incremented&amp;#039;, new value is 6"/>
             <location file="c++\2.operator.cpp" line="5" info="Assignment &amp;#039;x=5&amp;#039;, assigned value is 5"/>
         </error>
-        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;x&amp;lt;y&amp;#039; is always false" verbose="Condition &amp;#039;x&amp;lt;y&amp;#039; is always false" cwe="570" file0="c++/2.operator.cpp" sinceDate="M/d/yyyy">
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;x&amp;lt;y&amp;#039; is always false" verbose="Condition &amp;#039;x&amp;lt;y&amp;#039; is always false" cwe="570" file0="c++/2.operator.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\2.operator.cpp" line="35" info="Condition &amp;#039;x&amp;lt;y&amp;#039; is always false"/>
             <location file="c++\2.operator.cpp" line="7" info="x is incremented&amp;#039;, new value is 6"/>
             <location file="c++\2.operator.cpp" line="5" info="Assignment &amp;#039;x=5&amp;#039;, assigned value is 5"/>
         </error>
-        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;x==y&amp;#039; is always false" verbose="Condition &amp;#039;x==y&amp;#039; is always false" cwe="570" file0="c++/2.operator.cpp" sinceDate="M/d/yyyy">
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;x==y&amp;#039; is always false" verbose="Condition &amp;#039;x==y&amp;#039; is always false" cwe="570" file0="c++/2.operator.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\2.operator.cpp" line="36" info="Condition &amp;#039;x==y&amp;#039; is always false"/>
             <location file="c++\2.operator.cpp" line="7" info="x is incremented&amp;#039;, new value is 6"/>
             <location file="c++\2.operator.cpp" line="5" info="Assignment &amp;#039;x=5&amp;#039;, assigned value is 5"/>
         </error>
-        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;x!=y&amp;#039; is always true" verbose="Condition &amp;#039;x!=y&amp;#039; is always true" cwe="571" file0="c++/2.operator.cpp" sinceDate="M/d/yyyy">
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;x!=y&amp;#039; is always true" verbose="Condition &amp;#039;x!=y&amp;#039; is always true" cwe="571" file0="c++/2.operator.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\2.operator.cpp" line="37" info="Condition &amp;#039;x!=y&amp;#039; is always true"/>
             <location file="c++\2.operator.cpp" line="7" info="x is incremented&amp;#039;, new value is 6"/>
             <location file="c++\2.operator.cpp" line="5" info="Assignment &amp;#039;x=5&amp;#039;, assigned value is 5"/>
         </error>
-        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;x&amp;lt;=y&amp;#039; is always false" verbose="Condition &amp;#039;x&amp;lt;=y&amp;#039; is always false" cwe="570" file0="c++/2.operator.cpp" sinceDate="M/d/yyyy">
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;x&amp;lt;=y&amp;#039; is always false" verbose="Condition &amp;#039;x&amp;lt;=y&amp;#039; is always false" cwe="570" file0="c++/2.operator.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\2.operator.cpp" line="38" info="Condition &amp;#039;x&amp;lt;=y&amp;#039; is always false"/>
             <location file="c++\2.operator.cpp" line="7" info="x is incremented&amp;#039;, new value is 6"/>
             <location file="c++\2.operator.cpp" line="5" info="Assignment &amp;#039;x=5&amp;#039;, assigned value is 5"/>
         </error>
-        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;x&amp;gt;=y&amp;#039; is always true" verbose="Condition &amp;#039;x&amp;gt;=y&amp;#039; is always true" cwe="571" file0="c++/2.operator.cpp" sinceDate="M/d/yyyy">
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;x&amp;gt;=y&amp;#039; is always true" verbose="Condition &amp;#039;x&amp;gt;=y&amp;#039; is always true" cwe="571" file0="c++/2.operator.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\2.operator.cpp" line="39" info="Condition &amp;#039;x&amp;gt;=y&amp;#039; is always true"/>
             <location file="c++\2.operator.cpp" line="7" info="x is incremented&amp;#039;, new value is 6"/>
             <location file="c++\2.operator.cpp" line="5" info="Assignment &amp;#039;x=5&amp;#039;, assigned value is 5"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\5.boolean &amp;amp; concatenation.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\6.pointer.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\7.classobjet.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\9.structure.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\input is binary sequnce or not.cpp" line="1"/>
         </error>
-        <error id="negativeIndex" severity="error" msg="Array &amp;#039;a[10]&amp;#039; accessed at index -1, which is out of bounds." verbose="Array &amp;#039;a[10]&amp;#039; accessed at index -1, which is out of bounds." cwe="786" file0="c++/input is binary sequnce or not.cpp" sinceDate="M/d/yyyy">
+        <error id="negativeIndex" severity="error" msg="Array &amp;#039;a[10]&amp;#039; accessed at index -1, which is out of bounds." verbose="Array &amp;#039;a[10]&amp;#039; accessed at index -1, which is out of bounds." cwe="786" file0="c++/input is binary sequnce or not.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\input is binary sequnce or not.cpp" line="17" info="Negative array index"/>
             <location file="c++\input is binary sequnce or not.cpp" line="13" info="Assuming that condition &amp;#039;i&amp;gt;=0&amp;#039; is not redundant"/>
         </error>
-        <error id="uninitvar" severity="error" msg="Uninitialized variable: i" verbose="Uninitialized variable: i" cwe="457" file0="c++/input is binary sequnce or not.cpp" sinceDate="M/d/yyyy">
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: i" verbose="Uninitialized variable: i" cwe="457" file0="c++/input is binary sequnce or not.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\input is binary sequnce or not.cpp" line="10"/>
         </error>
-        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;a[i]&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;a[i]&amp;#039; is assigned a value that is never used." cwe="563" file0="c++/input is binary sequnce or not.cpp" sinceDate="M/d/yyyy">
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;a[i]&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;a[i]&amp;#039; is assigned a value that is never used." cwe="563" file0="c++/input is binary sequnce or not.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\input is binary sequnce or not.cpp" line="17"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\10.function\Returnvaluefun.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\10.function\fun.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\10.function\function with argumet and array.cpp" line="1"/>
         </error>
-        <error id="constParameter" severity="style" msg="Parameter &amp;#039;mark&amp;#039; can be declared as const array" verbose="Parameter &amp;#039;mark&amp;#039; can be declared as const array" cwe="398" file0="c++/10.function/function with argumet and array.cpp" sinceDate="M/d/yyyy">
+        <error id="constParameter" severity="style" msg="Parameter &amp;#039;mark&amp;#039; can be declared as const array" verbose="Parameter &amp;#039;mark&amp;#039; can be declared as const array" cwe="398" file0="c++/10.function/function with argumet and array.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\10.function\function with argumet and array.cpp" line="3"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\10.function\fundefault.cpp" line="1"/>
         </error>
-        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;country&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;country&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="c++/10.function/fundefault.cpp" sinceDate="M/d/yyyy">
+        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;country&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;country&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="c++/10.function/fundefault.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\10.function\fundefault.cpp" line="3"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\10.function\funoverloading.cpp" line="1"/>
         </error>
-        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;s1&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;s1&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="c++/10.function/funoverloading.cpp" sinceDate="M/d/yyyy">
+        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;s1&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;s1&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="c++/10.function/funoverloading.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\10.function\funoverloading.cpp" line="11"/>
         </error>
-        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;s2&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;s2&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="c++/10.function/funoverloading.cpp" sinceDate="M/d/yyyy">
+        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;s2&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;s2&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="c++/10.function/funoverloading.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\10.function\funoverloading.cpp" line="11"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\10.function\funpara&amp;amp;argu.cpp" line="1"/>
         </error>
-        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;name&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;name&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="c++/10.function/funpara&amp;amp;argu.cpp" sinceDate="M/d/yyyy">
+        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;name&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;name&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="c++/10.function/funpara&amp;amp;argu.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\10.function\funpara&amp;amp;argu.cpp" line="3"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\13.array program\array matrix add6.cpp" line="1"/>
         </error>
-        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;i&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;i&amp;#039; shadows outer variable" cwe="398" file0="c++/13.array program/array matrix add6.cpp" sinceDate="M/d/yyyy">
+        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;i&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;i&amp;#039; shadows outer variable" cwe="398" file0="c++/13.array program/array matrix add6.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\13.array program\array matrix add6.cpp" line="9" info="Shadow variable"/>
             <location file="c++\13.array program\array matrix add6.cpp" line="5" info="Shadowed declaration"/>
         </error>
-        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;i1&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;i1&amp;#039; shadows outer variable" cwe="398" file0="c++/13.array program/array matrix add6.cpp" sinceDate="M/d/yyyy">
+        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;i1&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;i1&amp;#039; shadows outer variable" cwe="398" file0="c++/13.array program/array matrix add6.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\13.array program\array matrix add6.cpp" line="11" info="Shadow variable"/>
             <location file="c++\13.array program\array matrix add6.cpp" line="5" info="Shadowed declaration"/>
         </error>
-        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;i&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;i&amp;#039; shadows outer variable" cwe="398" file0="c++/13.array program/array matrix add6.cpp" sinceDate="M/d/yyyy">
+        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;i&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;i&amp;#039; shadows outer variable" cwe="398" file0="c++/13.array program/array matrix add6.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\13.array program\array matrix add6.cpp" line="17" info="Shadow variable"/>
             <location file="c++\13.array program\array matrix add6.cpp" line="5" info="Shadowed declaration"/>
         </error>
-        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;i1&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;i1&amp;#039; shadows outer variable" cwe="398" file0="c++/13.array program/array matrix add6.cpp" sinceDate="M/d/yyyy">
+        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;i1&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;i1&amp;#039; shadows outer variable" cwe="398" file0="c++/13.array program/array matrix add6.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\13.array program\array matrix add6.cpp" line="19" info="Shadow variable"/>
             <location file="c++\13.array program\array matrix add6.cpp" line="5" info="Shadowed declaration"/>
         </error>
-        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;i&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;i&amp;#039; shadows outer variable" cwe="398" file0="c++/13.array program/array matrix add6.cpp" sinceDate="M/d/yyyy">
+        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;i&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;i&amp;#039; shadows outer variable" cwe="398" file0="c++/13.array program/array matrix add6.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\13.array program\array matrix add6.cpp" line="24" info="Shadow variable"/>
             <location file="c++\13.array program\array matrix add6.cpp" line="5" info="Shadowed declaration"/>
         </error>
-        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;i1&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;i1&amp;#039; shadows outer variable" cwe="398" file0="c++/13.array program/array matrix add6.cpp" sinceDate="M/d/yyyy">
+        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;i1&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;i1&amp;#039; shadows outer variable" cwe="398" file0="c++/13.array program/array matrix add6.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\13.array program\array matrix add6.cpp" line="25" info="Shadow variable"/>
             <location file="c++\13.array program\array matrix add6.cpp" line="5" info="Shadowed declaration"/>
         </error>
-        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;i&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;i&amp;#039; shadows outer variable" cwe="398" file0="c++/13.array program/array matrix add6.cpp" sinceDate="M/d/yyyy">
+        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;i&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;i&amp;#039; shadows outer variable" cwe="398" file0="c++/13.array program/array matrix add6.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\13.array program\array matrix add6.cpp" line="28" info="Shadow variable"/>
             <location file="c++\13.array program\array matrix add6.cpp" line="5" info="Shadowed declaration"/>
         </error>
-        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;i1&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;i1&amp;#039; shadows outer variable" cwe="398" file0="c++/13.array program/array matrix add6.cpp" sinceDate="M/d/yyyy">
+        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;i1&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;i1&amp;#039; shadows outer variable" cwe="398" file0="c++/13.array program/array matrix add6.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\13.array program\array matrix add6.cpp" line="30" info="Shadow variable"/>
             <location file="c++\13.array program\array matrix add6.cpp" line="5" info="Shadowed declaration"/>
         </error>
-        <error id="unusedVariable" severity="style" msg="Unused variable: i" verbose="Unused variable: i" cwe="563" file0="c++/13.array program/array matrix add6.cpp" sinceDate="M/d/yyyy">
+        <error id="unusedVariable" severity="style" msg="Unused variable: i" verbose="Unused variable: i" cwe="563" file0="c++/13.array program/array matrix add6.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\13.array program\array matrix add6.cpp" line="5"/>
         </error>
-        <error id="unusedVariable" severity="style" msg="Unused variable: i1" verbose="Unused variable: i1" cwe="563" file0="c++/13.array program/array matrix add6.cpp" sinceDate="M/d/yyyy">
+        <error id="unusedVariable" severity="style" msg="Unused variable: i1" verbose="Unused variable: i1" cwe="563" file0="c++/13.array program/array matrix add6.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\13.array program\array matrix add6.cpp" line="5"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\13.array program\array.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\13.array program\array1.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\13.array program\array2.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\13.array program\array3.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\13.array program\array4.cpp" line="1"/>
         </error>
-        <error id="constVariable" severity="style" msg="Variable &amp;#039;car&amp;#039; can be declared as const array" verbose="Variable &amp;#039;car&amp;#039; can be declared as const array" cwe="398" file0="c++/13.array program/array4.cpp" sinceDate="M/d/yyyy">
+        <error id="constVariable" severity="style" msg="Variable &amp;#039;car&amp;#039; can be declared as const array" verbose="Variable &amp;#039;car&amp;#039; can be declared as const array" cwe="398" file0="c++/13.array program/array4.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\13.array program\array4.cpp" line="5"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\13.array program\array5.cpp" line="1"/>
         </error>
-        <error id="constVariable" severity="style" msg="Variable &amp;#039;arrnum&amp;#039; can be declared as const array" verbose="Variable &amp;#039;arrnum&amp;#039; can be declared as const array" cwe="398" file0="c++/13.array program/array5.cpp" sinceDate="M/d/yyyy">
+        <error id="constVariable" severity="style" msg="Variable &amp;#039;arrnum&amp;#039; can be declared as const array" verbose="Variable &amp;#039;arrnum&amp;#039; can be declared as const array" cwe="398" file0="c++/13.array program/array5.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\13.array program\array5.cpp" line="5"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\13.array program\passarryfun.cpp" line="1"/>
         </error>
-        <error id="constParameter" severity="style" msg="Parameter &amp;#039;mynum&amp;#039; can be declared as const array" verbose="Parameter &amp;#039;mynum&amp;#039; can be declared as const array" cwe="398" file0="c++/13.array program/passarryfun.cpp" sinceDate="M/d/yyyy">
+        <error id="constParameter" severity="style" msg="Parameter &amp;#039;mynum&amp;#039; can be declared as const array" verbose="Parameter &amp;#039;mynum&amp;#039; can be declared as const array" cwe="398" file0="c++/13.array program/passarryfun.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\13.array program\passarryfun.cpp" line="3"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\3.condition statement\continue &amp;amp; break combine.cpp" line="1"/>
         </error>
-        <error id="duplicateBreak" severity="style" msg="Consecutive return, break, continue, goto or throw statements are unnecessary." verbose="Consecutive return, break, continue, goto or throw statements are unnecessary. The second statement can never be executed, and so should be removed." cwe="561" file0="c++/3.condition statement/continue &amp;amp; break combine.cpp" sinceDate="M/d/yyyy">
+        <error id="duplicateBreak" severity="style" msg="Consecutive return, break, continue, goto or throw statements are unnecessary." verbose="Consecutive return, break, continue, goto or throw statements are unnecessary. The second statement can never be executed, and so should be removed." cwe="561" file0="c++/3.condition statement/continue &amp;amp; break combine.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\3.condition statement\continue &amp;amp; break combine.cpp" line="12"/>
         </error>
-        <error id="unusedVariable" severity="style" msg="Unused variable: num" verbose="Unused variable: num" cwe="563" file0="c++/3.condition statement/continue &amp;amp; break combine.cpp" sinceDate="M/d/yyyy">
+        <error id="unusedVariable" severity="style" msg="Unused variable: num" verbose="Unused variable: num" cwe="563" file0="c++/3.condition statement/continue &amp;amp; break combine.cpp" sinceDate="dd-MMM-yy">
             <location file="c++\3.condition statement\continue &amp;amp; break combine.cpp" line="5"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\3.condition statement\goto.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\3.condition statement\if else.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\3.condition statement\if elseif .cpp" line="1"/>
         </error>
-        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;num&amp;gt;=0&amp;#039; is always true" verbose="Condition &amp;#039;num&amp;gt;=0&amp;#039; is always true" cwe="571" file0="c++/3.condition statement/if elseif .cpp" sinceDate="M/d/yyyy">
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;num&amp;gt;=0&amp;#039; is always true" verbose="Condition &amp;#039;num&amp;gt;=0&amp;#039; is always true" cwe="571" file0="c++/3.condition statement/if elseif .cpp" sinceDate="dd-MMM-yy">
             <location file="c++\3.condition statement\if elseif .cpp" line="12" info="Condition &amp;#039;num&amp;gt;=0&amp;#039; is always true"/>
             <location file="c++\3.condition statement\if elseif .cpp" line="8" info="Assuming that condition &amp;#039;num&amp;lt;0&amp;#039; is not redundant"/>
         </error>
-        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;num&amp;lt;=100&amp;#039; is always true" verbose="Condition &amp;#039;num&amp;lt;=100&amp;#039; is always true" cwe="571" file0="c++/3.condition statement/if elseif .cpp" sinceDate="M/d/yyyy">
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;num&amp;lt;=100&amp;#039; is always true" verbose="Condition &amp;#039;num&amp;lt;=100&amp;#039; is always true" cwe="571" file0="c++/3.condition statement/if elseif .cpp" sinceDate="dd-MMM-yy">
             <location file="c++\3.condition statement\if elseif .cpp" line="28" info="Condition &amp;#039;num&amp;lt;=100&amp;#039; is always true"/>
             <location file="c++\3.condition statement\if elseif .cpp" line="8" info="Assuming that condition &amp;#039;num&amp;gt;100&amp;#039; is not redundant"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\3.condition statement\switch.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\4.loop\combine al loop.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\4.loop\do while loop.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\4.loop\for loop.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\4.loop\while loop.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\8.Method\Methodinside.cpp" line="1"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MMM-yy">
             <location file="c++\8.Method\Methodoutside.cpp" line="1"/>
         </error>
     </errors>
