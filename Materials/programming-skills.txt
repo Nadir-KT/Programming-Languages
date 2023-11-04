@@ -1,0 +1,76 @@
+https://bootcamp.du.edu/blog/programming-skills/
+
+1. Introduction to Programming
+   - Basic concepts of programming
+   - Programming paradigms (procedural, object-oriented, functional)
+   - Understanding algorithms and problem-solving
+
+2. Language Fundamentals
+   - Syntax and semantics of the programming language
+   - Data types, variables, and constants
+   - Operators and expressions
+   - Control flow (conditionals and loops)
+
+3. Data Structures
+   - Arrays and lists
+   - Stacks and queues
+   - Linked lists
+   - Trees and graphs
+
+4. Functions and Modules
+   - Defining and calling functions
+   - Parameters and return values
+   - Recursion
+   - Organizing code into modules or classes
+
+5. Object-Oriented Programming (OOP)
+   - Classes and objects
+   - Inheritance and polymorphism
+   - Encapsulation and data hiding
+   - Abstraction and interfaces
+
+6. File Handling and Input/Output
+   - Reading from and writing to files
+   - Handling exceptions and errors
+   - Input/output streams
+
+7. Memory Management
+   - Stack and heap memory
+   - Pointers and references
+   - Garbage collection
+
+8. Error Handling and Debugging
+   - Common types of errors
+   - Debugging techniques and tools
+   - Error handling mechanisms (try-catch, exceptions)
+
+9. Algorithms and Data Manipulation
+   - Sorting and searching algorithms
+   - Data manipulation and transformation
+   - Time and space complexity analysis
+
+10. Libraries and Frameworks
+    - Introduction to popular libraries and frameworks in the language
+    - Integration and usage of external libraries
+    - Building projects using frameworks
+
+11. Database Integration
+    - Connecting to databases
+    - Querying and manipulating data
+    - Database management systems (DBMS)
+
+12. Web Development (if applicable)
+    - HTML and CSS basics
+    - Server-side scripting (e.g., PHP, Python, Node.js)
+    - Client-side scripting (e.g., JavaScript)
+
+13. Advanced Topics (Optional)
+    - Multithreading and concurrency
+    - Networking and socket programming
+    - Security and encryption
+    - Performance optimization
+
+14. Practice and Projects
+    - Solving coding problems and exercises
+    - Working on small projects to apply learned concepts
+    - Collaborating on open-source projects (if possible)
