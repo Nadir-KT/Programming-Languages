@@ -1,7 +1,5 @@
 #include <iostream>
 using namespace std;
-#include <iostream>
-using namespace std;
 #define INSTRAGRAM FOLLOWER //macro definition
 #define FOLLOWER 185 
 #define DATE 31 //macro definition
@@ -15,5 +13,7 @@ int main() //driver code
     area = AREA(I1, I2);
     cout<<"Area of the rectangle"<<" is :"<<area;
 }
+
+
 
 

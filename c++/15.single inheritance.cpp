@@ -6,6 +6,7 @@ class Account //base class
     float salary=6000;
 };
 class programmer:public Account //derived class
+{
     public:
     float bonus=5000;
 };

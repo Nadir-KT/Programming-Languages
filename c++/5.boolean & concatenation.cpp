@@ -9,10 +9,12 @@ int main()
  string firstName = "arjun ";
  string lastName = " more ";
  string fullName = firstName + lastName;
- cout<<fullName<<endl;;
+ cout<<fullName<<endl;
  string firstName1 = "pooja ";
  string lastName1 = " thorat ";
  string fullName1 = firstName1.append(lastName1);
  cout << fullName1;
 }
+
+
 

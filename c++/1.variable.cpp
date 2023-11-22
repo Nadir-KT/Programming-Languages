@@ -26,7 +26,7 @@ int main()
     cout<<g<<endl;
     string name="rani";
     cout<<name<<endl;
-    char n;
-    cout<<"A";
+    char n='a';
+    cout<<n;
 }
 
