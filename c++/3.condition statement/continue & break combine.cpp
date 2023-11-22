@@ -8,7 +8,7 @@ int main()
         if(1)
         {
             cout<<"num"<<" ";
-            continue;
+            //continue;
             break;
         }
     }

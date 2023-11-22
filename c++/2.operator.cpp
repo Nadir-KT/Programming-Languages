@@ -2,9 +2,9 @@
 using namespace std;
 int main()
 {
-    int x=5, y=8, u=5, v=5, z=8, w=5, p=5, r=5, s=5, t=5;
-    cout<<x<<endl;
-    ++x;
+    int x=5, y=8, u=5, v=5, z=8, w=5, p=5, r=5, s=5, t=5; //initialize the data
+    cout<<x<<endl; //print output
+    ++x; //increament
     cout<<x<<endl; 
     --y;
     cout<<y<<endl;

@@ -5,8 +5,8 @@ int main()
     int a, b, c; //local variable
     a=10; //initialization
     b=20;
-    c=a+b;
-    cout<<c<<endl;
+    c=a+b; //add two number
+    cout<<c<<endl; //print the output 
     c=a-b;
     cout<<c<<endl;
     c=a*b;

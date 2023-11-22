@@ -2,14 +2,12 @@
 using namespace std;
 int main()
 {
-    ineligible:
-    cout<<"you are not eligible to vote"<<endl;
-    cout<<"enter your age:";
-    int age;
+    int age; //initialize
+    cout<<"enter your age:"; //print
     cin>>age;
     if(age<18)
     {
-        goto ineligible;
+        cout<<"you are not eligible to vote"<<endl;
     }
     else
     {

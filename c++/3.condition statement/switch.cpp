@@ -2,8 +2,8 @@
 using namespace std;  
 int main ()
 {  
-    int num;  
-    cout<<"Enter a number to check grade:";    
+    int num; //initialize
+    cout<<"Enter a number to check grade:"; //print    
     cin>>num; 
     switch(num)
     {

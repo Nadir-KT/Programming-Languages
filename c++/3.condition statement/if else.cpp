@@ -1,11 +1,9 @@
 #include <iostream>
-
 using namespace std;
-
 int main()
 {
-    int num;
-    cout<<"enter a number: ";
+    int num; //initialize
+    cout<<"enter a number: "; //print
     cin>>num;
     if(num%2==0)
     {
