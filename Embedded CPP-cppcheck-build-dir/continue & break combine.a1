@@ -1,10 +1,7 @@
 <?xml version="1.0"?>
-<analyzerinfo hash="12476697414066145528">
+<analyzerinfo hash="12627119232475682528">
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\3.condition statement\continue &amp; break combine.cpp" line="1" column="0"/>
-        </error>
-        <error id="duplicateBreak" severity="style" msg="Consecutive return, break, continue, goto or throw statements are unnecessary." verbose="Consecutive return, break, continue, goto or throw statements are unnecessary. The second statement can never be executed, and so should be removed." cwe="561" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/3.condition statement/continue &amp; break combine.cpp">
-            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\3.condition statement\continue &amp; break combine.cpp" line="12" column="13"/>
         </error>
         <error id="unusedVariable" severity="style" msg="Unused variable: num" verbose="Unused variable: num" cwe="563" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/3.condition statement/continue &amp; break combine.cpp">
             <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\3.condition statement\continue &amp; break combine.cpp" line="5" column="9"/>

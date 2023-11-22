@@ -574,9 +574,6 @@
         <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
             <location file="c++\3.condition statement\continue &amp;amp; break combine.cpp" line="1"/>
         </error>
-        <error id="duplicateBreak" severity="style" msg="Consecutive return, break, continue, goto or throw statements are unnecessary." verbose="Consecutive return, break, continue, goto or throw statements are unnecessary. The second statement can never be executed, and so should be removed." cwe="561" file0="c++/3.condition statement/continue &amp;amp; break combine.cpp" sinceDate="M/d/yyyy">
-            <location file="c++\3.condition statement\continue &amp;amp; break combine.cpp" line="12"/>
-        </error>
         <error id="unusedVariable" severity="style" msg="Unused variable: num" verbose="Unused variable: num" cwe="563" file0="c++/3.condition statement/continue &amp;amp; break combine.cpp" sinceDate="M/d/yyyy">
             <location file="c++\3.condition statement\continue &amp;amp; break combine.cpp" line="5"/>
         </error>

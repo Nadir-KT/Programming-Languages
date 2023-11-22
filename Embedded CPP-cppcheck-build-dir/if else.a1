@@ -4,6 +4,6 @@
             <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\3.condition statement\if else.cpp" line="1" column="0"/>
         </error>
   <FileInfo check="CheckUnusedFunctions">
-    <functiondecl functionName="main" lineNumber="5"/>
+    <functiondecl functionName="main" lineNumber="3"/>
   </FileInfo>
 </analyzerinfo>
