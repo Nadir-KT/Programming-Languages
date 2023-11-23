@@ -344,9 +344,6 @@
         <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
             <location file="c++\1.variable.cpp" line="1"/>
         </error>
-        <error id="unusedVariable" severity="style" msg="Unused variable: n" verbose="Unused variable: n" cwe="563" file0="c++/1.variable.cpp" sinceDate="M/d/yyyy">
-            <location file="c++\1.variable.cpp" line="29"/>
-        </error>
         <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
             <location file="c++\10.constructor.cpp" line="1"/>
         </error>
@@ -359,32 +356,17 @@
         <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
             <location file="c++\11.INC &amp;amp; DEC post, prefix.cpp" line="1"/>
         </error>
-        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;pi&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;pi&amp;#039; is assigned a value that is never used." cwe="563" file0="c++/11.INC &amp;amp; DEC post, prefix.cpp" sinceDate="M/d/yyyy">
+        <error id="unusedVariable" severity="style" msg="Unused variable: pi" verbose="Unused variable: pi" cwe="563" file0="c++/11.INC &amp;amp; DEC post, prefix.cpp" sinceDate="M/d/yyyy">
             <location file="c++\11.INC &amp;amp; DEC post, prefix.cpp" line="5"/>
         </error>
         <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
             <location file="c++\12.Accessspecifire.cpp" line="1"/>
         </error>
-        <error id="noConstructor" severity="style" msg="The class &amp;#039;student&amp;#039; does not declare a constructor although it has private member variables which likely require initialization." verbose="The class &amp;#039;student&amp;#039; does not declare a constructor although it has private member variables which likely require initialization. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="c++/12.Accessspecifire.cpp" sinceDate="M/d/yyyy">
-            <location file="c++\12.Accessspecifire.cpp" line="3"/>
-        </error>
-        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;s1.x&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;s1.x&amp;#039; is assigned a value that is never used." cwe="563" file0="c++/12.Accessspecifire.cpp" sinceDate="M/d/yyyy">
-            <location file="c++\12.Accessspecifire.cpp" line="13"/>
-        </error>
-        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;s1.y&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;s1.y&amp;#039; is assigned a value that is never used." cwe="563" file0="c++/12.Accessspecifire.cpp" sinceDate="M/d/yyyy">
-            <location file="c++\12.Accessspecifire.cpp" line="14"/>
-        </error>
         <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
             <location file="c++\14.macros.cpp" line="1"/>
         </error>
         <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
-            <location file="c++\14.macros.cpp" line="3"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
             <location file="c++\15.single inheritance.cpp" line="1"/>
-        </error>
-        <error id="syntaxError" severity="error" msg="Unmatched &amp;#039;}&amp;#039;. Configuration: &amp;#039;&amp;#039;." verbose="Unmatched &amp;#039;}&amp;#039;. Configuration: &amp;#039;&amp;#039;." file0="c++/15.single inheritance.cpp" sinceDate="M/d/yyyy">
-            <location file="c++\15.single inheritance.cpp" line="11"/>
         </error>
         <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="M/d/yyyy">
             <location file="c++\2.operator.cpp" line="1"/>

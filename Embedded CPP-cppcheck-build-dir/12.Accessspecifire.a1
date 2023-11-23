@@ -1,22 +1,10 @@
 <?xml version="1.0"?>
-<analyzerinfo hash="10306931485612329360">
+<analyzerinfo hash="5862208047911105873">
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\12.Accessspecifire.cpp" line="1" column="0"/>
         </error>
-        <error id="noConstructor" severity="style" msg="The class &apos;student&apos; does not declare a constructor although it has private member variables which likely require initialization." verbose="The class &apos;student&apos; does not declare a constructor although it has private member variables which likely require initialization. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/12.Accessspecifire.cpp">
-            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\12.Accessspecifire.cpp" line="3" column="1"/>
-            <symbol>student</symbol>
-        </error>
-        <error id="unreadVariable" severity="style" msg="Variable &apos;s1.x&apos; is assigned a value that is never used." verbose="Variable &apos;s1.x&apos; is assigned a value that is never used." cwe="563" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/12.Accessspecifire.cpp">
-            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\12.Accessspecifire.cpp" line="13" column="9"/>
-            <symbol>s1.x</symbol>
-        </error>
-        <error id="unreadVariable" severity="style" msg="Variable &apos;s1.y&apos; is assigned a value that is never used." verbose="Variable &apos;s1.y&apos; is assigned a value that is never used." cwe="563" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/12.Accessspecifire.cpp">
-            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\12.Accessspecifire.cpp" line="14" column="9"/>
-            <symbol>s1.y</symbol>
-        </error>
   <FileInfo check="Class">
-<class name="student" file="H:/Software_Development/GitHub/Embedded_CPP/c++/12.Accessspecifire.cpp" line="3" col="1" hash="17772689182019055396"/>
+<class name="student" file="H:/Software_Development/GitHub/Embedded_CPP/c++/12.Accessspecifire.cpp" line="3" col="1" hash="11967106725161128472"/>
   </FileInfo>
   <FileInfo check="CheckUnusedFunctions">
     <functiondecl functionName="main" lineNumber="10"/>

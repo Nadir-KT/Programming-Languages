@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<analyzerinfo hash="6902828985677186051">
+<analyzerinfo hash="4928939301740222024">
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\11.INC &amp; DEC post, prefix.cpp" line="1" column="0"/>
         </error>
-        <error id="unreadVariable" severity="style" msg="Variable &apos;pi&apos; is assigned a value that is never used." verbose="Variable &apos;pi&apos; is assigned a value that is never used." cwe="563" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/11.INC &amp; DEC post, prefix.cpp">
-            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\11.INC &amp; DEC post, prefix.cpp" line="5" column="13"/>
+        <error id="unusedVariable" severity="style" msg="Unused variable: pi" verbose="Unused variable: pi" cwe="563" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/11.INC &amp; DEC post, prefix.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\11.INC &amp; DEC post, prefix.cpp" line="5" column="11"/>
             <symbol>pi</symbol>
         </error>
   <FileInfo check="CheckUnusedFunctions">
