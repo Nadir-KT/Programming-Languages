@@ -33,7 +33,7 @@ int main()
     s1.setdata(10.32,45.56);
     cout<<"\n we are in main";
     cout<<"\n x value is::"<<s1.getx();
-    cout<<"\n y value is:;"<<s1.gety();
+    cout<<"\n y value is::"<<s1.gety();
     s1.print();
     cout<<"\n";
     return 0;

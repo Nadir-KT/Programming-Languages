@@ -1,8 +1,6 @@
 #include<iostream>
 using namespace std;
-
 int i=0;
-
 class subscript
 {
     int array[10];
@@ -27,9 +25,9 @@ public:
 
 int main()
 {
-    class subscript ss(0);
+    class subscript s(0);
     cout<<"\n now we are going to place 13 element in 2nd index";
-    ss[2]=13;
+    s[2]=13;
     cout<<"\n now we are going to place 22 element in 10 index";
-    ss[10]=22; // error because size is exceeding
+   // s[10]=22; // error because size is exceeding
 }
