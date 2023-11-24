@@ -2,6 +2,6 @@
 using namespace std;
 int main()
 {
-    bool a=false;
-    cout << a <<endl;
+ bool embedded = true;
+ cout<<embedded<<endl;  // Outputs 1 (true)
 }

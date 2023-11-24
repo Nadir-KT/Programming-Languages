@@ -2,7 +2,6 @@
 using namespace std;
 int main()
 {
-    bool a=false,b=true;
-    cout << a <<endl;
-    cout << b <<endl;
+ bool design = false;
+ cout<<design<<endl;  
 }

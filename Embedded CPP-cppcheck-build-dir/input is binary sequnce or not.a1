@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <analyzerinfo hash="4505515342709902930">
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\input is binary sequnce or not.cpp" line="1" column="0"/>
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\c++\input is binary sequnce or not.cpp" line="1" column="0"/>
         </error>
-        <error id="negativeIndex" severity="error" msg="Array &apos;a[10]&apos; accessed at index -1, which is out of bounds." verbose="Array &apos;a[10]&apos; accessed at index -1, which is out of bounds." cwe="786" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/input is binary sequnce or not.cpp">
-            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\input is binary sequnce or not.cpp" line="17" column="5" info="Negative array index"/>
-            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\input is binary sequnce or not.cpp" line="13" column="13" info="Assuming that condition &apos;i&gt;=0&apos; is not redundant"/>
+        <error id="negativeIndex" severity="error" msg="Array &apos;a[10]&apos; accessed at index -1, which is out of bounds." verbose="Array &apos;a[10]&apos; accessed at index -1, which is out of bounds." cwe="786" file0="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/input is binary sequnce or not.cpp">
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\c++\input is binary sequnce or not.cpp" line="17" column="5" info="Negative array index"/>
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\c++\input is binary sequnce or not.cpp" line="13" column="13" info="Assuming that condition &apos;i&gt;=0&apos; is not redundant"/>
         </error>
-        <error id="uninitvar" severity="error" msg="Uninitialized variable: i" verbose="Uninitialized variable: i" cwe="457" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/input is binary sequnce or not.cpp">
-            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\input is binary sequnce or not.cpp" line="10" column="3"/>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: i" verbose="Uninitialized variable: i" cwe="457" file0="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/input is binary sequnce or not.cpp">
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\c++\input is binary sequnce or not.cpp" line="10" column="3"/>
             <symbol>i</symbol>
         </error>
-        <error id="unreadVariable" severity="style" msg="Variable &apos;a[i]&apos; is assigned a value that is never used." verbose="Variable &apos;a[i]&apos; is assigned a value that is never used." cwe="563" file0="H:/Software_Development/GitHub/Embedded_CPP/c++/input is binary sequnce or not.cpp">
-            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\input is binary sequnce or not.cpp" line="17" column="8"/>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;a[i]&apos; is assigned a value that is never used." verbose="Variable &apos;a[i]&apos; is assigned a value that is never used." cwe="563" file0="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/input is binary sequnce or not.cpp">
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\c++\input is binary sequnce or not.cpp" line="17" column="8"/>
             <symbol>a[i]</symbol>
         </error>
   <FileInfo check="CheckUnusedFunctions">

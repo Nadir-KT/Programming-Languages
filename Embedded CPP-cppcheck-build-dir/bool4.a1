@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <analyzerinfo hash="5940822632331952448">
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="H:\Software_Development\GitHub\Embedded_CPP\1 C++\bool4.cpp" line="1" column="0"/>
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\1 C++\bool4.cpp" line="1" column="0"/>
         </error>
-        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;a&apos; is always true" verbose="Condition &apos;a&apos; is always true" cwe="571" file0="H:/Software_Development/GitHub/Embedded_CPP/1 C++/bool4.cpp">
-            <location file="H:\Software_Development\GitHub\Embedded_CPP\1 C++\bool4.cpp" line="6" column="8" info="Condition &apos;a&apos; is always true"/>
-            <location file="H:\Software_Development\GitHub\Embedded_CPP\1 C++\bool4.cpp" line="5" column="12" info="Assignment &apos;a=true&apos;, assigned value is 1"/>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;a&apos; is always true" verbose="Condition &apos;a&apos; is always true" cwe="571" file0="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/1 C++/bool4.cpp">
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\1 C++\bool4.cpp" line="6" column="8" info="Condition &apos;a&apos; is always true"/>
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\1 C++\bool4.cpp" line="5" column="12" info="Assignment &apos;a=true&apos;, assigned value is 1"/>
         </error>
   <FileInfo check="CheckUnusedFunctions">
     <functiondecl functionName="main" lineNumber="3"/>

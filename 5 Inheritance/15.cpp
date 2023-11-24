@@ -5,14 +5,21 @@ class Base
     int x;
     public:
     virtual void fun() = 0;
-    int getX() { return x; }
+    int getx() 
+    { 
+        return x;
+    }
 };
 // This class inherits from Base and impliments fun()
 class Derived: public Base
 {
-    int y;
+    int x;
     public:
-    void fun() { cout << "fun() called"; }
+    void fun() 
+    { 
+        cout << "fun() called"; 
+        
+    }
 };
 int main(void)
 {

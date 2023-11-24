@@ -1,7 +1,7 @@
-[23.11.2023]
-1700719355614
-cppcheck-error:11
+[24.11.2023]
+1700823005758
+cppcheck-error:12
 cppcheck-warning:5
-cppcheck-style:60
+cppcheck-style:55
 cppcheck-performance:5
 cppcheck-portability:0
