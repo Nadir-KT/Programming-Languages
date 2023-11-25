@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <analyzerinfo hash="5862208047911105873">
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\c++\12.Accessspecifire.cpp" line="1" column="0"/>
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\c++\12.Accessspecifire.cpp" line="1" column="0"/>
         </error>
   <FileInfo check="Class">
-<class name="student" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/12.Accessspecifire.cpp" line="3" col="1" hash="11967106725161128472"/>
+<class name="student" file="H:/Software_Development/GitHub/Embedded_CPP/c++/12.Accessspecifire.cpp" line="3" col="1" hash="11967106725161128472"/>
   </FileInfo>
   <FileInfo check="CheckUnusedFunctions">
     <functiondecl functionName="main" lineNumber="10"/>

@@ -23,8 +23,10 @@ https://www.youtube.com/watch?v=oi1ffu6lBXE
 https://www.youtube.com/watch?v=KC47C8sg2zQ
 https://www.youtube.com/watch?v=1tON1Ui9ksk
 
-https://github.com/Nadir-KT/Embedded_CPP
-
 https://www.programiz.com/cpp-programming/examples/pyramid-pattern#pyramid
 https://www.geeksforgeeks.org/c-classes-and-objects/
 https://www.programiz.com/cpp-programming/object-class
+
+Code analysis: static code analysis, dynamic code analysis
+Code coverage: dynamic code coverage, functions, statements
+CRC: Pipelined cyclic redundancy check (CRC)

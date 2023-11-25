@@ -1,98 +1,98 @@
-classmethod.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/classmethod.cpp
-Untitled0.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/1 C++/Untitled0.cpp
-Untitled1.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/1 C++/Untitled1.cpp
-Untitled13.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/1 C++/Untitled13.cpp
-Untitled14.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/1 C++/Untitled14.cpp
-Untitled15.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/1 C++/Untitled15.cpp
-Untitled16.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/1 C++/Untitled16.cpp
-Untitled2.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/1 C++/Untitled2.cpp
-Untitled3.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/1 C++/Untitled3.cpp
-Untitled4.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/1 C++/Untitled4.cpp
-Untitled5.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/1 C++/Untitled5.cpp
-Untitled6.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/1 C++/Untitled6.cpp
-Untitled7.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/1 C++/Untitled7.cpp
-Untitled8.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/1 C++/Untitled8.cpp
-bool.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/1 C++/bool.cpp
-bool2.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/1 C++/bool2.cpp
-bool3.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/1 C++/bool3.cpp
-bool4.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/1 C++/bool4.cpp
-Untitled0.a2::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/2 Classes and objects/Untitled0.cpp
-Untitled1.a2::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/2 Classes and objects/Untitled1.cpp
-Untitled10.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/2 Classes and objects/Untitled10.cpp
-Untitled2.a2::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/2 Classes and objects/Untitled2.cpp
-Untitled3.a2::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/2 Classes and objects/Untitled3.cpp
-Untitled4.a2::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/2 Classes and objects/Untitled4.cpp
-Untitled5.a2::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/2 Classes and objects/Untitled5.cpp
-Untitled6.a2::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/2 Classes and objects/Untitled6.cpp
-Untitled7.a2::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/2 Classes and objects/Untitled7.cpp
-Untitled8.a2::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/2 Classes and objects/Untitled8.cpp
-Untitled9.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/2 Classes and objects/Untitled9.cpp
-class1.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/2 Classes and objects/class1.cpp
-1.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/3 Classes and objects/1.cpp
-2.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/3 Classes and objects/2.cpp
-3.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/3 Classes and objects/3.cpp
-4.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/3 Classes and objects/4.cpp
-5.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/3 Classes and objects/5.cpp
-6.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/3 Classes and objects/6.cpp
-1.a2::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/4 Operator Overloading/1.cpp
-2.a2::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/4 Operator Overloading/2.cpp
-3.a2::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/4 Operator Overloading/3.cpp
-4.a2::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/4 Operator Overloading/4.cpp
-5.a2::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/4 Operator Overloading/5.cpp
-1.a3::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/1.cpp
-10.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/10.cpp
-11.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/11.cpp
-12.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/12.cpp
-13.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/13.cpp
-14.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/14.cpp
-15.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/15.cpp
-16.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/16.cpp
-17.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/17.cpp
-2.a3::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/2.cpp
-3.a3::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/3.cpp
-4.a3::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/4.cpp
-5.a3::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/5.cpp
-6.a2::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/6.cpp
-7.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/7.cpp
-8.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/8.cpp
-9.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/9.cpp
-1.a4::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/6 Templates/1.cpp
-0.syntax and comment.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/0.syntax and comment.cpp
-1.9breakloop.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/1.9breakloop.cpp
-1.variable.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/1.variable.cpp
-10.constructor.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/10.constructor.cpp
-11.INC & DEC post, prefix.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/11.INC & DEC post, prefix.cpp
-12.Accessspecifire.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/12.Accessspecifire.cpp
-14.macros.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/14.macros.cpp
-15.single inheritance.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/15.single inheritance.cpp
-2.operator.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/2.operator.cpp
-5.boolean & concatenation.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/5.boolean & concatenation.cpp
-6.pointer.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/6.pointer.cpp
-7.classobjet.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/7.classobjet.cpp
-9.structure.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/9.structure.cpp
-input is binary sequnce or not.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/input is binary sequnce or not.cpp
-Returnvaluefun.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/10.function/Returnvaluefun.cpp
-fun.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/10.function/fun.cpp
-function with argumet and array.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/10.function/function with argumet and array.cpp
-fundefault.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/10.function/fundefault.cpp
-funoverloading.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/10.function/funoverloading.cpp
-funpara&argu.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/10.function/funpara&argu.cpp
-array matrix add6.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/13.array program/array matrix add6.cpp
-array.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/13.array program/array.cpp
-array1.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/13.array program/array1.cpp
-array2.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/13.array program/array2.cpp
-array3.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/13.array program/array3.cpp
-array4.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/13.array program/array4.cpp
-array5.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/13.array program/array5.cpp
-passarryfun.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/13.array program/passarryfun.cpp
-continue & break combine.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/3.condition statement/continue & break combine.cpp
-goto.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/3.condition statement/goto.cpp
-if else.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/3.condition statement/if else.cpp
-if elseif .a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/3.condition statement/if elseif .cpp
-switch.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/3.condition statement/switch.cpp
-combine al loop.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/4.loop/combine al loop.cpp
-do while loop.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/4.loop/do while loop.cpp
-for loop.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/4.loop/for loop.cpp
-while loop.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/4.loop/while loop.cpp
-Methodinside.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/8.Method/Methodinside.cpp
-Methodoutside.a1::C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/8.Method/Methodoutside.cpp
+classmethod.a1::H:/Software_Development/GitHub/Embedded_CPP/classmethod.cpp
+Untitled0.a1::H:/Software_Development/GitHub/Embedded_CPP/1 C++/Untitled0.cpp
+Untitled1.a1::H:/Software_Development/GitHub/Embedded_CPP/1 C++/Untitled1.cpp
+Untitled13.a1::H:/Software_Development/GitHub/Embedded_CPP/1 C++/Untitled13.cpp
+Untitled14.a1::H:/Software_Development/GitHub/Embedded_CPP/1 C++/Untitled14.cpp
+Untitled15.a1::H:/Software_Development/GitHub/Embedded_CPP/1 C++/Untitled15.cpp
+Untitled16.a1::H:/Software_Development/GitHub/Embedded_CPP/1 C++/Untitled16.cpp
+Untitled2.a1::H:/Software_Development/GitHub/Embedded_CPP/1 C++/Untitled2.cpp
+Untitled3.a1::H:/Software_Development/GitHub/Embedded_CPP/1 C++/Untitled3.cpp
+Untitled4.a1::H:/Software_Development/GitHub/Embedded_CPP/1 C++/Untitled4.cpp
+Untitled5.a1::H:/Software_Development/GitHub/Embedded_CPP/1 C++/Untitled5.cpp
+Untitled6.a1::H:/Software_Development/GitHub/Embedded_CPP/1 C++/Untitled6.cpp
+Untitled7.a1::H:/Software_Development/GitHub/Embedded_CPP/1 C++/Untitled7.cpp
+Untitled8.a1::H:/Software_Development/GitHub/Embedded_CPP/1 C++/Untitled8.cpp
+bool.a1::H:/Software_Development/GitHub/Embedded_CPP/1 C++/bool.cpp
+bool2.a1::H:/Software_Development/GitHub/Embedded_CPP/1 C++/bool2.cpp
+bool3.a1::H:/Software_Development/GitHub/Embedded_CPP/1 C++/bool3.cpp
+bool4.a1::H:/Software_Development/GitHub/Embedded_CPP/1 C++/bool4.cpp
+Untitled0.a2::H:/Software_Development/GitHub/Embedded_CPP/2 Classes and objects/Untitled0.cpp
+Untitled1.a2::H:/Software_Development/GitHub/Embedded_CPP/2 Classes and objects/Untitled1.cpp
+Untitled10.a1::H:/Software_Development/GitHub/Embedded_CPP/2 Classes and objects/Untitled10.cpp
+Untitled2.a2::H:/Software_Development/GitHub/Embedded_CPP/2 Classes and objects/Untitled2.cpp
+Untitled3.a2::H:/Software_Development/GitHub/Embedded_CPP/2 Classes and objects/Untitled3.cpp
+Untitled4.a2::H:/Software_Development/GitHub/Embedded_CPP/2 Classes and objects/Untitled4.cpp
+Untitled5.a2::H:/Software_Development/GitHub/Embedded_CPP/2 Classes and objects/Untitled5.cpp
+Untitled6.a2::H:/Software_Development/GitHub/Embedded_CPP/2 Classes and objects/Untitled6.cpp
+Untitled7.a2::H:/Software_Development/GitHub/Embedded_CPP/2 Classes and objects/Untitled7.cpp
+Untitled8.a2::H:/Software_Development/GitHub/Embedded_CPP/2 Classes and objects/Untitled8.cpp
+Untitled9.a1::H:/Software_Development/GitHub/Embedded_CPP/2 Classes and objects/Untitled9.cpp
+class1.a1::H:/Software_Development/GitHub/Embedded_CPP/2 Classes and objects/class1.cpp
+1.a1::H:/Software_Development/GitHub/Embedded_CPP/3 Classes and objects/1.cpp
+2.a1::H:/Software_Development/GitHub/Embedded_CPP/3 Classes and objects/2.cpp
+3.a1::H:/Software_Development/GitHub/Embedded_CPP/3 Classes and objects/3.cpp
+4.a1::H:/Software_Development/GitHub/Embedded_CPP/3 Classes and objects/4.cpp
+5.a1::H:/Software_Development/GitHub/Embedded_CPP/3 Classes and objects/5.cpp
+6.a1::H:/Software_Development/GitHub/Embedded_CPP/3 Classes and objects/6.cpp
+1.a2::H:/Software_Development/GitHub/Embedded_CPP/4 Operator Overloading/1.cpp
+2.a2::H:/Software_Development/GitHub/Embedded_CPP/4 Operator Overloading/2.cpp
+3.a2::H:/Software_Development/GitHub/Embedded_CPP/4 Operator Overloading/3.cpp
+4.a2::H:/Software_Development/GitHub/Embedded_CPP/4 Operator Overloading/4.cpp
+5.a2::H:/Software_Development/GitHub/Embedded_CPP/4 Operator Overloading/5.cpp
+1.a3::H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/1.cpp
+10.a1::H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/10.cpp
+11.a1::H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/11.cpp
+12.a1::H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/12.cpp
+13.a1::H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/13.cpp
+14.a1::H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/14.cpp
+15.a1::H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/15.cpp
+16.a1::H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/16.cpp
+17.a1::H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/17.cpp
+2.a3::H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/2.cpp
+3.a3::H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/3.cpp
+4.a3::H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/4.cpp
+5.a3::H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/5.cpp
+6.a2::H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/6.cpp
+7.a1::H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/7.cpp
+8.a1::H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/8.cpp
+9.a1::H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/9.cpp
+1.a4::H:/Software_Development/GitHub/Embedded_CPP/6 Templates/1.cpp
+0.syntax and comment.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/0.syntax and comment.cpp
+1.9breakloop.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/1.9breakloop.cpp
+1.variable.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/1.variable.cpp
+10.constructor.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/10.constructor.cpp
+11.INC & DEC post, prefix.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/11.INC & DEC post, prefix.cpp
+12.Accessspecifire.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/12.Accessspecifire.cpp
+14.macros.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/14.macros.cpp
+15.single inheritance.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/15.single inheritance.cpp
+2.operator.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/2.operator.cpp
+5.boolean & concatenation.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/5.boolean & concatenation.cpp
+6.pointer.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/6.pointer.cpp
+7.classobjet.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/7.classobjet.cpp
+9.structure.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/9.structure.cpp
+input is binary sequnce or not.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/input is binary sequnce or not.cpp
+Returnvaluefun.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/10.function/Returnvaluefun.cpp
+fun.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/10.function/fun.cpp
+function with argumet and array.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/10.function/function with argumet and array.cpp
+fundefault.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/10.function/fundefault.cpp
+funoverloading.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/10.function/funoverloading.cpp
+funpara&argu.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/10.function/funpara&argu.cpp
+array matrix add6.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/13.array program/array matrix add6.cpp
+array.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/13.array program/array.cpp
+array1.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/13.array program/array1.cpp
+array2.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/13.array program/array2.cpp
+array3.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/13.array program/array3.cpp
+array4.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/13.array program/array4.cpp
+array5.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/13.array program/array5.cpp
+passarryfun.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/13.array program/passarryfun.cpp
+continue & break combine.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/3.condition statement/continue & break combine.cpp
+goto.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/3.condition statement/goto.cpp
+if else.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/3.condition statement/if else.cpp
+if elseif .a1::H:/Software_Development/GitHub/Embedded_CPP/c++/3.condition statement/if elseif .cpp
+switch.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/3.condition statement/switch.cpp
+combine al loop.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/4.loop/combine al loop.cpp
+do while loop.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/4.loop/do while loop.cpp
+for loop.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/4.loop/for loop.cpp
+while loop.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/4.loop/while loop.cpp
+Methodinside.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/8.Method/Methodinside.cpp
+Methodoutside.a1::H:/Software_Development/GitHub/Embedded_CPP/c++/8.Method/Methodoutside.cpp

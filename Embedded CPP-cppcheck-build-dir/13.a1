@@ -1,7 +1,13 @@
 <?xml version="1.0"?>
+<<<<<<< Updated upstream
 <analyzerinfo hash="14159316794641809698">
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\5 Inheritance\13.cpp" line="1" column="0"/>
+=======
+<analyzerinfo hash="11717181945164117107">
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="H:/Software_Development/GitHub/Embedded_CPP/5 Inheritance/13.cpp">
+            <location file="H:\Software_Development\GitHub\Embedded_CPP\5 Inheritance\13.cpp" line="1" column="1"/>
+>>>>>>> Stashed changes
         </error>
   <FileInfo check="Class">
 <class name="ClassA" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/13.cpp" line="3" col="1" hash="1048284291913312223"/>
