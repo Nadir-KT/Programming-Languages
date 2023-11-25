@@ -1,6 +1,15 @@
 <?xml version="1.0"?>
-<analyzerinfo hash="11717181945164117107">
-        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/13.cpp">
-            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\5 Inheritance\13.cpp" line="1" column="1"/>
+<analyzerinfo hash="14159316794641809698">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\5 Inheritance\13.cpp" line="1" column="0"/>
         </error>
+  <FileInfo check="Class">
+<class name="ClassA" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/13.cpp" line="3" col="1" hash="1048284291913312223"/>
+<class name="ClassB" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/13.cpp" line="8" col="1" hash="17603104558577939134"/>
+<class name="ClassC" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/13.cpp" line="13" col="1" hash="12491432772575529478"/>
+<class name="ClassD" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/13.cpp" line="19" col="1" hash="178032815739831406"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="main" lineNumber="24"/>
+  </FileInfo>
 </analyzerinfo>

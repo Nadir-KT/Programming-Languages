@@ -202,6 +202,9 @@
         <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MM-yyyy">
             <location file="5 Inheritance\12.cpp" line="4"/>
         </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MM-yyyy">
+            <location file="5 Inheritance\13.cpp" line="1"/>
+        </error>
         <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;bits/stdc++.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;bits/stdc++.h&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd-MM-yyyy">
             <location file="5 Inheritance\14.cpp" line="2"/>
         </error>

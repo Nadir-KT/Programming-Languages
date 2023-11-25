@@ -1,10 +1,9 @@
 <?xml version="1.0"?>
-<analyzerinfo hash="8769509702459626319">
+<analyzerinfo hash="1085220372127052381">
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\1 C++\Untitled5.cpp" line="1" column="0"/>
         </error>
   <FileInfo check="CheckUnusedFunctions">
     <functiondecl functionName="main" lineNumber="3"/>
-    <functioncall functionName="printf"/>
   </FileInfo>
 </analyzerinfo>

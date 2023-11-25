@@ -5,11 +5,11 @@
         </error>
   <FileInfo check="Class">
 <class name="ClassA" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/12.cpp" line="7" col="1" hash="1048284291913312223"/>
-<class name="ClassB" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/12.cpp" line="12" col="1" hash="10849196665976378549"/>
-<class name="ClassC" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/12.cpp" line="17" col="1" hash="5511045733650537163"/>
-<class name="ClassD" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/12.cpp" line="22" col="1" hash="178032815739831406"/>
+<class name="ClassB" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/12.cpp" line="13" col="1" hash="10849196665976378549"/>
+<class name="ClassC" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/12.cpp" line="18" col="1" hash="5511045733650537163"/>
+<class name="ClassD" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/12.cpp" line="23" col="1" hash="178032815739831406"/>
   </FileInfo>
   <FileInfo check="CheckUnusedFunctions">
-    <functiondecl functionName="main" lineNumber="26"/>
+    <functiondecl functionName="main" lineNumber="27"/>
   </FileInfo>
 </analyzerinfo>
