@@ -1,0 +1,36 @@
+Dear,
+
+Thank you for interest in Testwell CTC++. I am Ranjith - We represent Verifysoft in India. 
+
+We received your evaluation request for CTC++.  To get you started with an evaluation please share your responses to the queries below:
+1.	What is driving the need for a Code Coverage tool?:
+2.	What programming language?
+3.	What is the host development platform?
+4.	How is the build done? If using an IDE please state name and version.
+5.	List compiler(s) and version? Please state the compiler binary
+6.	Is the application a combination of multiple programming languages and do you require coverage for the combination of files
+7.	Are you working on an embedded application (If yes, what is the target architecture and compiler involved)
+a. Memory available on target [RAM]
+b. Can you write to file system on target?
+8.	How many members in your team?
+9.	Would you be interested in evaluating the tool?:
+10.	What are the evaluation criteria for the tool? (List 3 – 5)
+11.	What is the time frame for having a solution in place?
+12.	Is this a management or software quality initiative?
+13.	Are you currently using any Code Coverage tools?
+We would further support you with:
+•	Technical Demo of the product (A good way to understand the powerful capabilities of the product)
+•	Free 15-days evaluation of the tool.
+We are happy to demonstrate the tool and its capabilities, can you please help me with your available time and date?
+
+Look forward to your inputs!
+
+Thanks & Regards,
+
+Ranjith Raghavendra. N
+Associate - Business Development 
+Phone: +918123500969 | Email: ranjith@lexingtonsoft.com 
+Website - www.lexingtonsoft.com | Follow us on LinkedIn 
+Lexington Soft | Bridging Technology and People 
+ 
+
