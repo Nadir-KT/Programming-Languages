@@ -14,6 +14,63 @@ Ans: code coverage tools - functions, statements
 	 https://totalview.io/blog/what-dynamic-analysis
 	 https://www.harness.io/blog/static-vs-dynamic-code-analysis
 	 Pipelined cyclic redundancy check (CRC)
+what is code coverage tool?
+Code coverage is a white-box testing technique performed to verify the extent to which the code has been executed. Code coverage tools use 
+static instrumentation in which statements monitoring code execution are inserted at critical junctures in the code. Now, adding instrumentation 
+code does result in increased execution time and code length. But the increase is more than justified in light of the tester’s information because 
+of the extra code.
+Code coverage tools will use one or more criteria to determine how your code was exercised or not during the execution of your test suite. 
+The common metrics that you might see mentioned in your coverage reports include.Code coverage is a metric that can help you understand
+how much of your source is tested. It's a very useful metric that can help you assess the quality of your test suite, and we will see here
+how you can get started with your projects. 
+*Function coverage: how many of the functions defined have been called.
+*Statement coverage: how many of the statements in the program have been executed.
+*Branches coverage: how many of the branches of the control structures (if statements for instance) have been executed.
+*Condition coverage: how many of the boolean sub-expressions have been tested for a true and a false value.
+*Line coverage: how many of lines of source code have been tested.
+Code coverage is primarily performed at the unit testing level. Unit tests are created by developers, thus giving them the best vantage 
+from which to decide what tests to include in unit testing. At this point, code coverage answers several questions, such as:
+Are there enough tests in the unit test suite? Do more tests need to be added? As development progresses, new features and fixes
+are added to the codebase. The test code must be changed to stay updated with these changes. Testing standards established at the
+beginning of the project must also be maintained throughout subsequent release cycles. Code coverage ensures these standards are 
+maintained so that only the optimal quality code is pushed to production.
+A high percentage of code coverage results in lower chances of unidentified bugs. It is best to set a minimum rate of code coverage that must be 
+achieved before testing in production to reduce the chances of bugs being detected later in development.
+Benefits:
+1)Easy maintenance of code base – Writing scalable code is crucial to extend the software program through the introduction of new or modified functionalities. 
+However, it is difficult to determine whether the written code is scalable. It can prove to be a useful metric in that context The analysis report will help 
+developers to ensure code quality is well-maintained and new features can be added with little-to-no efforts.
+2)Exposure of bad code – Continuous analysis will help developers to understand bad, dead, and unused code. As a result, they can improve code-writing practices,
+which in turn, will result in better maintainability of the product quality.
+3)Faster time to market – With the help of this metric, developers can finish the software
+development process faster, thereby increasing their productivity and efficiency. As a result, they will be able to deliver more products, allowing companies to 
+launch more software applications on the market in lesser time. This will undoubtedly lead to increased customer satisfaction and high ROI
+...................................
+dynamic code analysis?
+What Is Dynamic Code Analysis: Dynamic analysis is the process of testing and evaluating a program — while software is running. Also referred to as dynamic code 
+scanning, dynamic analysis improves the diagnosis and correction of bugs, memory issues, and crashes of an application during its execution.Dynamic code analysis 
+can be used interchangeably with dynamic analysis. 
+Why Is Dynamic Analysis Needed: Developers are under tremendous pressure to deliver clean applications faster. Dynamic code analysis tools can help them achieve
+this with easy debugging of running threads and processes. Dynamic analysis tools also help illuminate performance problems and memory usage issues and memory 
+leaks. Dynamic analysis testing will indicate whether an application works well; conversely, it will reveal errors indicating that an application doesn’t work as 
+intended.dynamic analysis tools to help you analyze and improve your application but when it comes to debugging, TotalView is the de facto standard for run-time 
+analysis and debugging of complex applications. It is a source code debugger for understanding how your multithreaded and multiprocess application runs and
+troubleshooting complex programs.
+....................................
+Static Code Analysis?
+Static code analysis is a method of debugging done by examining an application’s source code before a program is run. This is usually done by analyzing the code 
+against a given set of rules or coding standards.
+........................................
+function?
+A function is defined as a relation between a set of inputs having one output each. In simple words, a function is a relationship between inputs where each input 
+is related to exactly one output. Every function has a domain and codomain or range.
+..................................
+pipelined cyclic redundancy check (CRC)?
+The CRC for each of these can be precomputed. Then using Property 1, the CRC of Bi is equal to the xor of each of the precomputed values where there is a 1 in 
+that bit position. The prestage may be extended to many more than 8 bits. It can also be pipelined in order to meet the desired frequency.
+CRC is used in almost all communication protocols as an efficient way to detect transmission errors. The focus of this paper is to show how CRC throughput can 
+scalelinearly with data width and area. As well, pipeline latency can be traded off approximately linearly for area.
+
 2.	What programming language?
 Ans: Embeddec C
 3.	What is the host development platform?
