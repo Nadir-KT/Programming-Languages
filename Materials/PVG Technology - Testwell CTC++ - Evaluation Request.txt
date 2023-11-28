@@ -5,7 +5,14 @@ Thank you for interest in Testwell CTC++. I am Ranjith - We represent Verifysoft
 We received your evaluation request for CTC++.  To get you started with an evaluation please share your responses to the queries below:
 1.	What is driving the need for a Code Coverage tool?:
 Ans: code coverage tools - functions, statements
+	https://www.atlassian.com/continuous-delivery/software-testing/code-coverage
+	https://www.browserstack.com/guide/code-coverage-vs-test-coverage
+	https://en.wikipedia.org/wiki/Code_coverage
+	https://www.codegrip.tech/productivity/everything-you-need-to-know-about-code-coverage/
+	https://www.geeksforgeeks.org/code-coverage-testing-in-software-testing/
 	 dynamic code analysis
+	 https://totalview.io/blog/what-dynamic-analysis
+	 https://www.harness.io/blog/static-vs-dynamic-code-analysis
 	 Pipelined cyclic redundancy check (CRC)
 2.	What programming language?
 Ans: Embeddec C
