@@ -1,11 +1,6 @@
-[24.11.2023]
-<<<<<<< Updated upstream
-1700827573737
+[30.11.2023]
+1701341018423
 cppcheck-error:13
-=======
-1700825534352
-cppcheck-error:12
->>>>>>> Stashed changes
 cppcheck-warning:5
 cppcheck-style:55
 cppcheck-performance:5
