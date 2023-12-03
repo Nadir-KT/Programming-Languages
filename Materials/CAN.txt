@@ -1,0 +1,19 @@
+https://www.youtube.com/watch?v=9iHtNrSicXM
+https://www.youtube.com/watch?v=i5iWAl74Iug
+https://www.youtube.com/watch?v=8nl3XkL1eTc
+https://www.youtube.com/watch?v=X-q2_jynl6A
+https://www.youtube.com/watch?v=2gnXKMoFwkc
+https://www.seeedstudio.com/blog/2019/11/27/introduction-to-can-bus-and-how-to-use-it-with-arduino/
+https://www.instructables.com/Yes-We-CAN-BUS-With-Arduino-in-30-Seconds/
+https://circuitdigest.com/microcontroller-projects/arduino-can-tutorial-interfacing-mcp2515-can-bus-module-with-arduino
+https://www.tutorialspoint.com/can-bus-with-arduino
+https://create.arduino.cc/projecthub/maurizfa-13216008-arthur-jogy-13216037-agha-maretha-13216095/can-bus-using-arduino-9ce7ba
+
+https://en.wikipedia.org/wiki/Unified_Diagnostic_Services
+
+https://www.intelligence-airbusds.com/dimap/spec/dictionary/Spot_Scene/BYTEORDER.htm
+
+J1939 [ISO 11898, CAN 2.0B]
+The standard CAN Bus supports 11- bit or 29-bit message IDs at almost every baud rate up to 1 Mbps. In contrast, SAE J1939 is limited to a 29-bit message identifier at 250 or 500 kbps(max). This is to assure maximum reliability on J1939. But it can support messages greater than 8 data bytes.
+
+On-board vehicle diagnostics systems (OBD).[KWP-2000, UDS]

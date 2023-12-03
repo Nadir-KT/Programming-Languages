@@ -1,0 +1,35 @@
+Microcontroller peripherals low-level driver development from scratch (Multicore, Timer Modules (Generic Timer Module (GTM): Timer Output Module (TOM), Automatic Reset Unit-connected Timer Output Module (ATOM), Timer Input Module (TIM), Digital Phase Locked Loop (DPLL)), SPI, SENT (Single Edge Nibble Transmission), CAN, ADC, interrupt request (IRQ), FLASH).
+Development/Integration/Testing
+
+Basic Software Communication Stack (BSW ComStack)
+-------------------------------------------------
+COM Stack: Configuration/Testing of Can, CanIf, CanTp, CanSM, Com, ComM, BswM modules as per AUTOSAR for CAN protocol. - 4
+DCM Stack: Configuration/Testing of Dcm module as per AUTOSAR for CAN protocol. - 2
+Network Management: Configuration/Testing of CanNm and Nm modules as per AUTOSAR for CAN protocol. - 4
+Network Diagnostics: Implementation and Testing of detection of Message Timeout, Bus-Off, CRC error, Message Counter error, Invalid Signal. - 4
+- 2
+
+Communication HW Abstraction
+---------------------------
+CanIf - CAN Interface - It acts as an interface that allows the application software to communicate with the CAN bus in a standardized and efficient manner.
+
+Communication Services
+----------------------
+CanTp - CAN Transport Layer - Segmentation of messages which have a payload of more than 8 bytes
+CanSM - CAN State Manager - handles the start-up and shutdown features that depend on the communication system.
+Com - AUTOSAR COM module - to facilitate communication and coordination between different software components within a vehicle's ECU network.
+CanNm - CAN Network Management - It coordinates the transition between normal operation and bus-sleep mode of the network.
+Dcm module - Diagnostic Communication Manager - It ensures compatibility, reliability, and interoperability between the diagnostic tools and the ECUs.
+
+System Services
+---------------
+ComM - Communication Manager - It handles the initialization, configuration, and monitoring of communication channels.
+BswM - Basic Software Mode Manager - collection of software files (code and description) that define a certain basic software functionality present on an ECU.
+
+Network Diagnostics
+-------------------
+Message Timeout Timer
+Bus-Off(deactivated or unable to communicate)
+CRC error - Cyclic Redundancy Check.
+Message Counter error (Message Buffer No.)
+Invalid Signal (Bit errors, Frame errors, Bus-off condition, Faulty hardware or software)
