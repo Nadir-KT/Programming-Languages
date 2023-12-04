@@ -7,7 +7,6 @@ COM Stack: Configuration/Testing of Can, CanIf, CanTp, CanSM, Com, ComM, BswM mo
 DCM Stack: Configuration/Testing of Dcm module as per AUTOSAR for CAN protocol. - 2
 Network Management: Configuration/Testing of CanNm and Nm modules as per AUTOSAR for CAN protocol. - 4
 Network Diagnostics: Implementation and Testing of detection of Message Timeout, Bus-Off, CRC error, Message Counter error, Invalid Signal. - 4
-- 2
 
 Communication HW Abstraction
 ---------------------------
