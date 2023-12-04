@@ -32,3 +32,6 @@ Bus-Off(deactivated or unable to communicate)
 CRC error - Cyclic Redundancy Check.
 Message Counter error (Message Buffer No.)
 Invalid Signal (Bit errors, Frame errors, Bus-off condition, Faulty hardware or software)
+
+(Real-Time System Software Platform, Safety Mechanisms, Mechanisms for Reliable Systems,  Highly Available Systems Support,  Safety Related Process Support,
+Standardized Application Communication Interface, Formal Description Language.)
