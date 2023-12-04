@@ -27,7 +27,7 @@ int main()
 {
     class subscript s(0);
     cout<<"\n now we are going to place 13 element in 2nd index";
-    s[2]=13;
+    s[2]=4;
     cout<<"\n now we are going to place 22 element in 10 index";
-   // s[10]=22; // error because size is exceeding
+    s[10]=2; // error because size is exceeding
 }

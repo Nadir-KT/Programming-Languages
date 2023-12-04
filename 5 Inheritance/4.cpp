@@ -1,19 +1,19 @@
 #include<iostream>
 using namespace std;
-class vehicle //baseclass1
+class car //baseclass1
 {
     public:
-    vehicle()
+    car()
     {
-        cout<<"This is a vehicle\n";
+        cout<<"This is a car\n";
     }
 };
-class fourwheeler : public vehicle
+class fourwheeler : public car
 {
     public:
     fourwheeler()
     {
-        cout<<"This is a 4 wheeler vehicle\n";
+        cout<<"This is a 4 wheeler car\n";
     }
 };
 class car : public fourwheeler

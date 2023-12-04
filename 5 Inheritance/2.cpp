@@ -10,6 +10,6 @@ class vehicle
 class car:public vehicle{};
 int main()
 {
-    car obj;
+    vehicle obj;
     return 0;
 }

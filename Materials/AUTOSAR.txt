@@ -1,5 +1,6 @@
-Microcontroller peripherals low-level driver development from scratch (Multicore, Timer Modules (Generic Timer Module (GTM): Timer Output Module (TOM), Automatic Reset Unit-connected Timer Output Module (ATOM), Timer Input Module (TIM), Digital Phase Locked Loop (DPLL)), SPI, SENT (Single Edge Nibble Transmission), CAN, ADC, interrupt request (IRQ), FLASH).
-Development/Integration/Testing
+Microcontroller peripherals low-level driver development from scratch (Multicore, Timer Modules (Generic Timer Module (GTM): Timer Output Module (TOM), 
+Automatic Reset Unit-connected Timer Output Module (ATOM), Timer Input Module (TIM), Digital Phase Locked Loop (DPLL)), SPI, SENT (Single Edge Nibble Transmission), 
+CAN, ADC, interrupt request (IRQ), FLASH). Development/Integration/Testing
 
 Basic Software Communication Stack (BSW ComStack)
 -------------------------------------------------
