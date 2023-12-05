@@ -1,0 +1,6 @@
+Base
+display
+Derived
+display
+somefunc call:[display] noreturn:[display]
+main call:[b,d,somefunc]

@@ -1,0 +1,4 @@
+main call:[print < char >,print < float >,print < int >]
+print < int >
+print < char >
+print < float >

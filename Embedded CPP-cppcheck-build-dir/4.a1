@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="11149074394129083160">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\3 Classes and objects\4.cpp" line="1" column="0"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;one&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;one&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/3 Classes and objects/4.cpp">
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\3 Classes and objects\4.cpp" line="9" column="5"/>
+            <symbol>one</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;two&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;two&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/3 Classes and objects/4.cpp">
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\3 Classes and objects\4.cpp" line="20" column="5"/>
+            <symbol>two</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="one" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/3 Classes and objects/4.cpp" line="5" col="1" hash="3046184703029754396"/>
+<class name="two" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/3 Classes and objects/4.cpp" line="16" col="1" hash="11468254097503844883"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="display" lineNumber="10"/>
+    <functiondecl functionName="display" lineNumber="21"/>
+    <functiondecl functionName="add" lineNumber="28"/>
+    <functiondecl functionName="main" lineNumber="32"/>
+    <functioncall functionName="a"/>
+    <functioncall functionName="add"/>
+    <functioncall functionName="b"/>
+    <functioncall functionName="display"/>
+    <functioncall functionName="one"/>
+    <functioncall functionName="two"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,9 @@
+display
+getdata
+operatorint
+operatorchar*
+print
+setdata
+operatorfloat
+operatorchar*
+main call:[display,getdata,print,setdata]

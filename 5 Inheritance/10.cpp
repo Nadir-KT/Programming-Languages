@@ -1,26 +1,26 @@
-#include <iostream> // std::cout
+#include <iostream> 
 using namespace std;
-class Base
+class base
 {
     public:
     void baseFun()
     {
-        cout<<"Base Function"<<endl;
+        cout<<"base Function"<<endl;
     }
 };
-class Derived: public Base
+class derived: public base
 {
     public:
     void derivedFun()
     {
-        cout<<"Derived Fun"<<endl;
+        cout<<"derived Fun"<<endl;
     }
 };
 int main()
 {
-    Derived dObj;
+    derived dObj;
     //upcasting - implicit upcasting is allowed
-    Base *bPtr = &dObj;
+    base *bPtr = &dObj;
     bPtr -> baseFun();
     return 0;
 }

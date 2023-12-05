@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="8378914809363771838">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\5 Inheritance\5.cpp" line="1" column="0"/>
+        </error>
+  <FileInfo check="Class">
+<class name="Vehicle" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/5.cpp" line="3" col="1" hash="18090743368986206190"/>
+<class name="Car" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/5.cpp" line="11" col="1" hash="5511184057661575231"/>
+<class name="Bus" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/5.cpp" line="15" col="1" hash="16829640825294658615"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="main" lineNumber="19"/>
+  </FileInfo>
+</analyzerinfo>

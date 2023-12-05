@@ -6,7 +6,7 @@ int sum(int a,int b=0,int c=0)
 }
 int main()
 {
-    int x,y,z;
+    int x,y;
     x=13;
     y=23;
     cout << sum(x,y);

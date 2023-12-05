@@ -4,7 +4,8 @@
 #include <iostream>
 using namespace std;
 
-class ClassA {
+class ClassA 
+{
     public:
     int a;
 };

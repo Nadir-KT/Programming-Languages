@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="18297696853691175601">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\4 Operator Overloading\4.cpp" line="1" column="0"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;complex&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;complex&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/4 Operator Overloading/4.cpp">
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\4 Operator Overloading\4.cpp" line="9" column="5"/>
+            <symbol>complex</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="complex" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/4 Operator Overloading/4.cpp" line="4" col="1" hash="16392234104830994129"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/4 Operator Overloading/4.cpp:17:11" my-argnr="1" my-argname="out" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/4 Operator Overloading/4.cpp" line="19" col="5" value="0"/>
+    <unsafe-usage my-id="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/4 Operator Overloading/4.cpp:17:11" my-argnr="2" my-argname="c" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/4 Operator Overloading/4.cpp" line="19" col="10" value="0"/>
+    <unsafe-usage my-id="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/4 Operator Overloading/4.cpp:23:11" my-argnr="1" my-argname="in" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/4 Operator Overloading/4.cpp" line="26" col="5" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="main" lineNumber="31"/>
+  </FileInfo>
+</analyzerinfo>

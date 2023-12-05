@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="2305029345924632210">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\c++\3.condition statement\if elseif .cpp" line="1" column="0"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;num&gt;=0&apos; is always true" verbose="Condition &apos;num&gt;=0&apos; is always true" cwe="571" file0="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/3.condition statement/if elseif .cpp">
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\c++\3.condition statement\if elseif .cpp" line="12" column="16" info="Condition &apos;num&gt;=0&apos; is always true"/>
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\c++\3.condition statement\if elseif .cpp" line="8" column="13" info="Assuming that condition &apos;num&lt;0&apos; is not redundant"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;num&lt;=100&apos; is always true" verbose="Condition &apos;num&lt;=100&apos; is always true" cwe="571" file0="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/3.condition statement/if elseif .cpp">
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\c++\3.condition statement\if elseif .cpp" line="28" column="32" info="Condition &apos;num&lt;=100&apos; is always true"/>
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\c++\3.condition statement\if elseif .cpp" line="8" column="23" info="Assuming that condition &apos;num&gt;100&apos; is not redundant"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="main" lineNumber="3"/>
+  </FileInfo>
+</analyzerinfo>

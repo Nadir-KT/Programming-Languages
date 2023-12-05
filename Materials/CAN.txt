@@ -1,0 +1,15 @@
+https://en.wikipedia.org/wiki/Unified_Diagnostic_Services
+
+J1939 [ISO 11898, CAN 2.0B]
+The standard CAN Bus supports 11- bit or 29-bit message IDs at almost every baud rate up to 1 Mbps. In contrast, SAE J1939 is limited to a 29-bit message identifier at 250 or 500 kbps(max). This is to assure maximum reliability on J1939. But it can support messages greater than 8 data bytes.
+
+On-board vehicle diagnostics systems (OBD).[KWP-2000, UDS]
+
+AUTOSAR
+-------
+https://www.youtube.com/watch?v=NfZI8wvgZPo
+https://www.youtube.com/watch?v=pPAw0DCaTiA
+https://www.youtube.com/watch?v=7b5BY1IAfwY
+https://www.youtube.com/watch?v=k3aBUyLpUNI
+https://www.youtube.com/watch?v=MMYzGGrfCqM
+https://www.youtube.com/watch?v=qR_yEUJNPR4

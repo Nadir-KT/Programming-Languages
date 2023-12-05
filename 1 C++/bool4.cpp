@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    bool a=true; //1bit
+    bool a=false; //1bit
     if(a)
     {
         cout << "if block";
@@ -11,5 +11,4 @@ int main()
     {
         cout << "else block";
     }
-
 }

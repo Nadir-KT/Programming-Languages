@@ -1,0 +1,5 @@
+sample1 call:[print] noreturn:[print]
+sample1 call:[print] noreturn:[print]
+print
+sample1
+main call:[c2,c4]

@@ -1,0 +1,123 @@
+Pyramid (write A Program To print Inverted Half Pyramind Pattern using Number
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+
+    int rows;
+
+    cout << "Enter number of rows: ";
+    cin >> rows;
+
+    for(int i = rows; i >= 1; --i)
+    {
+        for(int j = 1; j <= i; ++j)
+        {
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+
+print full diamond pattern *
+#include <iostream>
+using namespace std;
+
+int main() {
+  int size = 5;
+  // upside pyramid
+  for (int i = 1; i <= size; i++) {
+    // printing spaces
+    for (int j = size; j > i; j--) {
+      cout << " ";
+    }
+    // printing star
+    for (int k = 0; k < i * 2 - 1; k++) {
+      cout << "*";
+    }
+    cout << "\n";
+  }
+  // downside pyramid
+  for (int i = 1; i <= size - 1; i++) {
+    // printing spaces
+    for (int j = 0; j < i; j++) {
+      cout << " ";
+    }
+    // printing star
+    for (int k = (size - i) * 2 - 1; k > 0; k--) {
+      cout << "*";
+    }
+    cout << "\n";
+  }
+  return 0;
+}
+#include<iostream>
+using namespace std;
+int main()
+{
+int n, s, i, j;
+cout << "Enter number of rows: ";
+cin >> n;
+for(i = 0; i <= n; i++)
+{
+for(s = n; s > i; s--)
+cout << " ";
+for(j=0; j<i; j++)
+cout << "* ";
+cout << "\n";
+}
+for(i = 1; i < n; i++)
+{
+for(s = 0; s < i; s++)
+cout << " ";
+for(j = n; j > i; j--)
+cout << "* ";
+// ending line after each row
+cout << "\n";
+}
+return 0;
+}
+
+create star pyramid patern
+#include<iostream>
+using namespace std;
+int main()
+{
+int n, s, i, j;
+cout << "Enter number of rows: ";
+cin >> n;
+for(i = n; i >= 1; i--)
+{
+//for loop to put space
+for(s = i; s < n; s++)
+cout << " ";
+//for loop for displaying star
+for(j = 1; j <= i; j++)
+cout << "* ";
+cout << "\n";
+}
+return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  // size of the pyramid
+  int size = 5;
+  for (int i = 0; i < size; i++) {
+    // print spaces
+    for (int j = 0; j < i; j++) {
+      cout << " ";
+    }
+    // print stars
+    for (int k = 0; k < 2 * (size - i) - 1; k++) {
+      cout << "*";
+    }
+    cout << "\n";
+  }
+  return 0;
+}

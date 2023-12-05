@@ -1,0 +1,10 @@
+main call:[display,read]
+array < int >
+read
+display
+array < char >
+read
+display
+array < double >
+read
+display

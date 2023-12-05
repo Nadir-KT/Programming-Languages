@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="7762509174161753890">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\5 Inheritance\8.cpp" line="1" column="0"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Base&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Base&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/8.cpp">
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\5 Inheritance\8.cpp" line="9" column="5"/>
+            <symbol>Base</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;display&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;display&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/8.cpp">
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\5 Inheritance\8.cpp" line="19" column="18" info="Function in derived class"/>
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\5 Inheritance\8.cpp" line="10" column="18" info="Virtual function in base class"/>
+            <symbol>display</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="Base" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/8.cpp" line="4" col="1" hash="8861370707929178118"/>
+<class name="Derived" file="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/5 Inheritance/8.cpp" line="14" col="1" hash="5796571396907313392"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="display" lineNumber="10"/>
+    <functiondecl functionName="display" lineNumber="19"/>
+    <functiondecl functionName="somefunc" lineNumber="25"/>
+    <functiondecl functionName="main" lineNumber="30"/>
+    <functioncall functionName="Base"/>
+    <functioncall functionName="b"/>
+    <functioncall functionName="d"/>
+    <functioncall functionName="display"/>
+    <functioncall functionName="somefunc"/>
+  </FileInfo>
+</analyzerinfo>

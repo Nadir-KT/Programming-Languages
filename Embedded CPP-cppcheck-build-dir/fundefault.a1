@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="3049207970629072645">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\c++\10.function\fundefault.cpp" line="1" column="0"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;country&apos; should be passed by const reference." verbose="Parameter &apos;country&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="C:/Users/EMBEDDED2/Documents/GitHub/Embedded_CPP/c++/10.function/fundefault.cpp">
+            <location file="C:\Users\EMBEDDED2\Documents\GitHub\Embedded_CPP\c++\10.function\fundefault.cpp" line="3" column="19"/>
+            <symbol>country</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="myfun" lineNumber="3"/>
+    <functiondecl functionName="main" lineNumber="7"/>
+    <functioncall functionName="myfun"/>
+  </FileInfo>
+</analyzerinfo>
