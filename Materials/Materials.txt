@@ -26,7 +26,3 @@ https://www.youtube.com/watch?v=1tON1Ui9ksk
 https://www.programiz.com/cpp-programming/examples/pyramid-pattern#pyramid
 https://www.geeksforgeeks.org/c-classes-and-objects/
 https://www.programiz.com/cpp-programming/object-class
-
-Code analysis: static code analysis, dynamic code analysis
-Code coverage: dynamic code coverage, functions, statements
-CRC: Pipelined cyclic redundancy check (CRC)
