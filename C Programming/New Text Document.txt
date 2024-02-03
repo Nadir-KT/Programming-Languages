@@ -1,0 +1,1 @@
+For Loop - Multiplication for(i=1;i<=a;i++){fact=i*fact;}

@@ -1,0 +1,66 @@
+https://www.studytonight.com/c/operators-in-c.php
+.(dot)operator: used to access individual elements of a C structure or C union.
+https://www.w3schools.com/c/c_structs.php
+https://www.tutorialspoint.com/cprogramming/c_structures.htm
+
+https://www.w3schools.com/c
+https://www.geeksforgeeks.org/c-programming-language
+https://www.tutorialspoint.com/cprogramming
+https://www.javatpoint.com/c-programming-language-tutorial
+https://www.codewithharry.com/tutorial/c
+https://www.studytonight.com/c
+
+C++
+---
+https://learn.microsoft.com/en-us/cpp
+https://www.w3schools.com/cpp
+https://www.geeksforgeeks.org/cpp-tutorial
+https://www.tutorialspoint.com/cplusplus
+https://www.javatpoint.com/cpp-tutorial
+https://cplusplus.com/doc/tutorial/
+https://www.scaler.com/topics/cpp/
+
+https://quickref.me/cpp.html
+https://www.codewithharry.com/blogpost/cpp-cheatsheet/
+https://hackingcpp.com/cpp/cheat_sheets.html
+https://www.geeksforgeeks.org/cpp-cheatsheet/
+https://github.com/mortennobel/cpp-cheatsheet
+https://hackr.io/blog/cpp-cheat-sheet-pdf
+https://www.geeksforgeeks.org/c-cpp-tricky-programs/
+
+https://www.youtube.com/playlist?list=PLnSDvcENZlwA6YDSfoieM1bl-Y3ALcnL5
+https://www.youtube.com/playlist?list=PLxgZQoSe9cg0df_GxVjz3DD_Gck5tMXAd
+https://www.youtube.com/playlist?list=PLdo5W4Nhv31YU5Wx1dopka58teWP9aCee
+https://www.youtube.com/watch?v=oi1ffu6lBXE
+https://www.youtube.com/watch?v=KC47C8sg2zQ
+https://www.youtube.com/watch?v=1tON1Ui9ksk
+
+https://www.programiz.com/cpp-programming/examples/pyramid-pattern#pyramid
+https://www.geeksforgeeks.org/c-classes-and-objects/
+https://www.programiz.com/cpp-programming/object-class
+
+list of topics, concepts, and components for any programming language in a structured & sequential approach.
+
+00. Comments - Notes in code for documentation.
+01. Syntax - Grammatical rules governing how statements and expressions are structured.
+02. Data Types - Named containers for storing data values like integers, strings, booleans, etc. Each container has an associated data type.
+03. Variables - Named containers for storing data values. Variables have an associated data type and can be scalar or array-like.
+04. Expressions - Combinations of values, variables, operators, and function calls that evaluate to a single value.
+05. Keywords - Words with special meaning in the programming language, like if, while, and for.
+06. Operators - Symbols like +, -, *, /, etc. used to perform operations on values and variables.
+07. Decision-making, Conditional Statements - Statements like if-else and switch-case that allow conditional code execution based on the result of an evaluation.
+08. Control structures: goto, loops, case/switch, exceptions
+09. Loops - Statements like for and while that repeat the execution of code blocks.
+10. Functions - Named reusable blocks of code to perform specific tasks, accepting input parameters and returning output values.
+11. Object-oriented features: objects, classes, interfaces, subtyping, (multiple) inheritance
+11. Object - A named structure that contains both data and code.
+12. Methods - Functions that are part of a class definition and operate on objects.
+13. Classes - Blueprints for objects that define properties and methods.
+14. Inheritance - Ability of a class to inherit properties and methods from a parent class.
+15. Data structures - Ways to organize data like arrays, lists, stacks, queues, etc.
+16. Modules - Self-contained reusable code units that encapsulate functionality.
+17. Scoping - Visibility of variables and functions based on context.
+18. Abstraction - Exposing only essential details and hiding complexity.
+19. Paradigms - Programming styles like procedural, object-oriented, functional, etc.
+20. File I/O - Reading and writing data from and to external files in a programming language.
+21. Macros

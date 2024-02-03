@@ -1,0 +1,43 @@
+Id: 91620808813
+Pass: rR7j7D
+Comma(,) operator b/w two conditions in a for loop takes && logical implimentation
+
+avg = (float) tot/3;
+	printf("\n Total : %d\n Average : %.2f\n",tot,avg);
+	if(mat>=35 && phy>=35 && che>=35 )
+
+gets();
+
+a[i] is equal to i[a]
+
+Functions
+1. Write a program to print no of times a function was called using static specified.
+2. Write a program to print right most occurrence of a character in the entered string.
+3. Write a program to count number of space, vowels, consonants in the entered string.
+4. Write a program to implement factorial of a number using recursion.
+5. Write a program to convert ASCII to int and ASCII to float.
+6. Write a program to print prime numbers between the entered range.
+ARRAY
+1. Write a program to perform addition, subtraction and multiplication on matrix.
+2. Write a program to find average of 1D array. Using array, using pointer to an array.
+3. Write a program containing a function which returns 2D array main. Display the elements of the array in main.
+4. Write a program to reverse element of 2d array.
+5. Write a program to remove duplicates in the string entered.
+Pointers and Strings
+1. Write a program to implement strcpy, strcat, strlen.
+2. Write a program which contains an array of pointer to store text of multiple lines and change the case of text.
+3. Write a program to find entered string is palindrome or not.
+4. Write a program to find entered word is a key word or not.
+5. Write a program to call a function defined in another file.
+6. Write a program to toggle case of a word passed through command line.
+Structure and DMA
+1. Write a program to find sum of arguments passed to a variable argument function.
+2. Write a program to implement bank account having account number, account name and balance field using array of structure, pointer to structure.
+3. Write a program containing function which allocates memory and free memory for a structure.
+4. Write a program to implement call by reference and call by value on structure.
+5. Write a program to demonstrate need to pack.
+Structures, unions, bit fields
+1. Write a program to stack operation using unions.
+2. Create a base structure having the following members int, float. This structure must be the member of the other structure known as “derived”, the other members of which are char and long, store data into the “derived” structure and display it.
+3. Write a program to create a union, which has a structure as its member. Choose two more members of your wish for this union. Perform operations of your wish on this union.
+4. Write a program to implement the status flags using bit field (eg PSW in 8051). The user must enter a number, the bits of this number correspond to PSW flags. Set the flags accordingly.

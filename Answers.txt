@@ -1,0 +1,26 @@
+the volatile variable prevents the compiler from assuming anything
+
+A pointer that directs the user to a memory address that has already been freed by the program and is no longer in use is known as a dangling pointer.
+
+Bare metal programming: Involves writing code directly for the hardware without an operating system.
+SBC programming: Involves programming on a Single Board Computer (SBC) with an operating system (such as Linux).
+
+Structure padding: The memory contents are brought into sync by inserting one or more zero bytes between the addresses. The compiler routinely checks to ensure that all of its parts are properly byte aligned.
+
+Recursive Functions 
+Function calling itself: (Direct way) 
+Recursion using mutual function call: (Indirect way) 
+Recursion using function pointers: (Indirect way) 
+
+The time for the ISR to respond to an interrupt is called interrupt latency.
+
+A segmentation fault occurs when a program attempts to access a memory location that it is not allowed to access, or attempts to access a memory location in a way that is not allowed (for example, attempting to write to a read-only location, or to overwrite part of the operating system).
+
+Count-down to zero loops is preferable over count-up loops.
+
+When we want to ensure that the variable value does not change, we use the const keyword.
+However, external interrupts or events can still cause the value to change. We can use const with volatile keywords without incident.
+
+storage classes in the C programming language: automatic, register, static, extern
+
+A startup function is a code executed before the primary function's execution. It is written in assembly language and is used to create a primary platform for the application.

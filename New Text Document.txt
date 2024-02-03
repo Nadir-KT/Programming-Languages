@@ -1,0 +1,6 @@
+https://www.scaler.com/topics/c/jump-statements-in-c/
+https://www.tutorialspoint.com/setjump-and-longjump-in-c
+https://www.codingeek.com/tutorials/c-programming/jump-statements-in-c-break-continue-goto-return/
+https://stackoverflow.com/questions/35404220/breaking-out-of-a-loop-from-within-a-function-called-in-that-loop
+https://www.javatpoint.com/exit-function-in-c
+https://www.techcrashcourse.com/2015/12/pointer-address-of-and-value-of-operator-in-c.html

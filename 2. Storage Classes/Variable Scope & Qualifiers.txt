@@ -1,0 +1,4 @@
+https://www.arduino.cc/reference/en/language/variables/variable-scope-qualifiers/const/
+https://www.arduino.cc/reference/en/language/variables/variable-scope-qualifiers/scope/
+https://www.arduino.cc/reference/en/language/variables/variable-scope-qualifiers/static/
+https://www.arduino.cc/reference/en/language/variables/variable-scope-qualifiers/volatile/

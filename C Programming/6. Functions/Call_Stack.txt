@@ -1,0 +1,13 @@
+A "call stack" is a dynamic stack data structure which stores information about the active function of a program. 
+This kind of stack is also known as an 
+		execution stack, 
+		control stack, 
+		function stack, or 
+		run-time stack, and is often shortened to just "the stack".
+
+The primary purpose of a call stack is
+
+		Storing the return address
+		Storing Parameter passed
+		Storing Local data 
+

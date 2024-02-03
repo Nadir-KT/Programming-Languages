@@ -1,0 +1,40 @@
+Design a timer module in an embedded system that utilizes a hardware timer generating interrupts at a fixed frequency.
+ 
+Assume the hardware timer generates an interrupt at every 1 ms and timerISR() function is called as part of servicing the interrupt.
+ 
+Please describe how you would design and implement this module, focusing on creating a set of timer APIs. These APIs should include functions for starting, stopping, and configuring timers with different durations and modes (e.g., one-shot, periodic).
+ 
+ 
+void timerISR(void)
+{
+	// Code for ISR processing
+}
+
+---------------------------------------------------------------------------------------------------------
+
+Timer_t myTimer;
+
+void myTimerCallback(void) {
+  // Perform timer-related actions
+}
+
+configureTimer(&myTimer, 500, true, myTimerCallback);
+startTimer(&myTimer);
+// ...
+stopTimer(&myTimer);
+
+if(timers[i].expiry != 0 && now >= timers[i].expiry) {
+
+  // Timer expired, call callback and update expiry
+  timers[i].callback();
+  
+  if(timers[i].mode == TIMER_PERIODIC) {
+    // Periodic timer, restart
+    timers[i].expiry = now + timers[i].duration;  
+  }
+  else {
+    // One-shot, stop timer
+    timers[i].expiry = 0;
+  }
+
+}

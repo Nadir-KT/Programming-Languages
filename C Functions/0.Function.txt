@@ -1,0 +1,51 @@
+Function with arguments and return value 
+----------------------------------------
+Function declaration : int function ( int );
+Function call : function( x );
+Function definition:
+             int function( int x )
+             {
+               statements;
+               return x;
+             }  
+
+Function with arguments but no return value
+-------------------------------------------
+Function declaration : void function ( int );
+Function call : function( x );
+Function definition:
+             void function( int x )
+             {
+               statements;
+             }
+
+Function with no argument and no return value
+---------------------------------------------
+Function declaration : void function();
+Function call : function();
+Function definition :
+                      void function()
+                      {
+                        statements;
+                      }
+
+Function with no arguments but returns a value
+----------------------------------------------
+Function declaration : int function();
+Function call : function();
+Function definition :
+                 int function()
+                 {
+                     statements;
+                      return x;
+                  }
+
+
+https://www.w3schools.com/c/c_functions_parameters.php
+https://www.geeksforgeeks.org/c-function-argument-return-values/
+https://www.geeksforgeeks.org/c-functions/
+https://www.geeksforgeeks.org/return-statement-in-c/
+https://www.geeksforgeeks.org/returning-a-function-pointer-from-a-function-in-c-cpp/
+https://www.geeksforgeeks.org/difference-between-argument-and-parameter-in-c-c-with-examples/
+https://www.tutorialspoint.com/c-function-argument-and-return-values
+https://www.javatpoint.com/functions-in-c

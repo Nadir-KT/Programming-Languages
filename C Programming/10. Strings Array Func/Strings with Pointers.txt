@@ -1,0 +1,50 @@
+1. man strlen
+----------
+strlen - calculate the length of a string, excluding the terminating null byte ('\0')
+
+Syntax
+------
+#include <string.h>
+size_t strlen(const char *s);
+
+Return value
+------------
+The strlen() function returns the number of bytes in the string pointed to by s.
+
+gets - scan string
+puts - print string
+
+2. man strcpy
+----------
+strcpy - copy a string
+The strcpy() function copies the string pointed to by src, including the terminating null byte ('\0'), to buffer pointed to by dest.
+
+Syntax
+------
+#include <string.h>
+char *strcpy(char *restrict dest, const char *src);
+
+Return value
+------------
+The strcpy() function return a pointer to the destination string dest.
+
+3. man strcmp
+-------------
+strcmp - compare two strings.
+The strcmp() function compares the two strings s1 and s2.
+strcmp() returns an integer indicationg the result of the comparison, as follows:
+0, if the s1 and s2 are equal;
+a negative value if s1 is less than s2;
+a positive value if s1 is greater than s2.
+
+Syntax
+------
+#include <string.h>
+int strcmp(const char *s1, const char *s2);
+
+RETURN VALUE
+------------
+       The strcmp() and strncmp() functions return an integer less than,
+       equal to, or greater than zero if s1 (or the first n bytes
+       thereof) is found, respectively, to be less than, to match, or be
+       greater than s2.

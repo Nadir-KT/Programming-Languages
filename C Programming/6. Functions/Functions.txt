@@ -1,0 +1,23 @@
+Function overloading - C++, java
+recursion  - function calling itself (ex: main(), printf(), scanf())
+predefined functions - printf(), scanf()
+_start - calls main function
+void fun() - returns nothing
+Every function should go back to main
+Functions can be classified into predefined and user defined types
+function declaration - specifying about function to compiler
+call by value and call by reference can pass arguments to function
+library functions are provided in source code form
+A function cannot be defined inside another function.
+name of the argument is not mandatory to match in case of actual and formal parameters
+function definition - provides body
+fun(arguments); - prototype
+main() function can have definition, declaration & arguments
+By default function returns int type value
+
+Features and advantages of functions
+------------------------------------
+1. reduces the size of the code
+2. recursion, reusability
+3. return and arguments
+4. easy to troubleshoot

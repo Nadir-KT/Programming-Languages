@@ -1,0 +1,13 @@
+https://en.wikipedia.org/wiki/C_data_types
+https://os.mbed.com/handbook/C-Data-Types
+https://en.wikipedia.org/wiki/Operators_in_C_and_C%2B%2B
+https://en.wikipedia.org/wiki/C_syntax
+https://www.arduino.cc/reference/en/
+https://electronics.stackexchange.com/questions/388806/c-struct-v-union-in-embedded-programming-why
+https://www.studytonight.com/c/unions-in-c.php
+https://en.wikipedia.org/wiki/Integer_(computer_science)
+https://stackoverflow.com/questions/1848700/biggest-integer-that-can-be-stored-in-a-double
+https://www.h-schmidt.net/FloatConverter/IEEE754.html
+https://www.tutorialspoint.com/format-specifiers-in-c
+https://onlinetoolz.net/unsigned-signed
+https://cplusplus.com/doc/tutorial/preprocessor/

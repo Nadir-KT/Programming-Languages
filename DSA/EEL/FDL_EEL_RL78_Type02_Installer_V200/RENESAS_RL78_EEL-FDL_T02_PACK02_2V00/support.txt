@@ -1,0 +1,21 @@
+===============================================================================
+Support information EEL pack02
+===============================================================================
+
+============================
+Library version information
+============================
+    EEL Pack02
+    ----------
+    EEL Pack02 for CA78K0R    :V1.01
+    EEL Pack02 for CC-RL      :V1.01
+
+=============================
+Supported Devices information 
+=============================
+For the list of devices supported by this flash library please refer to the 
+RL78 family self RAM list of the Flash Self Programming Library (R20UT2944xxxx) 
+
+===============================================================================
+end of Support information EEL pack02
+===============================================================================

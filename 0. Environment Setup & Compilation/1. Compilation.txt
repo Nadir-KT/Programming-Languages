@@ -1,0 +1,18 @@
+The compilation is the process where the compiler checks whether the program is correct syntax-wise and whether there are no errors in the syntax, and if the code is fine converts the C language source code into machine-understandable object code.
+
+C
+-
+gcc -E hello.c -o 
+hello.i
+gcc -S hello.i -o 
+hello.s
+gcc -c hello.s -o 
+hello.o
+gcc hello.o -o 
+Hello World 
+
+C++
+---
+$ g++ hello.cpp
+$ ./a.out
+Hello World

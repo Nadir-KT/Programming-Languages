@@ -1,0 +1,11 @@
+Step 1: Write the source codes (.cpp) and header files (.h).
+
+Step 2: Pre-process the source codes according to the preprocessor directives. Preprocessor directives begin with a hash sign (#), e.g., #include and #define. They indicate that certain manipulations (such as including another file or replacement of symbols) are to be performed BEFORE compilation.
+
+Step 3: Compile the pre-processed source codes into object codes (.obj, .o).
+
+Step 4: Link the compiled object codes with other object codes and the library object codes (.lib, .a) to produce the executable code (.exe).
+
+Step 5: Load the executable code into computer memory.
+
+Step 6: Run the executable code, with the input to produce the desried output.

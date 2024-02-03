@@ -1,0 +1,22 @@
+12:30:55 **** Incremental Build of configuration Debug for project GL ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GL.o" "..\\src\\GL.cpp" 
+../src/GL.cpp:5:55: GL/glut.h: No such file or directory
+../src/GL.cpp: In function `void display()':
+../src/GL.cpp:10: `glClearColor' undeclared (first use this function)
+../src/GL.cpp:10: (Each undeclared identifier is reported only once for each function it appears in.)
+../src/GL.cpp:11: `GL_COLOR_BUFFER_BIT' undeclared (first use this function)
+../src/GL.cpp:11: `glClear' undeclared (first use this function)
+../src/GL.cpp:14: `GL_QUADS' undeclared (first use this function)
+../src/GL.cpp:14: `glBegin' undeclared (first use this function)
+../src/GL.cpp:15: `glColor3f' undeclared (first use this function)
+../src/GL.cpp:16: `glVertex2f' undeclared (first use this function)
+../src/GL.cpp:20: `glEnd' undeclared (first use this function)
+../src/GL.cpp:22: `glFlush' undeclared (first use this function)
+../src/GL.cpp: In function `int main(int, char**)':
+../src/GL.cpp:27: `glutInit' undeclared (first use this function)
+../src/GL.cpp:28: `glutCreateWindow' undeclared (first use this function)
+../src/GL.cpp:29: `glutInitWindowSize' undeclared (first use this function)
+../src/GL.cpp:30: `glutInitWindowPosition' undeclared (first use this function)
+../src/GL.cpp:31: `glutDisplayFunc' undeclared (first use this function)
+../src/GL.cpp:32: `glutMainLoop' undeclared (first use this function)

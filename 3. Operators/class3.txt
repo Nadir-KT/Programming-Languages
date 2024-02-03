@@ -1,0 +1,162 @@
+Operators :-
+=========
+
+An operator specifies an operation to be performed that yields a value.
+The variables, constants can be joined by various operators to form an expression.
+An operand is a data item on which an operator acts.
+Some operators require two operands, while others act upon only one operand.
+C includes a large number of operators that fall under several different categories, which are as :-
+
+1. Arithmetic operators
+2. Assignment operators
+3. Increment and Decrement operators
+4. Relationaloperators.
+5. Logical operators
+6. Conditional operator
+7. Comma operator
+8. sizeof operator
+9. Bitwise operators
+10. Other operators
+
+Arithmetic operators are used for numeric calculations. They are of two types -
+1. Unary arithmetic operators
+2. Binary arithmetic operators
+
+Unary Arithmetic operators :-
+--------------------------
+
+Unary operators require only one operand. For example-
++x
+-y
+Here '-' changes the sign of the operand y.
+
+Binary Arithmetic operators :-
+---------------------------
+
++ addition
+- subtraction
+* multiplication
+/ division
+% gives the remainder in integer division
+
+Binary operators require two operands.
+There are five binary arithmetic operator.
+
+% (modulus operator) cannot be applied with floating point operands. 
+There is no exponent operator in C. 
+However there is a library function pow( ) to carry out exponentiation operation.
+
+Note :- unary plus and unary minus operators are different from the addition and subtraction operators.
+
+Integer Arithmetic :-
+------------------
+
+When both operands are integers then the arithmetic operation with these operands is called integer arithmetic and the resulting value is always an integer.
+
+eg :-
+a =17, b=4
+
+a+b 21
+a-b 13
+a*b 68
+a/b 4 (decimal part truncates)
+a%b 1 (Remainder after integer division)
+
+After division operation the decimal part will be truncated and result is only integer part of quotient.
+
+Floating-Point Arithmetic :-
+-------------------------
+
+When both operands are of float type then the arithmetic operation with these operands is called floaring-point arithmetic.
+Let us take two variables a and b. The value of a = 12.4 and b = 3.1 the result of the following operations are as :-
+
+Expression	Result
+a+b 		15.5
+a-b 		9.3
+a*b 		38.44
+a/b 		4.0
+
+The modulus operator % cannot be used with floating point numbers.
+
+Mixed Mode Arithmetic :-
+---------------------
+
+When one operand is of integer type and the other is of floating type then the arithmetic operation with these operands is known as mixed mode arithmetic and the resulting value is float type.
+Eg:-
+a=12 , b=2.5
+
+Expression	 Result
+a+b		 14.5
+a-b		 9.5
+a*b		 30.0
+a/b 14.5	 4.8
+
+Assignment Operators :-
+--------------------
+
+A value can be stored in a variable with the use of assignment operator.
+This assignment operator "= ", is used in assignment expressions and assignment statements.
+
+The operand on the left hand side should be a variable, while the operand on the right hand side can any variable, constant or expression.
+
+The value of right hand operand is assigned to the left hand operand.
+
+x=8 	/*8 is assigned to x*/
+y=5 	/*5 is assigned to y*/
+s=x+y-2 /*Value of expression x+y-2 is assigned to s*/
+y=x 	/*Value of x is assigned to y*/
+x=y 	/*Value of y is assigned to x*/
+
+We can have multiple assignment expressions also, for example :-
+
+x = y = z = 20
+
+Here all the three variables x, y, t will be assigned value 20, and the value of the whole expression will be 20.
+
+x + 5
+can also be writt-en as-
+x += 5
+
+Here += is a compound assignment operator.
+
+Increment And Decrement Operators :-
+---------------------------------
+
+C has two useful operators increment ( ++ ) and decrement ( -- ).
+These are unary operators because they operate on a single operand.
+The increment operator ( ++ ) increments the value of the variable by 1 and decrement operator ( -- ) decrements the value of the variable by 1.
+
+These operators are of two types-
+1. Prefix increment / decrement - operator is written before the operand (e.g. ++x or - -x )
+2. Postfix increment / decrement - operator is written after the operand (e.g. x++ or x - - )
+
+Prefix Increment / Decrement :-
+----------------------------
+
+Here first the value of variable' is incremented / decremented then the new value is used in the operation Let us take a variable x whose value is 3.
+
+The statement y = ++x; means first incremenf the value of x by 1, then assign the value of x to y.
+
+The statement y = --x ; means first decrement the value of x by 1 then assign the value of x to y.
+
+
+Postfix Increment / Decrement :-
+-----------------------------
+
+Here first the value of variable is used in the operation and then increment/decrement is performed Let us take a variable whose value is 3.
+
+The statement y = x++; means first the value of x is assigned to y and then x is incremented.
+
+statement is equivalent to these two statements :-
+y=x;
+x=x+1;
+
+These operators should be used only with variables; they can't be used with constants or expressions.
+
+Relational Operators :-
+--------------------
+
+
+Conditional operator :-
+--------------------
+(condition)?true:false;

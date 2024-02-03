@@ -1,0 +1,60 @@
+Special Symbols in C
+--------------------
+The following special symbols are used in C having some special meaning and thus, cannot be used for some other purpose. Some of these are listed below:
+
+1.	Brackets[]: Opening and closing brackets are used as array element references. These indicate single and multidimensional subscripts.
+2.	Parentheses(): These special symbols are used to indicate function calls and function parameters.
+3.	Braces{}: These opening and ending curly braces mark the start and end of a block of code containing more than one executable statement.
+4.	Comma (, ): It is used to separate more than one statement like for separating parameters in function calls.
+5.	Colon(:): It is an operator that essentially invokes something called an initialization list.
+6.	Semicolon(;): It is known as a statement terminator.  It indicates the end of one logical entity. That’s why each individual statement must be ended with a semicolon.
+7.	Asterisk (*): It is used to create a pointer variable and for the multiplication of variables.
+8.	Assignment operator(=): It is used to assign values and for logical operation validation.
+9.	Pre-processor (#): The preprocessor is a macro processor that is used automatically by the compiler to transform your program before actual compilation.
+10.	Period (.): Used to access members of a structure or union.
+11.	Tilde(~): Used as a destructor to free some space from memory.
+
+Trigraphs in C++
+----------------
+A few characters have an alternative representation, called a trigraph sequence. A trigraph is a three-character sequence that represents a single character and the sequence always starts with two question marks.
+
+Trigraphs are expanded anywhere they appear, including within string literals and character literals, in comments, and in preprocessor directives.
+
+Following are most frequently used trigraph sequences −
+
+Trigraph	Replacement
+??=			#
+??/			\
+??'			^
+??(			[
+??)			]
+??!			|
+??<			{
+??>			}
+??-			~
+All the compilers do not support trigraphs and they are not advised to be used because of their confusing nature.
+
+Whitespace in C++
+-----------------
+A line containing only whitespace, possibly with a comment, is known as a blank line, and C++ compiler totally ignores it.
+
+Whitespace is the term used in C++ to describe blanks, tabs, newline characters and comments. Whitespace separates one part of a statement from another and enables the compiler to identify where one element in a statement, such as int, ends and the next element begins.
+
+Escape Sequences/Execution Characters in C/C++:-
+========================================
+
+\b backspace		Moves the cursor to the previous position of the curret line.
+\a alert 		    Produces an audible or visible alert.
+\r carriage return 	Moves the cursor to beginning of the current line.
+\n newline 		    Moves the cursor to the beginning of the next line.
+\f form feed		Moves the cursor to te initial position of the next logical page.
+\0 null feed 		Used for termination of character string.
+\v vertical tab		Moves the cursor to next vertical tab postion.
+\t Horizontal tab	Moves the cursor to the next horizontal tab position.
+\\ backslash		Presents a character with backslash(\).
+\' single quote (')
+\" double quote (")
+\? question mark (?)
+backslash (\) at the end of line is considered a line-continuation
+\ooo	Octal number of one to three digits
+\xhh . . .	Hexadecimal number of one or more digits

@@ -1,0 +1,302 @@
+                                                                          Day -3&4 assignments 
+
+
+
+1. wap to check entered number is even or add --
+  
+ #include<iostream>
+ using namespace std;
+   int main()
+  {
+    int num;
+    cout<<"enter a number"<<endl;
+    cin>>num;
+if(num%2==0)
+{
+ cout<<"even number"<<endl;
+}
+else
+{
+cout<<"odd number"<<endl;
+}
+return 0;
+}
+--------------------------------------------------------------------------------------------------------
+2.wap check entered charecter is vowel or not
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int ch;
+cout<<"enter charecter"<<endl;
+cin>>ch;
+if(ch=='A'||ch=='E'||ch=='I'||ch=='0'||ch=='U')
+{
+cout<<" given char is vowel"<<endl;
+}
+else
+{
+cout<<" given char is consonant"endl;
+}
+return0;
+}
+---------------------------------------------------------------------------------------------------------------
+3.wap to find the biggest of three numbers using nested if
+#include<iostream>
+using namespace std;
+int main()
+{
+int a,b,c;
+cout<<"enter 3numbers find biggest one"<<endl;
+cin>>a<<b<<c;
+if(a<b)
+{
+  if(a<c)
+    {
+     cout<<"a is big"<<endl;
+     }
+      else
+       {
+      cout<<"c is big"<<endl;
+      }
+}
+  if(b<c)
+    {
+cout<<"b is big"<<endl;
+}
+else
+{
+cout<<"c is big"<<endl;
+}
+returno;
+}
+--------------------------------------------------------------------------------------------------------------------
+4.wap perform calculation operations 1.ADD,2.SUB,3.MUL,4.DIV,5.MOD
+
+#Include<iostream>
+using namespace std;
+int main()
+{ 
+int a=20,b=10,n;
+float c;
+cout<<"enter your choice"<<endl;
+cin>>n;
+switch(n)
+{
+case1;
+c=a+b;
+cout<<c<<endl;
+break;
+case2;
+c=a-b;
+cout<<c<<endl;
+break;
+case3;
+c=a*b;
+cout<<c<<endl;
+break;
+case4;
+c=a/b;
+cout<<c<<endl;
+break;
+case5;
+c=a%b;
+cout<<c<<endl;
+break;
+}
+return0;
+}
+------------------------------------------------------------------------------------------------------------------------------
+             loops
+1.find the number of digits in an entered number ?
+#include<iostream>
+using namespace std;
+int main()
+{
+long int n;
+int count = 0; 
+cout<<"enter n">>endl;
+cin>>n;
+while(n!=0)
+{
+ n=n/10;
+ count++;
+}
+cout<<"the number of digits n="<<count <<endl;
+return0;
+}
+-------------------------------------------------------------------------------------------------------------
+2.WAP to reverse a number and check palindrome or not?
+#include<<iostrem>>
+using namespace std;
+int main()
+{
+ int num,sum=0,r,temp;
+cout<<"enter number">>endl;
+cin>>num;
+temp=num;
+while(num<0)
+{
+r=num%10;
+sum=sum*10+r;
+n=n/10;
+}
+cout<<"reverse is"<<sum<<endl;
+if(temp==num)
+{ 
+cout<<"num is a polyndrome"<<endl;
+}
+else
+{
+cout<<"num is not a polyndrome"<<endl:
+}
+return0;
+}
+-----------------------------------------------------------------------------------------------------------------------
+3. Wap to find the length of an entered string?
+#include<<iostream>>
+using namespace std;
+int main()
+{
+int length;
+char str[]="hello world";
+length=strlen(str);
+cout<<"length of string="<<length<<endl;
+return0;
+}
+--------------------------------------------------------------------------------
+4.wap to reverse a string and check palindrome or not?
+#include<iostream>
+using namespace std:
+int main()
+{
+char s[30],r[30],temp;
+int i,count=0,n;
+cout<<"enter the string">>endl;
+cin.getline(s,30);
+strcpy(s,r);
+strrev(r);
+cout<<s<<endl;
+if(strcmp(r,s)==0)
+{
+cout<<"str is a polyndrome"<<endl;
+}
+else
+{
+cout<<"str is not a polyndrome"<<endl;
+}
+return0;
+}
+
+
+-----------------------------------------------------------------------------
+5.Wap to count space, vowels and consonents of an entered string
+
+    #include<iostream>
+using namespace std:
+int main()
+{
+char str[30];
+int i,v=0,c=0,s=0;
+cout<<"enter string"<<endl;
+cin.getline (str,30);
+for(i=0;str[i]!='\0',i++)
+{
+if (str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u'||
+      str[i]=='A'||str[i]=='E'||str[i]=='I'||str[i]=='O'||str[i]=='U')
+{
+  v++;
+}
+if (str[i]>=='a' && str[i]<=='z') (str[i]>=='A' && str[i]<=='Z')
+{
+C++;
+}
+if (str[i]==' ')
+{
+ s++;
+}
+}
+cout<<vowel=<<v<<endl;
+cout<<consonant=<<c<<endl;
+cout<<space==<<s<<endl;
+return0;
+}
+
+----------------------------------------------------------------------------------------------
+                      day 4
+1.call by value
+  
+#include<iostream>
+using namespace std;
+void swap(int x,int y)
+{
+int z;
+z=y;
+y=x;
+x=z;
+cout<<"x="<<x<<" "<<"y="<<Y<<endl;
+}
+int main()
+{
+int a,b;
+cout<<"enter a and b"<<endl;
+cin>>a>>b;
+cout<<" before swap"<<"a="<<a<<" "<<"b="<<b<<endl;
+swap(a,b)
+cout<<"after swap"<<"a="<<a<<" "<<"b="<<b<<endl;
+return0;
+}
+------------------------------------------------------------------------------
+2.call by reference
+#inlude<iostream>
+using namespace std;
+void swap(int *x, int *y)
+{
+int z;
+z=*y;
+*y=*x;
+*x=z; 
+count<<"x="<<*x<<" "<<"y="<<*y<<endl;
+}
+int main()
+{
+int a,b;
+cout<<"enter a and b"<<endl;
+cin<<a<<b;
+cout<<"before swap"<< "a="<<a<<" "<<"b="<<b<<endl;
+swap(&a,&b);
+count<<"afterswap"<<"a="<<a<<" "<<"b="<<b<<endl;
+return0;
+}
+---------------------------------------------------------------------------------
+3.reference parameter?
+ #include<iostream>
+ using namespace std;
+void swap(int &x, int &y);
+{ 
+int z;
+z=y;
+y=x;
+x=z;
+cout<<"x="<<x<<" "<<"y"<<Y<<endl;
+}
+int main()
+{
+int a,b;
+cout<<"enter a and b"<<endl;
+cin>>a>>b;
+cout<<"before swap"<<"a="<<a<<" "<<"b"<<b<<endl;
+swap(a,b);
+cout<<"after swap"<<"a="<<a<<" "<<"b"<<b<<endl;
+return0;
+}
+------------------------------------------------------------------------------
+4.advantage of new() over malloc()
+->malloc need sizeof() operator.
+->new calls constructors, while malloc() does not.
+->malloc() need typecasting, new() does not need.
+-> new() is operator used to call constructor of object , malloc() is library  function 
+         eg: int *p=new int(20);  // *p=20
+-> new operator allocates enough  memory required for an object of a specific type
+-> it requires less time for exicution

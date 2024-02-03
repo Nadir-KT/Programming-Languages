@@ -1,0 +1,478 @@
+Elements of C :-
+=============
+
+1. C Character Set :-
+==================
+
+Uppercase and Lowercase Letters.
+-------------------------------
+	A,B,C.........Z
+	a,b,c.........z
+
+Digits.
+------
+	0,1,2,3,4,5,6,7,8,9
+
+Graphic characters.
+------------------
+
+	+ plus sign.
+	* asterisk.
+	\ backward slash.
+	< less than sign.
+	> greater than sign.
+	( left parenthesis.
+	{ left bracs.
+	[ left bracket.
+	, comma.
+	' single quotes.
+	: colon.
+	? question mark.
+	& ampersand.
+	~  tilde sign.
+	# hash.
+	- minus sign (hyphen).
+	% percent sign.
+	/ forward slash.
+	= equal to sign.
+	_ underscore sign.
+	) right parenthesis.
+	} right braces.
+	] right bracket.
+	. period.
+	"" double quotes.
+	; semicolon.
+	! exclamation sign.
+	| vertical bar.
+	^ caret sign.
+
+2. Escape Sequences/Execution Characters :-
+========================================
+
+\b backspace		Moves the cursor to the previous position of the curret line.
+\a alert 		    Produces an audible or visible alert.
+\r carriage return 	Moves the cursor to beginning of the current line.
+\n newline 		    Moves the cursor to the beginning of the next line.
+\f form feed		Moves the cursor to te initial position of the next logical page.
+\0 null feed 		Used for termination of character string.
+\v vertical tab		Moves the cursor to next vertical tab postion.
+\t Horizontal tab	Moves the cursor to the next horizontal tab position.
+\\ backslash		Presents a character with backslash(\).
+\' single quote (')
+\" double quote (")
+\? question mark (?)
+backslash (\) at the end of line is considered a line-continuation
+
+Trigraph Characters :-
+-------------------
+
+??<	{ left brace.
+??>	} right brace.
+??(	[ left bracket.
+??)	] right bracket.
+??!	| vertical bar.
+??/	\ backslash.
+??=	# hash sign.
+??-	~  tilde.
+??'	^ caret.
+
+Delimiters :-
+----------
+
+:	colon			used for label.
+;	semicolon		end of statement.
+()	parentheses		used in expressions.
+[]	square brackets		used for arrays.
+{}	curly braces		used for block of statements.
+#	hash			preprocessor directive.
+,	comma			variable delimiter.
+
+Reserved Words / keywords :-
+-------------------------
+char 
+short 
+int 
+float
+double 
+long 
+void 
+auto
+static 
+register 
+if 
+else
+switch 
+while 
+do 
+for
+break 
+continue 
+goto 
+const
+default 
+enum 
+struct 
+volatile
+case 
+typedef 
+unions 
+unsigned
+signed 
+sizeof 
+extern 
+return
+
+Identifiers :-
+-----------
+
+* All words that we will use in our c programs will be either keywords or identifiers.
+* Keywords are predefined and cannot be changed by the user, while identifiers are user defined words and are used to give names to entities like variables,arrays,functions,structures.
+
+1. The name should consists of only uppercase and lowercase letters , digits and underscore sign (_).
+2. First character should be an alphabet or underscore.
+3. The name should not be a keyword.
+4. Since C is case sensitive, the uppercase and lowercase letters are considered different. For example code , Code and CODE are different identifiers.
+5. An identifier name may be arbitrarily long.	Some implementations of C recognize only the first eight characters, through most implemntations recognize 31 characters. ANSI standard compilers recognize 31 characters.
+
+identifiers are generally given meaningful names. Some examples of valid identifier names-
+
+Value 
+a 
+net_pay
+rec1
+
+examples of invalid identifier names are-
+
+5bc	First character should be an alphabet or underscore
+int	int is a keyword
+rec#	# is a special character
+avg no	blank space is not permitted
+
+
+Data types :-
+----------
+
+C supports different types of data. 
+Storage representation of these data types is different in memory.
+There are four fundamental datatypes in C, 
+
+which are int, char, float and double.
+
+* 'char' is used to store any single character
+* 'int' is used to store integer value
+* 'float' is used for storing single precision floating point number.
+* 'double' is used for storing double precision floating point number.
+
+float - decimal 4 bytes
+double - decimal 8 bytes
+
+C Data type Modifiers :-
+---------------------
+There are 4 datatype modifiers in C programming that are used along with the basic data types to categorize them further.
+1. signed
+2. unsigned
+3. long
+4. short
+
+There are two types of type qualifiers-
+1. Size qualifiers
+short, long
+2. Sign qualifiers
+signed, unsigned
+
+When the qualifier unsigned is used the number is always positive.
+when signed is used number may be positive or negative.
+If the sign qualifier is not mentioned, then by default signed qualifier is assumed.
+
+C Literals/Constants :-
+--------------------
+A literal is used when we want to use a fixed value in the program, hence literals are also called Constants.
+Constant is a va1ue that cannot be changed during execution of the program. There are three type of constants-
+
+Constants 
+
+1. Numeric Constants.
+
+	Integer constant.
+		Decimal.
+		Octal.
+		Hexadecimal.
+
+	Real Constant.
+
+2. Character Constants.
+
+3. String Constants.
+
+1. Numeric Constants :-   
+--------------------
+1. Numeric constant should have at least one digit.
+2. No comma or space is allowed within the numeric constant.
+3. Numeric constants can either be positive or negative but default sign is always positive.
+
+Integer Constants.
+-----------------
+
+Decimal constants - 0,1,2,3,4,5,6,7,8,9		(base 10)
+Octal constants -   0,1,2,3,4,5,6,7			(base 8)
+Hex decimal constants - 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F,a,b,c,d,e,f	(base 16)
+
+Some valid decimal integer constants are-
+123
+3705
+23759
+
+Invalid
+2.5	illegal character ( . )
+3#5	illegal character ( # )
+98 5	No blank. space allowed
+0925	First digit can not be zero
+8,354	Comma is not allowed'
+
+
+Octal Constants.
+---------------
+
+octal integer .constants first digit must be 0. For example-
+
+0
+05
+077
+0324
+
+Hexadecimal Constant.
+--------------------
+
+In hexadecimal integer constants, first two characters should be 0x or 0X. Some examples are 
+
+0x
+0X23
+0x515
+0XA15B
+
+
+We can also explicitly mention the type of the constant by suffixing it with l or L( for long), u or U (for unsigned), ul or UL (for unsigned long).
+
+6453.
+456667UL or 456667ul
+76676U or 76676u
+85		/* decimal */
+0213	/* octal */
+0x4b	/* hexadecimal */
+75         // int
+75u        // unsigned int
+75l        // long
+75ul       // unsigned long 
+75lu       // unsigned long
+
+Real (floating point) Constants :-
+-------------------------------
+
+Floating point constants are numeric constants that contain decimal point.
+eg :-
+0.5
+5.3
+4000.0
+0.0073
+5597.
+3.14159
+314159E-5L
+For expresing very large or very small real constants, exponential (scientific) form is used
+
+Here .the number is written in the mantissa and exponent form, which are specified by 'e' or 'E'.
+
+The mantissa can be an integer or a real number, while the exponent can be only an integer (positive or negative).
+
+eg:-
+2500000000	 2.5*10 9	 2.5e9
+
+Character Constants :- 
+ascii(american standard code for information interchange)
+-------------------
+
+A character constant is a single character that is enclosed within single quotes.
+
+eg :- 
+'9'	'D'	'$'	' '	'#'
+
+invalid :-
+-------
+
+'four'	There should be only one character within quotes
+"d"	Double quotes are not allowed
+''	No character between single quotes
+y	Single quotes missing
+
+* Every character constant has a unique integer value associated with it.
+* This integer is the numeric value the character in the machine's character code.
+
+	A - Z	ASCII 	(65 -90)
+	a - z	ASCII	(97 -122)
+	0 - 9	ASCII	(48 -57)
+	;	ASCII	(59)
+
+String Constants :-
+----------------
+
+A String constant has zero, one or more than one character.
+A string constant is enclosed within double quotes (" ").
+At the end of string, \0 is 'automatically placed by the compiler.
+
+
+Some examples of string constants are-
+"Kumar"
+"593"
+"8"
+"A"
+" "
+
+Defining Constants :-
+------------------
+There are two simple ways in C to define constants −
+1. Using #define preprocessor.
+2. Using const keyword.
+
+The #define Preprocessor (Symbolic Constants):-
+---------------------------------------------
+
+* A symbolic constant is a name that substitutes for a sequence of characters.
+* The characters may represent a numeric constant, a character constant or a string constant.
+
+#define identifier replacement // Any occurrence of identifier in the code is interpreted as replacement
+#define name value // do not require semicolons (;) at the end, If a semicolon is included then it is also included in all replaced occurrences.
+
+Here 'name' is the symbolic name for the constant, and is generally written in uppercase letters. 'value' can be numeric, character or string constant.
+
+#define MAX 100
+#define PI 3.14159625
+#define CH 'y'
+#define NAME "Suresh"
+
+The const Keyword:-
+-----------------
+You can use const prefix to declare constants with a specific type as follows −
+const type variable = value;
+
+Variables:-
+---------
+
+* Variable is a name that can be -used to store values.
+* Variables can take different values but one at a time.
+* These values can be changed during execution of the program.
+* A data type is associated with each variable.
+
+Declaration of Variabes:-
+------------------------
+
+It is must to declare a variable before it is used in the program.
+Declaration of a variable specifies it& name and datatype.
+The type and range of values that a variable can store depends upon its datatype.
+
+
+The syntax of declaration of a variable is-
+datatype variablename;
+
+eg :-
+int x;
+float salary;
+char grade;
+
+We can also declare more than one variable in a single declaration :-
+
+int x, y, z, total;
+
+Initialisation of Variables :-
+---------------------------
+When a variable is declared it contains undefined value commonly known as garbage value.
+If we want we can assign some initial value to the variable during the declaration itself, this is called initialisation of the variable.
+
+eg :-
+int a = 5;
+float x = 8.9, Y = 10.5;
+char ch = 'y';
+double num = 0.15197e-7;
+int 1, m, n, total = 0;
+
+Expressions :-
+-----------
+
+an expression is a combination of operators, constants, variables and function calls.
+The expression can be arithmetic, logical or relationaL.
+
+
+eg :-
+x+y	arithmetic operation
+a = b+c	uses two operators ( =') and ( + )
+a > b	relational expression
+a==b	logical expression
+func(a, b) function call
+
+Statements :-
+----------
+
+In a C program, instructions are written in the form of statements.
+
+A statement is an executable part of program and causes the computer to carry out some action.
+
+Expression statements
+Compound statements
+Control statements
+
+
+Expression statement:-
+--------------------
+Expression statement consists of an expression followed by a semicolon.
+x = 5;
+x = y - z;
+func( a , b );
+
+
+Compound Statement :-
+------------------
+
+A compound statement consists of several statements enclosed within a pair of curly braces { }.
+Compound statement is also known as block of statements.
+Note that there is no semicolon after the closing brace.
+
+
+{
+int 1=4, b=2, h=3;
+int area, volume;
+area=2*(1*b+b~h+h*1) ;
+volume=l*b*h;
+}
+
+Control Statements :-
+------------------
+Selection statements (if, if. .. else, switch)
+Iterative statements (for, while, do, .. while)
+Jump statements ( goto, continue, break, return)
+Label statements ( case, default, label statement used in goto )
+
+Comments :-   
+--------
+
+Comments are used for increasing readability of the program.
+They explain the purpose of the program and are helpful in understanding the program.
+Comments are written inside /* and */. There can be single line or multiple line comments.
+We can write comments anywhere in a program except inside a string constant or a character constant.
+Some examples of comments are-
+
+//Variable b represents basic salary	(single line comment)
+/*This is a C program to calculate	(Multiline comment)
+simple interest */
+
+Comments can't be nested i.e. we can', write a comment inside another comment
+
+typedef Declarations in C++
+---------------------------
+You can create a new name for an existing type using typedef. Following is the simple syntax to define a new type using typedef −
+
+typedef type newname; 
+For example, the following tells the compiler that feet is another name for int −
+
+typedef int feet;
+Now, the following declaration is perfectly legal and creates an integer variable called distance −
+
+feet distance;
+

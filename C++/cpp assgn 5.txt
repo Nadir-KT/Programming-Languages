@@ -1,0 +1,53 @@
+                                                                                     Assignment 5
+
+
+  1.Diff between c and c++ ?
+ ans: 
+
+
+    c                                                         c++
+
+
+ 1.c is a procedual language .                           1. c++ is obeject oriented language.
+
+ 2.c is used functions                                   2.c++ is used object and class
+
+ 3.In C data and functions are                           3.In C++ data and functions are encapsulated 
+     separate and free entities.                                 together in form of an object.
+
+ 4. In c data is not sequred                             4.data is hidden (sequred)
+
+ 5.c have 32 keywords                                    5. in c++ more then 40 kwywords used
+
+ 6.The header file is #include<stdio.h>                  6. here #include<iostream> is used
+ 
+ 7.prinf and scanf are used to                           7.cout and cin are used to find ouputs  
+     find the ouputs.
+ 
+ 8.C does not support reference variables.               8.C++ supports reference variables.
+
+ 9. c does not used reference variable                   9. it is used reference variable 
+
+10.C provides malloc() and calloc() functions             10. C++ provides new operator for memory allocation and 
+    for dynamic memory allocation, and free()                 delete operator for memory de-allocation.
+     for memory de-allocation.
+ 
+11.C has no support for virtual and friend functions.    11.C++ supports virtual and friend functions.
+                    
+
+12.it has no support for polymorphism, encapsulation.    12.C++ supports polymorphism, encapsulation, and inheritance.
+     and inheritance.               
+
+
+
+
+
+
+2. what is inline function and its uses?
+
+ans: An inline function is a function that is expanded in line when it is invoked. That is the complier replaces the function call with the corresponding function code.
+
+   uses: it is used for faster exicution means exicution time is less
+        
+
+                    

@@ -1,0 +1,18 @@
+A function is a portion of code within a larger program, which performs a specific task and can be relatively independent 
+of the remaining code.
+
+There are many advantages to breaking a program up into subroutines, including:
+
+    * reducing the duplication of code in a program (reusability),
+    * enabling reuse of code across multiple programs,
+    * decomposing complex problems into simpler pieces (this improves maintainability and ease of extension),
+    * improving readability of a program, and
+    * hiding or regulating part of the program (see Information hiding).
+
+The components of a subroutine may include:
+
+    * a body of code to be executed when the subroutine is called,
+    * parameters that are passed to the subroutine from the point where it is called, and
+    * a value that is returned to the point where the call occurs.
+
+C implementations use a "call stack" to implement function calls and returns

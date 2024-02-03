@@ -1,0 +1,11 @@
+https://github.com/RobTillaart/I2C_EEPROM
+https://github.com/Polohpi/AT24C256
+https://github.com/cvmanjoo/AT24Cxx
+https://www.totalphase.com/blog/2020/06/differences-between-spi-eeproms-and-spi-flash-memories/
+https://www.arduinolibraries.info/categories/data-storage
+
+https://www.arduino.cc/reference/en/libraries/sparkfun-external-eeprom-arduino-library/
+https://mischianti.org/arduino-fast-external-spi-flash-memory/
+https://learn.sparkfun.com/tutorials/reading-and-writing-serial-eeproms
+https://learn.sparkfun.com/tutorials/microsd-breakout-with-level-shifter-hookup-guide
+https://www.instructables.com/How-to-Design-with-Discrete-SPI-Flash-Memory/

@@ -1,0 +1,11 @@
+A while loop is a control flow statement that allows code 
+to be executed repeatedly based on a given boolean condition. 
+The while loop can be thought of as a repeating if statement.
+
+The while construct consists of a block of code and a condition. 
+The condition is first evaluated - if the condition is true the code 
+within the block is then executed. This repeats until the condition 
+becomes false. Because while loops check the condition before the 
+block is executed, the control structure is often also known as a 
+pre-test loop. Compare with the do while loop, which tests the 
+condition after the loop has executed.

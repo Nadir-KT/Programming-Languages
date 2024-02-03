@@ -1,0 +1,18 @@
+man malloc
+----------
+malloc, free, calloc, realloc, reallocarray - allocate and free dynamic memory
+The malloc() function allocates size bytes and returns a pointer to the allocated memory.
+The memory is not initialized.  If size is 0, then malloc() returns either NULL, or a unique pointer value that can later be successfully passed to free().
+The calloc() function allocates memory for an array of nmemb elements of size bytes each and returns a pointer to the allocated memory.  The memory is set to zero.  If nmemb or size is 0, then calloc() returns either NULL, or a unique pointer value that can later be successfully passed to free().
+The realloc() function changes the size of the memory block pointed to by ptr to size bytes.  The contents will be unchanged in the range from the start of the region up to the minimum of the old and new sizes.
+The free() function frees the memory space pointed to by ptr,
+
+Syntax
+------
+#include <stdlib.h>
+
+       void *malloc(size_t size);
+       void free(void *ptr);
+       void *calloc(size_t nmemb, size_t size);
+       void *realloc(void *ptr, size_t size);
+       void *reallocarray(void *ptr, size_t nmemb, size_t size);

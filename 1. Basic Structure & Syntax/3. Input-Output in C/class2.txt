@@ -1,0 +1,469 @@
+Input-Output in C :-
+=================
+
+There are three main functions of any program- It takes data as input, processes this data and gives the output.
+
+The input operation involves movement of data from an input device to computer memory.
+
+C language does not provide any facility for input-output operations.
+
+The input output is performed through a set of library functions that are supplied with every C compiler.
+
+There are several header files that provide necessary information in support of the various library functions.
+
+These header files are entered in the program using the #include directive at the beginning of the program.
+
+For example if a program uses any function from the standard I/O library, then it should include the file stdio.h as.
+
+#include <stdio.h>
+
+A simple method for taking the data as input is to give the value to the variables by assignment statement.
+
+int basic = 2000;
+char ch = 'y';
+
+This way we can give only particular data to the variables.
+
+The second method is to use the input function scanf( ), which takes the input data from the keyboard.
+
+In this method we can give any value to the variables at run time. For output, we use the function printf().
+
+
+Conversion Specifications :-
+-------------------------
+
+The functions scanf( ) and printf( ) make use of conversion specifications to specify the type and size of data.
+
+Each conversion specification must begin with a percent sign ( % ).
+
+%c	-	a single character
+%d	-	a decimal integer
+%f	-	a floating point number
+%e	-	a floating point number
+%g	-	a floating point number
+%lf	-	long range of floating point number (for double data
+%h	-	a short integer
+%o	-	an octal integer
+%x	-	a hexadecimal integer
+%i	-	a decimal, octal or hexadecimal integer
+%s	-	a string
+%u	-	an unsigned decimal integer
+
+The modifier h can be used before conversion specifications d, i, 0, u, x to specify short integer and the modifier l can be used before them to specify a long integer.
+
+The modifier l can be used before conversion specifications f, e, g to specify double while modifier L can be used before them to specify a long double.
+
+For example %ld, %hd, %Lf, %hx are valid conversion specifications.
+
+Reading Input Data :-
+------------------
+
+Input data can be entered into the memory from a standard input device (keyboard).
+
+C provides the scanf( ) library function for entering input data.
+
+This function can take all types of values (numeric, character, string) as input.								
+										
+scanf("control string", address1, address2, ....);			
+
+This function should have at least two parameters.First parameter is a control string, which contains conversion specification characters.
+
+It should be within double quotes.The conversion specification characters may be one or more.
+
+It depends on the number of variables we want to input.The other parameters are addresses of variables.
+
+In the scanf( ) function at least one address should be present the address of a variable is found by preceding the variable name by an ampersand (&) sign.
+
+The sign is called the address operator and it gives the starting address of the variable name in memory.
+
+Ex :-
+
+#include<stdio.h>
+
+void main ()
+{
+	int marks;
+	scanf("%d",&marks);
+}
+
+#include<stdio.h>
+
+void main ( )
+{
+	int i;
+	char ch;
+	float f;
+	scanf("%d%c%f",&i,&ch,&f);
+	printf("%d %c %f\n",i,ch,f);
+}
+
+#include <stdio.h>
+
+void main()
+{
+	char str[30];
+	scanf("%s",str);
+}
+
+When more than one values are input by scanf( ), these values can be separated by whitespace character like space, tab or newline (default)
+
+A specific character can also be placed between two conversion specification characters as a delimiter.
+
+#include<stdio.h>
+
+void main()
+{
+	int basic;
+	float hra;
+	scanf("%d:%f",&basic,&hra) ;
+}
+
+Here the delimiter is colon ( : ). The input data can be entered as-
+1500:200.50
+
+Comma as delimiter :-
+
+Scanf("%d,%f",&basic,&hra);
+
+eg :-
+scanf("%d-%d-%d",&day,&month,&year) ;
+scanf (" $%d", &basic) ;
+
+If we include any spaces between the Conversion specifications inside the control string, then they are just ignored.
+
+Writing Output Data :-
+===================
+
+Output data can be written from computer memory to the standard output device (monitor) using printf() library function.
+
+With this function all type of values (numeric, character or string) can be written as output.
+
+printf("control string", variable1, variable2, ...);
+
+In this function the control string contains conversion specification characters and text.It should be enclosed within double quotes.
+
+The name of variables snould not be preceded by an ampersand(&) sign.
+
+If the control string does not contain any conversion specification, then the variable names are not specified.
+
+Eg:-
+
+#include<stdio.h>
+
+void main ()
+{
+	printf ("Hello ISM\n");
+}
+
+Output:-
+------
+
+	Hello ISM.
+
+#include<stdio.h>
+
+void main ( )
+{
+	int d=2000;
+	printf("%d",d);
+}
+
+In this example control string contains a conversion specification character %d, which implies that are integer value will be displayed.
+The variable basic has that integer value which will be displayed as output.
+
+#include<stdio.h>
+main ( )
+{
+	float height=5.6;
+	printf("%f",height);
+}
+
+#include<stdio.h>
+main ( )
+{
+	char ch='$';
+	printf("%c",ch) ;
+}
+
+#include<stdio.h>
+main ( )
+{
+	char str[30];
+	printf("%s",str) ;
+}
+
+#include<stdio.h>
+main()
+{
+	int num=l0;
+	printf ("Octal equivalent of decimal %d %o" , num, num);
+}
+
+#include<stdio.h>
+main()
+{
+	int num=l0;
+	printf ("Hex equivalent of decimal %d is %x", num, num) ;
+}
+
+
+#include<stdio.h>
+main (I )
+{
+	int, b=1500;
+	float h=200.50;
+	char g='A';
+	printf("Basic %d\n HRA %f\n  Grade %c\n",b,h,g);
+}
+
+'\n' moves the cursor to the beginning of next line. Here we have placed a '\n' at the end of control.
+String also, it ensures that the output of the next program starts at a new line.
+
+If we want to print characters like single quotes ( , ),double quotes ( " ) or the backslash charcter
+( \ ), then we have to precede them by a backslash character in the format string.
+
+printf("9 \\ I I \\ 1978"); will print 9 \ 11 \ 1978
+printf("She said, \"1 have to go\". "); will print She said, "I have to go".
+
+formatted Input And Output :-
+------------------------------------
+
+%wd
+Here 'd' is the conversion specification character for integer value and 'w' is an integer number specifying the ,maximum field width of input data. If the length of input is more than this maximum field width then the values are not stored correctly. 
+
+For example :-
+
+scanf ("%2d%3d", &a, &b );
+
+1. When input data length is less than the given field width, then the input values are unaltered and stored in given variables.
+
+Input-
+6 39
+
+6 is stored in a and 39 is stored in b.
+
+2. When input data length is equal to the given 'field width, then the input values are unaltered and stored in given variables.
+
+Input-
+26 394
+
+Result-
+
+26 is stored in a and 394 is stored in b.
+
+3. When input data length is more than the given field width, then the input values are altered and stored in the variable as
+
+Input-
+269 3845
+
+Result-
+
+26 is stored in a and 9 is stored in b and the rest of input is ignored.
+
+Format For Integer Output :-
+=========================
+
+%wd
+Here w is the, integer number specifying the minimum field width of the output data. If the length of the variable is less than the specified field width, then the variable is right justified with leading blanks.
+
+Eg :-
+printf("a=%3d, b=%4d", a, b );
+
+1. When the length of variable is less than the width specifier.
+
+Value of variables-
+78 9
+Output:
+	a=   78, b=    9
+The width specifier of first data is 3 while there are only 2 digits in it, so there is one leading blank.
+The width specifier of second data is 4 while there is only 1 digit, so there are 3 leading blanks.
+
+2. When the length of the variable is equal to the width specifier.
+
+Value of variables -
+263 1941
+
+a=263,b=1941
+
+3. When length of variable is more than the width specifier, then also the output is printed correctly.
+
+Value of variables -
+2691 19412
+
+a=2691,b=19412
+
+
+#include<stdio.h>
+main ( )
+{
+	int a=4000,b=200, c=15;
+	printf ("a = %d \nb = %d \nc = %d\n",a,b,c);
+	printf("%a = %4d \nb = %4d \nc = %4d\n",a,b,c);
+}
+
+The output of the first printf would be -
+a = 4000 
+b = 200
+c = 15
+
+while the output of second printf would be -
+a = 4000
+b =  200
+c =   15
+
+
+Format For Floating Point Numeric Input:-
+----------------------------------------------------
+
+%wf
+
+Here 'w' is the integer number specifying the total width of the input data (including the digits before and after decimal and the decimal itself). 
+
+For example -
+
+scanf("%3f %4f", &x, &y);
+
+1. When input data length is less than the given width, values are unaltered and stored in the variables.
+
+Input
+5 5.9
+Result
+
+5.0 is stored in x and 5.90 is stored in y.
+
+
+2. When input data length is equal to the given width, then the given values are unaltered and stored in the given variables.
+
+Input
+5.3 5.92
+
+Result
+5.3 is stored in x and 5.92 is stored in y
+
+3. When input data length is more than the given width then the given values are altered and stored in the given variables as-
+
+Input
+5.93 65.87
+
+Result
+5.9 is stored in x and 3.00 is stored in y.
+
+Format For Floating Point Numeric Output :-
+----------------------------------------
+
+%w.nf
+
+w is the integer number specifying the total width of the input data and n is the number of digits
+to be printed after decimal point. By default 6 digits are printed after the decimal. For example-
+
+printf("x = %4.1f, y = %7.2f ", x, y);
+
+If the total length of the variable is less than the specified width 'w', then the value is right justified with leading blanks. 
+If the number of digits after decimal is more than 'n' then the digits are rounded off.
+
+Value of variables -
+
+8 5.9
+Output:
+x= 8.0,y=   5.90
+
+Value of variables -
+
+25.3	1635.92
+
+Output:
+x=25.3,y=1635.92
+
+Value of variables
+
+15.231
+65.875948
+
+OUtput:
+x=15.2,y=  65.88
+
+Format For String Input :-
+-------------------------------
+
+%ws
+
+Here w specifies the total number of characters that will be stored in the string.
+
+char str [8];
+scanf ("%3s",str);
+
+Input:
+hello
+
+only first three characters of this input will be stored in the string, so the characters in the string will be-
+'h', 'e', 'l', '\0'
+
+The null character('\0') is automatically stored at the end.
+
+Format For String Output :-
+------------------------
+%w.ns
+
+Here w is the specified field width. Decimal point and 'n' are optional. If present then 'n' specifies that only first n characters of the string will be displayed and (w - n) leading blanks are displayed before string.
+
+printf("%3s", "sureshkumar" );	sureshkumar
+printt("% 10s", "reeta");		      reeta
+printf("%.3s", "sureshkumar " );	sur
+printf("% 8.3s", "sureshkumar ");	      sur	(8 - 3 = 5 leading blanks)
+
+Suppression Character in scanf( ) :-
+---------------------------------
+
+If we want to skip any input field then we specify * between the % sign and the conversion specification.
+The input field is read but its value is not assigned to any address. This character * is called the suppression character.
+
+scanf ("%d %*d %d", &a, &b, &c);
+
+Input:
+25 30 35
+
+Here 25 is stored in 'a' , 30 is skipped and 35 is stored in the 'b'. Since no data is available for 'c'
+so it has garbage value.
+
+scanf("%d %*c %d %*c %d", &d, &m, &y);
+
+Input:
+31/1/2003
+
+Here 3 will be stored in d, then / will be skipped, 11 will be stored in m, again i will be skipped and finally 2003 will be stored in y.
+
+Character I/O :-
+-------------
+
+getchar ( ) and putchar( )
+
+These macros getchar() and putchar( ) can be used for character I/O.
+getchar( ) reads a single character from the standard input. putchar( ) outputs one character at a time to the standard output.
+
+#include <stdio.h>
+
+void main()
+{
+	char Ch;
+	printf ("Enter a character : ");
+	ch=getchar() ;
+	printf ("The entered character is :");
+	putchar(ch);
+}
+
+Output :
+
+Enter a character : B
+The entered character is : B
+
+-------------------
+int putchar(int c);
+int getchar(void);
+
+#include<stdio.h>
+main ()
+{
+char a;
+a= getchar();
+putchar(a);
+}

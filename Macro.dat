@@ -1,0 +1,8 @@
+#define NULL 0
+#define PMC_bit      (*(volatile __near __bitf_T *)0xFFFE)
+#define MAA          (((volatile __near __bitf_T *)0xFFFE)->no0)
+#define INTWDTI                         0x0004
+
+https://www.geeksforgeeks.org/macros-and-its-types-in-c-cpp/
+https://www.codecademy.com/resources/docs/cpp/macros
+https://www.programiz.com/c-programming/c-preprocessor-macros

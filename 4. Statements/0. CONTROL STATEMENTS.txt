@@ -1,0 +1,203 @@
+if syntax
+---------
+if (condition) {
+statement(s);
+}
+-------------------------------
+if(a) is equivalent to if(a!=0)
+-------------------------------
+
+nested if syntax
+----------------
+if(condition1) {
+   if(condition2) {
+      // statement(s) to be executed if the condition2 is true
+   }
+}
+
+else syntax
+-----------
+if (condition) {
+True statement(s) block;
+} else {
+false statement(s) block;
+}
+
+else if syntax
+--------------
+if (condition1) {
+  // statement(s) to be executed if condition1 is true
+} else if (condition2) {
+  // statement(s) to be executed if the condition1 is false and condition2 is true
+} else {
+  // statement(s) to be executed if the condition1 is false and condition2 is false
+}
+
+Short Hand If...Else (Ternary Operator)
+---------------------------------------
+(condition) ? expressionTrue : expressionFalse;
+
+switch syntax
+-------------
+switch(expression)
+{
+case l: 
+statement(s)1;
+break;
+case 2: 
+statement(s)2;
+break;
+case 3: 
+statement(s)3;
+break;
+.
+.
+.
+default:
+default statement(s);
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+The default keyword must be used as the last statement to specify some code to run if there is no case match, and it does not need a break.
+-------------------------------------------------------------------------------------------------------------------------------------------
+When C reaches a break keyword, it breaks out of the switch block.
+------------------------------------------------------------------
+
+nested switch statements
+------------------------
+switch(ch1) {
+
+   case 'A': 
+      printf("This A is part of outer switch" );
+		
+      switch(ch2) {
+         case 'A':
+            printf("This A is part of inner switch" );
+            break;
+         case 'B': /* case code */
+      }
+	  
+      break;
+   case 'B': /* case code */
+}
+
+------------------------------------------------------------------------------
+Loops can execute a block of code as long as a specified condition is reached.
+------------------------------------------------------------------------------
+while loop syntax
+-----------------
+while(condition);
+{
+statement(s);
+increment;
+}
+
+do-while loop syntax
+--------------------
+do {
+statement(s);
+increment;
+}
+while(condition);
+----------------------------------------------------------------------------------------------------------------------------------------------------
+This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+for loop syntax
+---------------
+for (initialization; condition; increment)
+{
+  statement(s);
+}
+
+----------------------------------------------------------------------------------
+Comma(,) operator b/w two conditions in a for loop takes && logical implimentation
+----------------------------------------------------------------------------------
+
+The Infinite Loop
+-----------------
+A loop becomes an infinite loop if a condition never becomes false. The for loop is traditionally used for this purpose.
+for(;;) is infinite loop
+
+nested for loop
+---------------
+for ( init; condition; increment ) {
+
+   for ( init; condition; increment ) {
+      statement(s);
+   }
+   statement(s);
+}
+
+nested while loop
+-----------------
+while(condition) {
+
+   while(condition) {
+      statement(s);
+   }
+   statement(s);
+}
+
+nested do-while loop
+--------------------
+do {
+   statement(s);
+
+   do {
+      statement(s);
+   }while( condition );
+
+}while( condition );
+
+goto syntax: Forward Jump
+-------------------------
+|<-goto label_name;
+|  statement1;
+|  statement2;
+|  statementn;
+|->label_name: 
+   statements;
+   
+goto syntax: Backward Jump
+--------------------------
+|->label_name;
+|  statements;
+|<-goto label_name; 
+   statement1;
+   statement2;
+   statementn;
+
+--------------------------
+goto is unconditional jump
+--------------------------
+
+break syntax
+------------
+   for (initialization; condition; increment)
+   {
+   statements
+   if(condition)
+|<-break;
+|  statements
+|  }
+|->statements outside the for loop
+-----------------------------------------------------------
+The break statement can also be used to jump out of a loop.
+-----------------------------------------------------------
+
+continue syntax
+---------------
+|->for (initialization; condition; increment)
+|  {
+|  statements
+|  if(condition)
+|<-continue;
+   statements
+   }
+   statements outside the for loop
+----------------------------------------------------------------------------------------------------------------------------------------------
+The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+[if (a > b) { printf("Hello"); } printf("Hi");] is equivalent to [if (a > b) printf("Hello"); printf("Hi");]
