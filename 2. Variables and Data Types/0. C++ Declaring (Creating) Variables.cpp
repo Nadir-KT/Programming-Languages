@@ -7,7 +7,11 @@ int main()
 {
     cout<<"Hello World\n";
     cout << "Hello World!" << endl;
-
+	
+	int i;		// declaration of variable
+	i = 10;		// initialisation of variable
+	int j = 20;	// definition = declaration + initialisation
+	
 	// initialization of variables
 	int a=5;	// c-like initialization
 	int b(3);	// constructor initialization
@@ -18,7 +22,7 @@ int main()
 	cout << result <<endl;
 	
 	const int  LENGTH2 = 10; // Defining Constant using const keyword.
-	const int  WIDTH2 = 5;
+	const int  WIDTH2 = 5; // Always initialize the constant variables at declaration
 	const char NEWLINE2 = '\n';
 
 	int foo = 0;
@@ -40,7 +44,7 @@ int main()
 	myText = "string expressed in \
 	two lines"; //backslash (\) at the end of line is considered a line-continuation
 	cout << myText <<endl;
-    int x = 5, y = 6, z = 50;
+    int x = 5, y = 6, z = 50; // Declaring multiple variables
     x = y = z = 50;
     cout << x + y + z;
     const int minutesPerHour = 60; //When you declare a constant variable, it must be assigned with a value
