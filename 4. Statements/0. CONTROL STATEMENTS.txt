@@ -18,19 +18,20 @@ if(condition1) {
 else syntax
 -----------
 if (condition) {
-True statement(s) block;
-} else {
-false statement(s) block;
-}
+True statement(s) block;} 
+else {
+false statement(s) block;}
 
 else if syntax
 --------------
 if (condition1) {
-  // statement(s) to be executed if condition1 is true
-} else if (condition2) {
-  // statement(s) to be executed if the condition1 is false and condition2 is true
-} else {
-  // statement(s) to be executed if the condition1 is false and condition2 is false
+  // statement(s) to be executed if condition1 is true;
+} 
+else if (condition2) {
+  // statement(s) to be executed if the condition1 is false and condition2 is true;
+} 
+else {
+  // statement(s) to be executed if the condition1 is false and condition2 is false;
 }
 
 Short Hand If...Else (Ternary Operator)
@@ -42,19 +43,19 @@ switch syntax
 switch(expression)
 {
 case l: 
-statement(s)1;
-break;
+	statement1;
+	break;
 case 2: 
-statement(s)2;
-break;
+	statement2;
+	break;
 case 3: 
-statement(s)3;
-break;
+	statement3;
+	break;
 .
 .
 .
 default:
-default statement(s);
+	default statement(s);
 }
 
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -62,6 +63,7 @@ The default keyword must be used as the last statement to specify some code to r
 -------------------------------------------------------------------------------------------------------------------------------------------
 When C reaches a break keyword, it breaks out of the switch block.
 ------------------------------------------------------------------
+The break keyword indicates the end of a particular case. If we do not put the break in each case, then even though the specific case is executed, C's switch will continue to execute all the cases until the end is reached. The default case is optional. Whenever the expression's value is not matched with any of the cases inside the switch, then the default case will be executed. It is not necessary to use the break keyword after every case. Break keywords should only be used when we want to terminate our case at that time, otherwise we won’t.
 
 nested switch statements
 ------------------------
@@ -84,19 +86,22 @@ switch(ch1) {
 ------------------------------------------------------------------------------
 Loops can execute a block of code as long as a specified condition is reached.
 ------------------------------------------------------------------------------
+Entry Controlled loops: for Loop and while Loop
+Exit Controlled Loops: do-while loop
+-----------------------------------------------
 while loop syntax
 -----------------
 while(condition);
 {
 statement(s);
-increment;
+increment/decrement;
 }
 
 do-while loop syntax
 --------------------
 do {
 statement(s);
-increment;
+increment/decrement;
 }
 while(condition);
 ----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -105,7 +110,7 @@ This loop will execute the code block once, before checking if the condition is 
 
 for loop syntax
 ---------------
-for (initialization; condition; increment)
+for (initialization; condition; increment/decrement)
 {
   statement(s);
 }
@@ -117,13 +122,13 @@ Comma(,) operator b/w two conditions in a for loop takes && logical implimentati
 The Infinite Loop
 -----------------
 A loop becomes an infinite loop if a condition never becomes false. The for loop is traditionally used for this purpose.
-for(;;) is infinite loop
+for(;;) is infinite loop & while(1) is also an infinite loop
 
 nested for loop
 ---------------
-for ( init; condition; increment ) {
+for ( init; condition; increment/decrement ) {
 
-   for ( init; condition; increment ) {
+   for ( init; condition; increment/decrement ) {
       statement(s);
    }
    statement(s);
@@ -174,7 +179,7 @@ goto is unconditional jump
 
 break syntax
 ------------
-   for (initialization; condition; increment)
+   for (initialization; condition; increment/decrement)
    {
    statements
    if(condition)
@@ -188,7 +193,7 @@ The break statement can also be used to jump out of a loop.
 
 continue syntax
 ---------------
-|->for (initialization; condition; increment)
+|->for (initialization; condition; increment/decrement)
 |  {
 |  statements
 |  if(condition)
@@ -199,5 +204,16 @@ continue syntax
 ----------------------------------------------------------------------------------------------------------------------------------------------
 The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
 ----------------------------------------------------------------------------------------------------------------------------------------------
+-------------------
+if (a > b) 
+{ 
+printf("Hello"); 
+} 
+printf("Hi");
 
-[if (a > b) { printf("Hello"); } printf("Hi");] is equivalent to [if (a > b) printf("Hello"); printf("Hi");]
+is equivalent to ->
+
+if (a > b) 
+printf("Hello"); 
+printf("Hi");
+-------------------
