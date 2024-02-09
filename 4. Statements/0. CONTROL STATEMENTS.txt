@@ -63,7 +63,21 @@ The default keyword must be used as the last statement to specify some code to r
 -------------------------------------------------------------------------------------------------------------------------------------------
 When C reaches a break keyword, it breaks out of the switch block.
 ------------------------------------------------------------------
-The break keyword indicates the end of a particular case. If we do not put the break in each case, then even though the specific case is executed, C's switch will continue to execute all the cases until the end is reached. The default case is optional. Whenever the expression's value is not matched with any of the cases inside the switch, then the default case will be executed. It is not necessary to use the break keyword after every case. Break keywords should only be used when we want to terminate our case at that time, otherwise we won’t.
+The break keyword indicates the end of a particular case. If we do not put the break in each case, then even though the specific case is executed, C's switch will continue to execute all the cases until the end is reached. 
+int i = 1;
+switch(i)
+{
+    case 1:    
+        printf("A");        // No break
+    case 2:
+        printf("B");        // No break
+    case 3:
+        printf("C");
+        break;
+}
+
+OUTPUT:A B C
+The default case is optional. Whenever the expression's value is not matched with any of the cases inside the switch, then the default case will be executed. It is not necessary to use the break keyword after every case. Break keywords should only be used when we want to terminate our case at that time, otherwise we won’t.
 
 nested switch statements
 ------------------------
@@ -82,6 +96,8 @@ switch(ch1) {
       break;
    case 'B': /* case code */
 }
+----------------------------------------------------------------------------------------------------------------------------------
+Difference between switch and if: if statements can evaluate float conditions. switch statements cannot evaluate float conditions.
 
 ------------------------------------------------------------------------------
 Loops can execute a block of code as long as a specified condition is reached.
@@ -123,7 +139,7 @@ The Infinite Loop
 -----------------
 A loop becomes an infinite loop if a condition never becomes false. The for loop is traditionally used for this purpose.
 for(;;) is infinite loop & while(1) is also an infinite loop
-
+Other than 0(zero), all other values are considered as true
 nested for loop
 ---------------
 for ( init; condition; increment/decrement ) {
@@ -205,15 +221,8 @@ continue syntax
 The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 -------------------
-if (a > b) 
-{ 
-printf("Hello"); 
-} 
-printf("Hi");
-
-is equivalent to ->
-
-if (a > b) 
-printf("Hello"); 
-printf("Hi");
--------------------
+In if statement, a single statement can be included without enclosing it into curly braces { ... }
+int a = 5;
+if(a > 4)
+    printf("success");
+No curly braces are required in the above case, but if we have more than one statement inside if condition, then we must enclose them inside curly braces.
