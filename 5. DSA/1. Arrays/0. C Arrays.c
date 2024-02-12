@@ -11,7 +11,8 @@ int main() {
   }
   // Create a variable and assign the first array element of ages to it
   int lowestNumber = myNumbers[0];
-
+  printf("Enter a number to add in to myNumbers[3]");
+  scanf("%d", &myNumbers[3]); // will insert element at index 3, i.e. 4th position
   // Loop through the elements of the ages array to find the lowest age
   for (int i = 0; i < length; i++) {
     if (lowestNumber > myNumbers[i]) {
@@ -19,5 +20,10 @@ int main() {
     }
   }
   printf("%d\n", lowestNumber);
+  printf("Enter new numbers to add in to myNumbers");
+  for(int i = 0; i < 4; i++)
+    scanf("%d", &myNumbers[i]);
+  for (i = 0; i < 4; i++)
+    printf("%d\n", myNumbers[i]);
   return 0;
 }
