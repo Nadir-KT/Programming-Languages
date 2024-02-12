@@ -25,5 +25,9 @@ int main() {
     scanf("%d", &myNumbers[i]);
   for (i = 0; i < 4; i++)
     printf("%d\n", myNumbers[i]);
+  int sum = 0;
+  for(int i = 0; i < 4; i++)
+	sum += arr[i];
+  printf("Sum =%d", sum);
   return 0;
 }
