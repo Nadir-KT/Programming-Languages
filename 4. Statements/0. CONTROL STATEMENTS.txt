@@ -43,19 +43,18 @@ switch syntax
 switch(expression)
 {
 case l: 
-	statement1;
-	break;
+		statement1;
+		break;
 case 2: 
-	statement2;
-	break;
+		statement2;
+		break;
 case 3: 
-	statement3;
-	break;
+		statement3;
+		break;
 .
 .
 .
-default:
-	default statement(s);
+default: default_statement(s);
 }
 
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -81,29 +80,53 @@ The default case is optional. Whenever the expression's value is not matched wit
 
 nested switch statements
 ------------------------
-switch(ch1) {
+switch (variable)
+{
+    case 1:
+        statement1;
+        switch (variable_1)
+        {
+            case 'A':
+					printf("This A is part of inner switch" );
+					break;
+			case 'B': /* case code */
+        }
+        break;
+    
+    case 2:
+        statement2;
+        switch (variable_2)
+        {
+            case 'A':
+					printf("This A is part of inner switch" );
+					break;
+			case 'B': /* case code */
+        }
+        break;
 
-   case 'A': 
-      printf("This A is part of outer switch" );
-		
-      switch(ch2) {
-         case 'A':
-            printf("This A is part of inner switch" );
-            break;
-         case 'B': /* case code */
-      }
-	  
-      break;
-   case 'B': /* case code */
+	case x:
+        statement(s);
+        break;
+
+    default:
+        statement;       
+        switch (variable_x)
+        {
+            case 'A':
+					printf("This A is part of inner switch" );
+					break;
+			case 'B': /* case code */
+        }
+        break;
 }
 ----------------------------------------------------------------------------------------------------------------------------------
 Difference between switch and if: if statements can evaluate float conditions. switch statements cannot evaluate float conditions.
-
+Switch case variables can have only int or char and cannot be float or any other data type.
 ------------------------------------------------------------------------------
 Loops can execute a block of code as long as a specified condition is reached.
 ------------------------------------------------------------------------------
-Entry Controlled loops: for Loop and while Loop
-Exit Controlled Loops: do-while loop
+Entry Controlled loops:- while() and for()
+Exit Controlled Loops:- do-while()
 -----------------------------------------------
 while loop syntax
 -----------------
@@ -140,24 +163,27 @@ The Infinite Loop
 A loop becomes an infinite loop if a condition never becomes false. The for loop is traditionally used for this purpose.
 for(;;) is infinite loop & while(1) is also an infinite loop
 Other than 0(zero), all other values are considered as true
+
 nested for loop
 ---------------
-for ( init; condition; increment/decrement ) {
-
-   for ( init; condition; increment/decrement ) {
-      statement(s);
-   }
-   statement(s);
-}
+for (initialization; condition; increment/decrement)   
+{  
+    for(initialization; condition; increment/decrement)  
+    {  
+           // statement(s) of inner loop.  
+    }  
+    // statement(s) of outer loop.  
+}  
 
 nested while loop
 -----------------
-while(condition) {
-
-   while(condition) {
-      statement(s);
-   }
-   statement(s);
+while(condition)  
+{  
+    while(condition)  
+    {  
+         // statement(s) of the inner loop.  
+    }  
+	// statement(s) of outer loop.  
 }
 
 nested do-while loop
@@ -189,8 +215,13 @@ goto syntax: Backward Jump
    statement2;
    statementn;
 
---------------------------
-goto is unconditional jump
+--------------------
+infinite_loop; 
+// body statements. 
+goto infinite_loop;
+--------------------
+goto is unconditional jump : The goto statement is discouraged in C, because it alters the sequential flow of logic that is the characteristic of C language.
+This word is redundant in C and encourages poor programming style. it is only recommended as a last resort if structured solutions are much more complicated.
 --------------------------
 
 break syntax

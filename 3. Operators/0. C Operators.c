@@ -100,6 +100,7 @@ int main()
 	b = 10; 
 	int c = (a++, b++, a + b);
 	printf("\nc = %d", c);
+	printf("%d\n", (a = b, b = c, c));
 	
 	// . (dot) operator is used to access individual elements of a C structure or C union.	
 	// If emp is a structure with an element int age in it, then emp.age will return the value of age.

@@ -14,7 +14,7 @@ int main() {
 	printf("\"Hello World\"");
 	printf("\nEnter integer and then a float: ");
     // Taking multiple inputs
-    scanf("%d%f", &a, &b);
+    scanf("%d %f", &a, &b);
     printf("You entered %d and %f", a, b);
 	printf("\nEnter a character: ");
 	x = getchar(); //int getchar(void); function reads a character from the terminal and returns it as an integer.
