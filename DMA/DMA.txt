@@ -1,0 +1,32 @@
+Static Memory Allocation
+------------------------
+In this type of allocation, the compiler allocates a fixed amount of memory during compile time and the operating system internally uses a data structure known as stack to manage the memory.
+
+Exact memory requirements must be known in advance as once memory is allocated it can not be changed.
+
+int days; // Needs to be initialized or assigned some value at run time
+int snowfall = 0; // Normal variable
+const int maxScore = 10; // Constant, can not be changed
+static datatype variable_name = variable_value;
+
+Dynamic Memory Allocation
+-------------------------
+In this type of allocation, system memory is managed at runtime. Dynamic memory management in C programming language is performed using the malloc(), calloc(), realloc(), and free() functions. These four functions are defined in the <stdlib.h> C standard library header file. It uses the heap space of the system memory.
+
+malloc():	Allocates a block of memory in the heap, but does not initialize.
+Syntax of malloc() in C:	ptr = (cast-type*) malloc(byte-size);
+For Example:	ptr = (int*) malloc(100 * sizeof(int));
+
+calloc():	Dynamically allocates an array of memory blocks of a specified type.
+Syntax of calloc() in C:	ptr = (cast-type*)calloc(n, element-size);
+here, n is the no. of elements and element-size is the size of each element.
+For Example:	ptr = (float*) calloc(25, sizeof(float));
+This statement allocates contiguous space in memory for 25 elements of an array each with the size of the float.
+
+free():		Dynamically de-allocates memory at runtime.
+Syntax of free() in C:		free(ptr);
+
+realloc():	Reallocates(newSize) a block of memory that was previously allocated.
+Syntax of realloc() in C:	ptr = realloc(ptr, newSize);	(or)	ptr = (ptr - type *)realloc(ptr, new_size_in_bytes)
+where ptr is reallocated with new size 'newSize'. re-allocation of memory maintains the already present value and new blocks will be initialized with the default garbage value.
+Example:	ptr = (int *)realloc(ptr,10* sizeof(int));

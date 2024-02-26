@@ -7,7 +7,7 @@ int main(void)
 {	//Using the right data type for the right purpose will save memory and improve the performance of the program.
 	printf("sizeof(char) = %lu\n",sizeof(char));
 	printf("sizeof(short) = %lu\n",sizeof(short));
-	printf("sizeof(int) = %lu\n",sizeof(int)); //sizeof operator:To get the exact size of a type or a variable on a particular platform
+	printf("sizeof(int) = %lu\n",sizeof(int)); //sizeof operator:To get the exact size of a type or a variable in bytes on a particular platform
 	printf("sizeof(long) = %lu\n",sizeof(long));
 	printf("sizeof(float) = %lu\n",sizeof(float));
 	printf("sizeof(double) = %lu\n",sizeof(double));

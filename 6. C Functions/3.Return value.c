@@ -3,7 +3,6 @@
 
 int function(void);
 //int value;
-
 void main(void)
 {
   int value = function(); // function call
@@ -13,5 +12,5 @@ void main(void)
 int function(void)
 {
   int ret = 2;
-  return ret;
+  return ret; //The return statement returns a value to where the function was called.
 }

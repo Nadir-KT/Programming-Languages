@@ -220,6 +220,7 @@ infinite_loop;
 // body statements. 
 goto infinite_loop;
 --------------------
+goto is used to jump from anywhere to anywhere within a function.
 goto is unconditional jump : The goto statement is discouraged in C, because it alters the sequential flow of logic that is the characteristic of C language.
 This word is redundant in C and encourages poor programming style. it is only recommended as a last resort if structured solutions are much more complicated.
 --------------------------

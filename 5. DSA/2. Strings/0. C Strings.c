@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 int main() {
-  char srting[]={};
+  char srting[]={};//same as char srting[]={0};
   char greetings[] = "Hello World!";
   printf("%s", greetings);
   printf("\n%c", greetings[0]);

@@ -1,0 +1,72 @@
+/* Deadlock describes a situation where two or more threads are blocked forever, waiting for each other.
+	 * A Deadlock is a situation where each of the computer process waits for a resource which is being assigned to some another process. 
+	 * In this situation, none of the process gets executed since the resource it needs, is held by some other process which is also waiting for some other resource to be released.
+	 * And, none is able to leave the lock on the resource it is holding. Therefore, none of the processes gets executed.
+	 * In a communications system, deadlocks occur mainly due to loss or corruption of signals rather than contention for resources.
+	 * 
+	 * Necessary conditions for Deadlocks:- https://www.tutorialspoint.com/process-deadlocks-in-operating-system
+	 * 1. Mutual Exclusion: A resource can only be shared in mutually exclusive manner. It implies, if two process cannot use the same resource at the same time.
+	 * 2. Hold and Wait: A process waits for some resources while holding another resource at the same time.
+	 * 3. No Preemption: The resource will be released only after the execution of thread is completed.
+	 * 4. Circular Wait: This condition occurs when each thread is waiting for a resource held by the preceding one and the last thread is waiting for a resource held by first thread.
+	 * 
+	 * A deadlock in a program can be prevented if any of the four conditions are not met. They are:
+	 * 1. Mutual Exclusive Condition: If every resource is shared by multiple threads, deadlock would never occur.
+	 * 2. Hold and Wait Condition: This condition can be eliminated when a thread is prohibited to wait for more resources while already holding a certain resource. It can be achieved when we declare all resources at the very beginning that are expected to use by a thread.
+	 * 3. No Preemption Condition: This condition can be eliminated if a thread holding a certain resource is denied for further request. That thread must unlock its original resource. If necessary request them again together with additional resource.
+	 * 4. Circular Wait Condition: This is the easiest way to avoid deadlock than the above three. There are two ways to eliminate deadlock.
+	 * 4.1 First way: It can be achieved if a thread is to force to hold only one resource at a time. If it needs another resource, it must first release that resource that is held by it and then requests another.
+	 * 4.2 Second way: It can be achieved by acquiring resources (locks) in a specific order and releasing them in reverse order so that a thread can only continue to acquire a resource if it held the other one.
+	 * 
+	 * Deadlocks cannot be completely resolved. It depends on the logic used by the programmer. But we can avoid them by following basic rules mentioned below:
+	 * 1. Avoid Nested Locks: We must avoid giving locks to multiple threads, this is the main reason for a deadlock condition. It normally happens when you give locks to multiple threads.
+	 * 2. Avoid Unnecessary Locks: The locks should be given to the important threads. Giving locks to the unnecessary threads that cause the deadlock condition.
+	 * 3. Using Thread Join: A deadlock usually happens when one thread is waiting for the other to finish. In this case, we can use join with a maximum time that a thread will take.
+	 */
+/* Inter-thread communication or Co-operation is all about allowing synchronized threads to communicate with each other.
+		 * Cooperation (Inter-thread communication) is a mechanism in which a thread is paused running in its critical section and another thread is allowed to enter (or lock) in the same critical section to be executed.
+		 * A critical section is a code segment that can be accessed by only one process at a time.
+		 * Inter-thread communication in Java can be achieved by using three methods provided by Object class of java.lang package. They are:
+		 * 2.2.1 public void wait(): Causes the current thread to wait until another thread wakes it up by calling notify() method or the notifyAll() method for this object, or a specified amount of time has elapsed.
+		 * 2.2.2 public void notify(): Wakes up the first thread that called wait() on the same object.
+		 * 2.2.3 public void notifyAll(): Wakes up all the threads that called wait( ) on the same object.
+		 */
+/* MultiThreading: Executing multiple programs concurrently
+		 * Thread: Independent path of execution
+		 * MultiThread Creation:- 
+		 * 1. by overriding run() of Thread class
+		 * 2. by implementing run() of java.lang.Runnable Interface
+		 * Default Threads:-
+		 * 1. Main Thread (User Thread / non Daemon Thread) // JRE
+		 * 2. Garbage Collector Thread // protected Object finalize() // Automatic (Daemon Thread)
+		 * 3. Thread Scheduler
+		 */
+		/* Thread Life Cycle : https://beginnersbook.com/2013/03/thread-life-cycle-in-java/
+		 * Threads can go through five different status in its life cycle as shown below.
+		 * 1. New: A new thread is created but not working. A thread after creation and before invocation of start() method will be in new state.
+		 * 2. Runnable: A thread after invocation of start() method will be in runnable state. A thread in runnable state will be available for thread scheduler.
+		 * 3. Running: A thread in execution after thread scheduler select it, it will be in running state.
+		 * 4. Blocked: A thread which is alive but not in runnable or running state will be in blocked state. A thread can be in blocked state because of suspend(), sleep(), wait() methods or implicitly by JVM to perform I/O operations.
+		 * 5. Dead: A thread dies naturally when the run() method exits. We can use stop() method to forcefully kill a thread.
+		 */
+		/* Methods of ThreadClass
+		 * public void getState() – It returns the state of the thread.
+		 * final boolean isAlive() – Check if the thread is alive.
+		 */
+/* Synchronization is the capability to control the access of multiple threads to any shared resources.
+	 * 1) Process Synchronization: It means sharing system resources by processes in a such a way that, 
+	 * Concurrent access to shared data is handled thereby minimizing the chance of inconsistent data.
+	 * 2) Thread Synchronization
+	 * 2.1 Mutual Exclusive (only 1 option from below is required for Synchronization)
+	 * 2.1.1 Using synchronized method
+	 * 2.1.2 Using synchronized block
+	 * 2.1.3 Static synchronization
+	 * 2.2 Inter-thread Communication--(Cooperation)
+	 */
+
+// xTaskCreate(Function to be called, "Name of task", Stack size in words, Arguments(pvParameters to pass), Task priority, Task handle); 
+// Task handles: vTaskDelete, Suspend, Resume
+// Low priority numbers denote low priority tasks. The idle task has priority zero
+// Tasks can be created before or after starting the RTOS scheduler
+// vTaskStartScheduler(); // Start the real time scheduler.
+// There is no instruction in the loop section of the code. // Because each task executes on interrupt after specified time

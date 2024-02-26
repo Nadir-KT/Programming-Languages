@@ -27,5 +27,8 @@ int main(void)
     printf("%f", sum); // 2.500000
     // When you declare a constant variable, it must be assigned with a value
     const int myNum = 15;  // C Constants (myNum will always be 15)
+	typedef unsigned long ulong; //typedef type newname; create a new name for an existing type
+	ulong distance=10;
+	printf("\n%d", distance);
 	return 0;
 }

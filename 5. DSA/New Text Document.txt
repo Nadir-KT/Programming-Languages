@@ -11,3 +11,6 @@ https://www.h-schmidt.net/FloatConverter/IEEE754.html
 https://www.tutorialspoint.com/format-specifiers-in-c
 https://onlinetoolz.net/unsigned-signed
 https://cplusplus.com/doc/tutorial/preprocessor/
+
+http://www.btechsmartclass.com/data_structures/introduction-to-algorithms.html
+https://techvidvan.com/tutorials/learn-data-structures/

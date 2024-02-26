@@ -1,6 +1,8 @@
 #include<stdio.h>
+//A set of named constants or enumerators that represent a collection of connected values can be defined in C using the enumeration data type (enum). Enumerations give you the means to give names that make sense to a group of integral values, which makes your code easier to read and maintain.
 int main() {
  enum week{ Monday =1, Tuesday, Wednesday=5, Thursday} v,h; //enum enum-name { list of names } var-list;
+ //By default, the value of each constant is it’s index (starting at zero), though this can be changed.
  v = Tuesday;
  printf("Day = %d\n", v);
  enum { A= 3, B , C , Z = 400, X, Y };
@@ -10,7 +12,7 @@ int main() {
  printf("X = %d \t Y = %d\n", X,Y);
  printf("Thursday/Tuesday = %d\n", Thursday/Tuesday);
  enum week day;
- day = Wednesday;
+ day = Wednesday; //constant value, cannot redeclare
  printf("Day = %d\n", day);
  return 0;
 }
