@@ -1,0 +1,18 @@
+Key OOP concepts:
+
+Encapsulation: Binding code and data together in an object. Keeps details private and exposes selected information.  
+
+Inheritance: Child classes inherit properties and behaviors from parent classes. Allows code reuse.
+
+Abstraction: Hiding complex implementation details, exposing only essential features. Achieved via abstract classes and interfaces.
+
+Polymorphism: Entities can take different forms. Method overriding allows subclasses to override parent methods. Method overloading provides same method name with different parameters.
+
+In summary:
+
+- Encapsulation bundles code and data in objects, hiding implementation details
+- Inheritance enables code reuse through parent-child class relationships
+- Abstraction focuses on essential features by hiding complexity
+- Polymorphism allows objects to exhibit different forms and behaviors
+
+These core OOP principles enable modular and reusable code through interfaces, inheritance, and object composition. They provide flexibility while managing complexity.
