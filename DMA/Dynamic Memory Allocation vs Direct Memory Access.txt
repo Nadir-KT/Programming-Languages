@@ -1,0 +1,24 @@
+**Direct Memory Access (DMA)** is a data transfer technique used in microcontrollers and computers. Let's explore what DMA is and how it works:
+
+1. **What is DMA?**
+   - **DMA** stands for **Direct Memory Access**.
+   - It is a hardware mechanism that allows **I/O devices** (such as peripherals, sensors, or external memory) to **communicate directly with the main memory** without involving the **Central Processing Unit (CPU)**.
+   - Instead of the CPU handling data transfers, a dedicated **DMA controller** takes over this task, resulting in faster and more efficient data movement.
+
+2. **How Does DMA Work?**
+   - When an I/O device needs to transfer data to or from memory, it sends a request to the DMA controller.
+   - The DMA controller initiates the data transfer based on the **start address**, the **number of words** to be transferred, and the **direction** (read or write).
+   - It performs the requested function without CPU intervention, bypassing steps like opcode fetching, decoding, and address calculations.
+   - Once the entire block of data is transferred, the DMA controller raises an **interrupt signal** to inform the CPU that the operation is complete.
+
+3. **Advantages of DMA:**
+   - **Faster Data Transfer**: DMA eliminates CPU overhead, leading to high data transfer rates between peripherals and memory.
+   - **Reduced CPU Load**: The CPU can focus on other tasks while DMA handles data movement.
+   - **Efficient for Bulk Data**: DMA efficiently transfers large blocks of data, such as video frames or audio samples.
+
+In summary, DMA streamlines data transfers, improves system efficiency, and allows I/O devices to directly access memory. It's a crucial feature in microcontrollers and modern computers¹.
+
+Source: Conversation with Bing, 3/2/2024
+(1) Direct Memory Access (DMA) Introduction - Microcontrollers Lab. https://microcontrollerslab.com/dma-introduction-working-programming-mode-arbitration-advantages/.
+(2) STM32 DMA Tutorial How to Use Direct Memory Access - Microcontrollers Lab. https://microcontrollerslab.com/stm32-dma-tutorial-direct-memory-access/.
+(3) Direct Memory Access (DMA) Controller in Computer Architecture. https://www.geeksforgeeks.org/direct-memory-access-dma-controller-in-computer-architecture/.
