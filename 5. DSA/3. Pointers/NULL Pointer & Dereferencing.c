@@ -1,0 +1,1 @@
+/* A NULL pointer is a specific value, indicating that a pointer doesn't point to a valid address. A void pointer is a data type that doesn't specify any particular data type, but it's used to point to data of any type. */
