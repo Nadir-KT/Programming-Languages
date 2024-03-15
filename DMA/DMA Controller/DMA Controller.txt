@@ -1,0 +1,2 @@
+https://www.geeksforgeeks.org/direct-memory-access-dma-controller-in-computer-architecture/
+https://varshaaks.wordpress.com/2020/06/01/dma-controller/
