@@ -1,0 +1,3 @@
+batch/Make/CMake file: https://www.youtube.com/playlist?list=PLEg2mgYz66IOcHRvvUDf9O1ZCGy58M1Bt 
+https://developer.arm.com/downloads/-/gnu-rm
+C:\Program Files (x86)\GNU Tools Arm Embedded_v7\7 2018-q2-update\bin
