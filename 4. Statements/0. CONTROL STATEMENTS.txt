@@ -208,7 +208,7 @@ goto syntax: Forward Jump
    
 goto syntax: Backward Jump
 --------------------------
-|->label_name;
+|->label_name:
 |  statements;
 |<-goto label_name; 
    statement1;
