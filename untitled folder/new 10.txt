@@ -1,0 +1,391 @@
+Relevant Exp:
+IoT:
+Embedded System:
+Security:
+UART, I2C, JTAG, MQTT, CoAP, HTTP:
+ARM/MIPS/x86 code architecture:
+PCB reversing:
+BLE, WIFI, LoRa, DSP, SDR:
+industrial IoT (IIoT) security :
+Proficiency in programming languages commonly used in embedded systems (C/C++, Python)- In which languages & how many years?
+
+Position :  IoT/Embedded Security Engineer
+
+No of resources : 1 nos
+
+Experience: 5 – 8 Yrs
+
+Role :  IoT/Embedded Security Engineer
+
+Location: Whitefield, Bangalore
+
+Position Overview:
+We are seeking a highly skilled and motivated IoT / Embedded Security Engineer to join our team. The ideal candidate must have a strong background in IoT / embedded systems security, with a proven track record in identifying vulnerabilities and implementing robust security measures.
+
+Roles and Responsibilities:
+Conduct security assessments and risk analysis of embedded medical devices.
+Develop and implement security protocols and solutions for medical devices.
+Design and execute penetration testing and vulnerability assessments.
+Research and stay updated on emerging threats, vulnerabilities, and security trends in IoT and embedded systems.
+Collaborate with cross-functional teams to integrate security measures into the development lifecycle of products.
+Provide technical guidance and support to internal teams on security best practices.
+Participate in the design and architecture of secure IoT and embedded systems.
+Mandatory Skills:
+Bachelor's or Master's degree in Electrical Engineering, Computer Science or Electronic field.
+Proven experience (5 years) in IoT and embedded systems security.
+Strong knowledge of IoT protocols (e.g., UART, I2C, JTAG, MQTT, CoAP, HTTP) and embedded system architecture
+Experience with reverse engineering ARM/MIPS/x86 code architecture.
+Hands on with hardware attacks such as PCB reversing, Component identification, Side channel attacks, memory extraction methods.
+Knowledge of radio frequency (RF) protocols and related security implications such as BLE, WIFI, LoRa, DSP, SDR, etc.
+Understanding of industrial IoT (IIoT) security considerations.
+Experience with various hardware security assessment tools/frameworks.
+Familiarity with hardware security concepts such as secure boot, encryption, and secure firmware updates.
+Proficiency in programming languages commonly used in embedded systems (C/C++, Python).
+Proactive, problem-solver and the ability to work independently and within a team.
+Good to Have:
+
+Understanding of cryptographic algorithms and protocols.
+Knowledge of exploit development techniques, buffer overflows, and other memory corruption vulnerabilities applicable to embedded systems.
+Knowledge of secure coding practices and principles specific to embedded systems, including memory management and input validation.
+Familiarity with regulatory compliance and standards in IoT security.
+Any certification in IoT security, Embedded device security or similar, is a preferred
+
+Q1: Can you briefly introduce yourself and explain your experience in IoT and embedded systems security?
+
+Q3: Can you explain some common security threats in IoT and embedded systems?  
+A3: Some common threats include firmware vulnerabilities, insecure boot mechanisms, lack of encryption, side-channel attacks, and insecure communication protocols. Attackers often exploit debugging interfaces like JTAG and UART, or use reverse engineering techniques to extract firmware and find vulnerabilities.*  
+
+Q4: How would you secure an embedded device from unauthorized access?
+A4: I would implement a multi-layered approach that includes secure boot, encrypted firmware updates, disabling unused hardware interfaces, access control mechanisms, and using cryptographic authentication for device communication. Additionally, regular vulnerability assessments and penetration testing would help identify and mitigate risks.
+
+Q5: Can you explain how UART, JTAG, and I2C can be exploited in an embedded system, and how you would mitigate these risks?
+A5: UART can be exploited to gain root shell access, JTAG allows debugging and full control over the device, and I2C can be used for unauthorized data retrieval. To mitigate these, I would disable or restrict access to these interfaces, use authentication for debugging interfaces, and ensure secure boot is in place to prevent unauthorized firmware modification.
+ 
+Q6: How would you perform a penetration test on an embedded device?
+A6: I would follow these steps: 
+1. Identify the attack surface (hardware interfaces, software vulnerabilities, network communication, etc.).  
+2. Perform firmware analysis using reverse engineering techniques (binwalk, Ghidra, IDA Pro). 
+3. Test hardware security using JTAG/UART debugging and memory dumping methods.
+4. Analyze communication protocols for weaknesses (e.g., sniffing BLE, MQTT security issues).
+5. Attempt side-channel attacks or fault injection techniques if applicable.
+6. Report findings and suggest mitigation strategies.
+
+Q8: Can you explain the importance of secure boot and how you would implement it in an embedded system?
+A8: Secure boot ensures that only authenticated and signed firmware is executed, preventing unauthorized modifications. It is implemented by storing a cryptographic hash of the firmware in secure storage and verifying it at boot time using a hardware root of trust. If the hash does not match, the boot process is halted to prevent execution of malicious code.
+
+Q9: How do you handle secure firmware updates in IoT devices?
+A9: Secure firmware updates should use end-to-end encryption and authentication to prevent tampering. The process includes:
+- *Digitally signing the firmware image using asymmetric cryptography.*  
+- *Verifying the signature before flashing the update.*  
+- *Encrypting the firmware during transmission.*  
+- *Implementing rollback protection to prevent downgrades to vulnerable versions.*  
+
+Q10: Suppose you are assessing a medical IoT device, and you discover an open UART interface that provides root shell access. What steps would you take?**  
+*A10: I would immediately report the issue and recommend disabling UART in production firmware. If debugging is required, I would suggest using a secure authentication mechanism. I would also check for other potential attack vectors, enforce access control policies, and ensure that no sensitive data is exposed through UART.*  
+
+Q11: You have detected an insecure BLE communication issue in a wearable medical device. How would you approach fixing it?**  
+*A11: I would analyze the BLE security settings and enforce authentication and encryption (AES-CCM). I would disable unauthenticated pairing modes, ensure secure key exchange mechanisms, and implement device whitelisting to prevent unauthorized connections.*
+
+### **Secure Coding & Cryptography**  
+
+**Q11: How would you implement AES encryption in an embedded system with limited resources?**  
+*A11: Use lightweight cryptographic libraries like **TinyAES** or **mbedTLS** to minimize resource usage. Example AES-128 encryption:*  
+```c
+#include "aes.h"
+struct AES_ctx ctx;
+AES_init_ctx(&ctx, key);
+AES_ECB_encrypt(&ctx, data);
+```
+- Use **hardware-accelerated encryption** if available.  
+- Avoid **storing keys in plaintext**.  
+
+**Q12: What is a race condition? How would you fix it in an embedded system?**  
+*A12: A race condition occurs when two threads or interrupts access a shared resource simultaneously, leading to unpredictable behavior. Fix it by:*  
+- Using **atomic operations**  
+- Disabling **interrupts** while modifying critical data  
+- Implementing **mutexes/semaphores** for shared resources  
+
+---
+
+### **Advanced Questions (Reverse Engineering & Exploits)**  
+
+**Q13: How would you analyze an unknown embedded firmware binary?**  
+*A13: The process includes:*  
+- Extracting the firmware using **binwalk**  
+- Disassembling it using **IDA Pro or Ghidra**  
+- Identifying functions and symbols via **strings & objdump**  
+- Checking for security vulnerabilities like hardcoded credentials  
+
+**Q14: What is Return-Oriented Programming (ROP), and why is it a security risk in embedded systems?**  
+*A14: ROP is an exploit technique where an attacker uses existing code sequences (gadgets) to execute arbitrary code without injecting new code. Mitigation includes:*  
+- **Enabling NX bit (No-Execute memory protection)**  
+- **Using Address Space Layout Randomization (ASLR)**  
+- **Implementing stack canaries**  
+
+---
+
+### **Practical Coding Problems**  
+
+**Q15: Write a C function to swap two variables without using a temporary variable.**  
+```c
+void swap(int *a, int *b) {
+    *a = *a ^ *b;
+    *b = *a ^ *b;
+    *a = *a ^ *b;
+}
+```
+
+**Q16: Implement a simple CRC32 checksum calculation for data integrity in an embedded system.**  
+```c
+#include <stdint.h>
+uint32_t crc32(uint32_t crc, const uint8_t *data, size_t len) {
+    crc = ~crc;
+    for (size_t i = 0; i < len; i++) {
+        crc ^= data[i];
+        for (int j = 0; j < 8; j++)
+            crc = (crc >> 1) ^ (0xEDB88320U & -(crc & 1));
+    }
+    return ~crc;
+}
+```
+- Used in **secure bootloaders** for verifying firmware integrity.  
+
+---
+
+**Q2: What is the difference between `const`, `static`, and `volatile` in C?**  
+**A2:**  
+- `const`: Defines a read-only variable whose value cannot be changed after initialization.  
+- `static`: Keeps a variable's scope limited to a function or file but retains its value between function calls.  
+- `volatile`: Prevents compiler optimizations on a variable that may change asynchronously.  
+
+**Example:**  
+```c
+const int threshold = 100;  // Read-only variable
+static int counter = 0;     // Retains value between function calls
+volatile int status_flag;    // Prevents optimization in embedded systems
+```
+
+---
+
+### **2. Memory Management and Embedded Considerations**  
+
+**Q3: What are memory sections in embedded C, and how are they used?**  
+**A3:** In an embedded system, memory is typically divided into:  
+1. **Text Segment:** Stores code instructions.  
+2. **Data Segment:** Stores initialized global and static variables.  
+3. **BSS Segment:** Stores uninitialized global/static variables.  
+4. **Heap:** Used for dynamic memory allocation (`malloc`, `free`).  
+5. **Stack:** Stores local variables and function call context.  
+
+**Example:**  
+```c
+int global_var = 10;  // Stored in data segment
+static int static_var; // Stored in BSS
+void func() {
+    int local_var;  // Stored in stack
+}
+```
+
+---
+
+**Q4: What are memory leaks, and how can they be avoided in C?**  
+**A4:** A memory leak occurs when dynamically allocated memory is not freed, causing unnecessary memory consumption.  
+
+**Prevention:**  
+- Always `free()` memory after using `malloc()`, `calloc()`, or `realloc()`.  
+- Use static analysis tools like Valgrind to detect leaks.  
+- In embedded systems, minimize dynamic memory usage since heap fragmentation can lead to unpredictable behavior.  
+
+**Example:**  
+```c
+char *ptr = (char *)malloc(100);  
+if (ptr) {
+    // Use memory
+    free(ptr);  // Prevent memory leak
+}
+```
+
+---
+
+### **3. Pointers and Security Issues**  
+
+**Q5: What are dangling pointers, and how do you prevent them?**  
+**A5:** A **dangling pointer** is a pointer that refers to a memory location that has been freed or is invalid.  
+
+**Prevention:**  
+- Set pointers to `NULL` after `free()`.  
+- Avoid returning addresses of local variables from functions.  
+- Use tools like AddressSanitizer to detect dangling pointers.  
+
+**Example:**  
+```c
+int *ptr = (int *)malloc(sizeof(int));
+free(ptr);
+ptr = NULL;  // Prevents dangling pointer
+```
+
+---
+
+**Q6: How do buffer overflows occur, and how can they be prevented?**  
+**A6:** A **buffer overflow** occurs when data is written beyond the allocated memory, potentially leading to memory corruption, crashes, or security vulnerabilities (e.g., stack smashing).  
+
+**Prevention:**  
+- Use `snprintf()` instead of `sprintf()`.  
+- Implement boundary checks.  
+- Use stack canaries and memory-safe functions.  
+- Enable compiler protections (`-fstack-protector`, `-D_FORTIFY_SOURCE=2`).  
+
+**Example (Unsafe Code - Vulnerable to Overflow):**  
+```c
+char buffer[10];
+strcpy(buffer, "This is a very long string");  // Overflow occurs
+```
+**Example (Safe Code - Prevents Overflow):**  
+```c
+char buffer[10];
+snprintf(buffer, sizeof(buffer), "Safe String");  // Prevents overflow
+
+---
+
+### **4. Embedded Security & Cryptography**  
+
+**Q7: How do you implement secure firmware updates in C?**  
+**A7:** Secure firmware updates ensure authenticity and integrity using cryptographic techniques.  
+
+**Steps:**  
+1. **Digital Signature Verification** using RSA/ECDSA.  
+2. **Integrity Check** using SHA-256 hash.  
+3. **Secure Bootloader** that verifies firmware before executing.  
+4. **AES Encryption** to prevent tampering during transfer.  
+
+**Example (SHA-256 Hashing):**  
+```c
+#include <openssl/sha.h>
+unsigned char hash[SHA256_DIGEST_LENGTH];
+SHA256((unsigned char *)firmware_data, firmware_size, hash);
+```
+
+---
+
+**Q8: What is the difference between symmetric and asymmetric encryption, and when would you use each in an IoT device?**  
+**A8:**  
+- **Symmetric Encryption (AES, DES)**: Uses the same key for encryption and decryption. Faster but requires secure key distribution. Used for **secure communication between IoT devices**.  
+- **Asymmetric Encryption (RSA, ECC)**: Uses a public key for encryption and a private key for decryption. Used for **firmware signing and key exchange**.  
+
+**Example (AES Encryption in C using OpenSSL):**  
+```c
+#include <openssl/aes.h>
+AES_KEY enc_key;
+unsigned char key[16] = "1234567890abcdef";
+unsigned char plaintext[16] = "Hello IoT!";
+unsigned char ciphertext[16];
+
+AES_set_encrypt_key(key, 128, &enc_key);
+AES_encrypt(plaintext, ciphertext, &enc_key);
+```
+
+---
+
+### **5. Multithreading and Real-Time Systems**  
+
+**Q9: How does a watchdog timer work in embedded systems, and how do you implement it in C?**  
+**A9:** A watchdog timer (WDT) is a hardware timer that resets the system if the software fails to "pet" it periodically, preventing system hangs.  
+
+**Implementation (Pseudocode):**  
+```c
+void watchdog_init() {
+    WDT_ENABLE();  // Enable watchdog timer
+}
+
+void watchdog_feed() {
+    WDT_RESET();  // Reset watchdog timer
+}
+
+void main() {
+    watchdog_init();
+    while (1) {
+        watchdog_feed();  // Keep feeding to prevent reset
+    }
+}
+```
+
+---
+
+**Q10: What are race conditions in embedded systems, and how do you prevent them in C?**  
+**A10:** A **race condition** occurs when multiple threads access shared resources without synchronization, leading to unpredictable behavior.  
+
+**Prevention:**  
+- Use **mutexes** or **semaphores** to protect shared resources.  
+- Implement **atomic operations** when modifying critical variables.  
+
+**Example (Using Mutex):**  
+```c
+#include <pthread.h>
+
+pthread_mutex_t lock;
+int shared_resource = 0;
+
+void *thread_function(void *arg) {
+    pthread_mutex_lock(&lock);
+    shared_resource++;
+    pthread_mutex_unlock(&lock);
+}
+
+int main() {
+    pthread_mutex_init(&lock, NULL);
+    pthread_t t1, t2;
+    pthread_create(&t1, NULL, thread_function, NULL);
+    pthread_create(&t2, NULL, thread_function, NULL);
+    pthread_join(t1, NULL);
+    pthread_join(t2, NULL);
+    pthread_mutex_destroy(&lock);
+}
+```
+
+---
+
+### **Final Thoughts & Questions from Candidate (2 minutes)**  
+At the end of the interview, the interviewer can ask:  
+**"Do you have any questions for us?"**  
+This allows the candidate to inquire about the team structure, challenges, or future security projects.  
+
+
+#include <stdio.h>
+#include<string.h>
+#include<ctype.h>
+//abcd efgh - I/P
+//dcba hgfe -  O/P
+ 
+void ReverseString(char str[])
+{
+int left=0;
+int right=strlen(str)-1;
+while(left<right)
+{
+     if(isspace(str[left]))
+     {
+         left++;
+         continue;
+     }
+    if(isspace(str[right]))
+     {
+         right--;
+         continue;
+     }
+     char Temp=str[left];
+     str[left]=str[right];
+     str[right]=Temp;
+     left++;
+     right--;
+}
+
+}
+ 
+int main() {
+    char str[]="abcd efgh";
+    printf("Original String : %s",str);
+    ReverseString(str);
+    printf("\nReversed String : %s",str);
+ 
+    return 0;
+}

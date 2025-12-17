@@ -1,0 +1,189 @@
+CODING - OK  SECURE&CRC&AES- DOWN,  BLE/WIFI/LTE - DOWN,  RTOS - DOWN
+Q1: Can you briefly introduce yourself and explain your experience in IoT and embedded systems security?
+Q3: Can you explain some common security threats in IoT and embedded systems? 
+Q4: How would you secure an embedded device from unauthorized access? - HSM
+Q7: How do you implement secure firmware updates in C?, Write a code to impliment AES encryption
+Q16: Implement a simple CRC32 checksum calculation for data integrity in an embedded system.- Used in **secure bootloaders** for verifying firmware integrity.  
+Q6: How would you perform a penetration test on an embedded device?
+Q8: Can you explain the importance of secure boot and how you would implement it in an embedded system?
+Q9: How do you handle secure firmware updates in IoT devices?
+Q11: You have detected an insecure BLE communication issue in a wearable medical device. How would you approach fixing it?
+FuSa RPN(Risk Priority Number)=Severity×Occurrence×Detection
+ASIL Level:	Severity (S)	Exposure (E)	Controllability (C)	
+GATT (Generic Attribute Profile): Defines how devices exchange data using services and characteristics.
+GAP (Generic Access Profile): Handles device visibility, pairing, and connection management.
+What is UUID in BLE? GATT & GAP
+Q11: How would you implement AES encryption in an embedded system with limited resources?
+Q12: What is a race condition? How would you fix it in an embedded system?
+Q10: What are race conditions in embedded systems, and how do you prevent them in C?
+Q13: How would you analyze an unknown embedded firmware binary?
+
+Q2: What is the difference between `const`, `static`, and `volatile` in C?
+Q3: What are memory sections in embedded C, and how are they used?
+Q4: What are memory leaks, and how can they be avoided in C?
+5.	What is Segmentation Fault in C ?
+Q5: What are dangling pointers, and how do you prevent them?
+Q6: How do buffer overflows occur, and how can they be prevented?
+Q9: How does a watchdog timer work in embedded systems, and how do you implement it in C?
+
+https://en.wikipedia.org/wiki/OSI_model
+Working of Networking Systems:- Networking systems operate using the OSI model:  
+1. **Physical Layer:** Transmits raw bits over physical media.  
+2. **Data Link Layer:** Error detection, framing (e.g., Ethernet).  
+3. **Network Layer:** Routing and addressing (e.g., IP).  
+4. **Transport Layer:** Reliable data delivery (e.g., TCP).  
+5. **Session Layer:** Manages sessions (e.g., TLS).  
+6. **Presentation Layer:** Data encoding (e.g., encryption).  
+7. **Application Layer:** User-facing protocols (e.g., HTTP, MQTT).
+---
+operationas of L2, L3, L4 protocols, switching, routing, gateway and service discovery:
+1. L2 (Data Link): Frame transmission (e.g., Ethernet, Wi-Fi).
+2. L3 (Network): Routing and IP addressing.
+3. L4 (Transport): Data transfer using TCP/UDP.
+---
+operationas of L2, L3 and L4 level security:
+1. L2: MAC address filtering, VLANs.
+2. L3: IPsec for encryption.
+3. L4: Secure transport protocols like TLS/DTLS.
+---
+OSI Model Security Implementation:
+1. Physical Layer: Secure physical access, encrypted transmission. (e.g., firewalls).  
+2. Data Link Layer: MAC filtering, encryption, access control. (e.g., WPA, MAC address filtering, VLANs).
+3. Network Layer: IPsec (Internet Protocol Security), NAT (Network Address Translation), firewalls. (e.g., VPN, ). 
+4. Transport Layer: TLS/SSL (Transport Layer Security/Secure Sockets Layer), session security. (e.g., HTTPS, SFTP). 
+5. Session Layer: Session protection, authentication. (e.g., Secure session tokens)
+6. Presentation Layer: Encryption, data integrity checks.
+7. Application Layer: Web security, application firewalls, authentication. (e.g., OAuth, JWT (JSON Web Tokens)). 
+---
+What is NAT in networking ?
+NAT (Network Address Translation): Translates private IP addresses to a single public IP address for devices to communicate over the internet.
+
+RTOS
+----
+
+Common Issues in RTOS IPC
+1. Priority Inversion – A low-priority task holds a resource needed by a high-priority task.  
+   - Solution: Use priority inheritance.  
+2. Deadlocks – Circular resource dependencies between tasks.  
+   - Solution: Use timeouts and resource ordering.  
+3. Race Conditions – Multiple tasks accessing shared data without proper synchronization.  
+   - Solution: Use mutexes or critical sections.  
+4. Message Queue Overflow – Too many messages causing loss of data.  
+   - Solution: Implement queue size limits and message discarding strategies.  
+5. High Latency – Delays in message delivery due to blocking IPC mechanisms.  
+   - Solution: Use non-blocking IPC methods where possible.  
+
+Conditional Lock: Task locks a resource only when a condition(if,else,etc..) is met, preventing unnecessary blocking.
+Preemption Priority: A high-priority task interrupts (preempts) a currently running lower-priority task before it completes execution.
+Priority Inheritance: Mechanism used to prevent priority inversion by temporarily increasing the priority of a lower-priority task that holds a resource needed by a higher-priority task.
+Deadlocks: Processes stuck in a circular wait for resources.
+Concurrency: Multiple processes or threads making progress simultaneously.
+Race Conditions: Multiple tasks accessing shared resources without proper synchronization.
+Thread-Safe: Code or functions that operate correctly in the presence of multiple threads without introducing race conditions.
+Priority Inversion: A higher-priority task waits for a lower-priority one to release resources.
+Starvation: A process/thread is perpetually denied access to resources due to other higher-priority threads/processes.
+Spinning: Situation where a thread or process continuously checks for a condition (e.g., waiting for a lock to be released) without releasing the CPU.
+Latency: High overhead in message-passing mechanisms.
+
+linux
+-----
+Steps involved in Socket Programming
+Linux kernel modules, system calls, and memory management.
+
+Linux Device Drivers
+	1. Application to read from a driver: Use file operations like `open()`, `read()`, and `ioctl()` to communicate with device drivers.
+	2. Linux System Control Drivers: Implemented using `sysfs`, `procfs`, or `ioctl` for user-space communication with kernel drivers.
+
+Threads:
+	1. How to create a thread: Use `pthread_create()` in Linux.
+	   ```c
+	   pthread_t thread_id;
+	   pthread_create(&thread_id, NULL, thread_function, NULL);
+	   ```
+	2. How to communicate within threads: Use shared memory, mutexes, semaphores, or condition variables.
+
+System Calls:
+- Interface for user-space applications to request services from the kernel (e.g., `read`, `write`, `fork`, `exec`).
+- How to switch any application to kernel: Use system calls to interface with the kernel.
+
+Virtual Memory in Embedded C and how can it be implemented?
+Virtual memory allows programs to address more memory than what is physically available in the system by using a technique called paging or segmentation. It allows the operating system to provide an illusion of a large, continuous memory space even though physical memory may be limited.
+
+---
+Linux Kernel Modules:
+- Dynamically loadable pieces of code to extend kernel functionality.  
+  Example: Writing a simple `hello` module.
+   ```c
+   static int __init hello_init(void) { printk("Hello Kernel!"); return 0; }
+   static void __exit hello_exit(void) { printk("Goodbye Kernel!"); }
+   ```
+---
+Linux Kernel Networking:
+- Covers packet filtering, routing, and netfilter modules (e.g., `iptables`).
+
+OOPS
+----
+C, C++ difference 
+- C: Procedural, no OOP, no STL, supports structures.  
+- C++: Supports OOP, classes, objects, STL, and advanced memory management.
+
+ALL OOPS Concepts:
+1. Encapsulation: Wrapping data and methods in a class.
+2. Inheritance: Deriving new classes from existing ones.  
+   Example:
+   ```cpp
+   class Base {
+       public: void show() { cout << "Base"; }
+   };
+   class Derived : public Base {};
+   ```
+3. Polymorphism: Same interface, different implementation (overloading/overriding).  
+4. Abstraction: Hiding details and exposing only essentials.
+
+Constructors and Destructors:
+1. Constructor: Initializes class objects.
+   ```cpp
+   class A { A() { cout << "Constructor"; } };
+   ```
+2. Destructor: Cleans up resources when the object goes out of scope.
+
+What is a Class and an Object?
+- **Class:** A blueprint for creating objects. It defines properties (data members) and behaviors (methods).  
+   Example:
+   ```cpp
+   class Car {
+       public:
+           string brand;
+           void start() { cout << "Car started"; }
+   };
+   ```
+- **Object:** An instance of a class that holds specific values.  
+   Example:
+   ```cpp
+   Car myCar;
+   myCar.brand = "Tesla";
+   myCar.start(); // Outputs: Car started
+   ```
+   
+Questions
+---------
+deadlock prevention, ipc overhead, RTOS Kernal functions
+how to find there is a memory leak, SPI Modes, use of break, continue, goto statement
+string operations: strcat(str1, str2);  // Concatenates str2 to str1, strcpy(str1, "name"); memcpy(dest, src, size)
+size of long, double etc..., enum, strstr(), strncpy(), strcpy(), snprintf()
+static int j = i++; //error: initializer element is not constant  
+callig main from other functions is illegal
+
+Program - Pending 4,7,8,9
+-------
+1. Bitwise operator; Toggle a bit in an integer, toggle alternative bits,
+2. Program to count the number of bits set in a number
+3. Allocate memory to 2d array using dynamic memory allocation put some values and print
+4. String Reverse Challenges, program reversing a string using pointers (ex: abcd efgh -> dcba hgfe)
+5. Take a number find if it is a prime if not find the next prime number
+6. Allocate a dynamic memory
+7. Create a list dynamically. In that structure, we have member as roll_no, name.
+8. call back function by using array of function pointers
+A callback function is a function that is passed as an argument to another function and is executed at a later time, typically when a certain condition or event occurs. In C, you can implement callback functions using function pointers.
+
+9. Merge Two Sorted Linked Lists.

@@ -1,0 +1,148 @@
+Here are some **C programming questions** tailored for an **IoT/Embedded Security Engineer** role:  
+
+---
+
+### **Basic & Core C Questions**  
+
+**Q1: What are the differences between `volatile` and `const` in C? How would you use `volatile` in an embedded system?**  
+*A1: `volatile` tells the compiler not to optimize the variable because its value can change unexpectedly, such as in memory-mapped I/O registers, interrupt service routines, or shared variables in multi-threaded applications. `const` makes a variable read-only. Example usage:*  
+```c
+volatile int sensor_data; // Prevents compiler optimization for real-time sensor updates
+```
+
+**Q2: How does memory allocation work in C? What are the risks of using `malloc` in embedded systems?**  
+*A2: Memory is allocated dynamically using `malloc`, but embedded systems often have limited RAM, and `malloc` can cause fragmentation or memory leaks. Using stack-based or static allocation is generally preferred in embedded environments.*  
+
+**Q3: What happens when a null pointer is dereferenced? How can you prevent null pointer dereferences?**  
+*A3: Dereferencing a null pointer causes a segmentation fault, leading to undefined behavior or crashes. Preventative measures include:*  
+- Always initializing pointers  
+- Checking if a pointer is `NULL` before dereferencing  
+- Using static analysis tools to detect potential null dereferences  
+
+---
+
+### **Embedded C & Memory Management**  
+
+**Q4: Explain the difference between stack and heap memory in C. Why is stack memory preferred in embedded systems?**  
+*A4: The stack is a limited, fast, and automatically managed memory space, while the heap is dynamically allocated but can cause fragmentation and performance issues. Stack memory is preferred in embedded systems due to its deterministic behavior and efficiency.*  
+
+**Q5: What is a memory leak? How can you detect and prevent it in C?**  
+*A5: A memory leak occurs when dynamically allocated memory is not freed, leading to exhaustion of available memory. Prevention includes:*  
+- Always freeing memory using `free()`  
+- Using tools like Valgrind or static code analysis tools  
+- Avoiding unnecessary `malloc` calls in embedded applications  
+
+**Q6: What is the role of the `register` keyword in C? Is it still relevant in modern compilers?**  
+*A6: The `register` keyword suggests that the variable should be stored in a CPU register for faster access. However, modern compilers optimize this automatically, so its usage is largely obsolete.*  
+
+---
+
+### **Concurrency & Interrupt Handling**  
+
+**Q7: How do you ensure thread safety in embedded systems when multiple threads access a shared resource?**  
+*A7: Techniques include:*  
+- Using **mutexes** or **semaphores** to control access  
+- Disabling interrupts when modifying critical data  
+- Implementing **lock-free algorithms** using atomic operations  
+
+**Q8: What is an ISR (Interrupt Service Routine), and what are the key considerations while writing one?**  
+*A8: An ISR handles hardware or software interrupts. Best practices include:*  
+- Keeping ISRs **short and efficient**  
+- Avoiding **blocking functions** (e.g., `printf`, `malloc`)  
+- Using **volatile variables** to prevent compiler optimization  
+- Clearing the interrupt flag before returning  
+
+Example ISR for a timer interrupt:  
+```c
+volatile int flag = 0;
+void __attribute__((interrupt)) Timer_ISR() {
+    flag = 1;  // Set flag for main loop to process
+    // Clear interrupt flag (hardware-specific)
+}
+```
+
+---
+
+### **Pointer & Buffer Security (Critical for IoT Security)**  
+
+**Q9: What is a buffer overflow? How can it be exploited in embedded systems?**  
+*A9: A buffer overflow occurs when data exceeds allocated buffer space, leading to memory corruption. Attackers exploit this to overwrite return addresses and execute malicious code. Prevention strategies:*  
+- **Using `strncpy()` instead of `strcpy()`**  
+- **Enabling stack canaries**  
+- **Using memory-safe coding practices**  
+
+**Q10: What is a dangling pointer, and how do you prevent it?**  
+*A10: A dangling pointer points to freed or unallocated memory, causing undefined behavior. Prevent it by:*  
+- Setting pointers to `NULL` after `free()`  
+- Avoiding the use of local pointers outside their scope  
+
+---
+
+### **Secure Coding & Cryptography**  
+
+**Q11: How would you implement AES encryption in an embedded system with limited resources?**  
+*A11: Use lightweight cryptographic libraries like **TinyAES** or **mbedTLS** to minimize resource usage. Example AES-128 encryption:*  
+```c
+#include "aes.h"
+struct AES_ctx ctx;
+AES_init_ctx(&ctx, key);
+AES_ECB_encrypt(&ctx, data);
+```
+- Use **hardware-accelerated encryption** if available.  
+- Avoid **storing keys in plaintext**.  
+
+**Q12: What is a race condition? How would you fix it in an embedded system?**  
+*A12: A race condition occurs when two threads or interrupts access a shared resource simultaneously, leading to unpredictable behavior. Fix it by:*  
+- Using **atomic operations**  
+- Disabling **interrupts** while modifying critical data  
+- Implementing **mutexes/semaphores** for shared resources  
+
+---
+
+### **Advanced Questions (Reverse Engineering & Exploits)**  
+
+**Q13: How would you analyze an unknown embedded firmware binary?**  
+*A13: The process includes:*  
+- Extracting the firmware using **binwalk**  
+- Disassembling it using **IDA Pro or Ghidra**  
+- Identifying functions and symbols via **strings & objdump**  
+- Checking for security vulnerabilities like hardcoded credentials  
+
+**Q14: What is Return-Oriented Programming (ROP), and why is it a security risk in embedded systems?**  
+*A14: ROP is an exploit technique where an attacker uses existing code sequences (gadgets) to execute arbitrary code without injecting new code. Mitigation includes:*  
+- **Enabling NX bit (No-Execute memory protection)**  
+- **Using Address Space Layout Randomization (ASLR)**  
+- **Implementing stack canaries**  
+
+---
+
+### **Practical Coding Problems**  
+
+**Q15: Write a C function to swap two variables without using a temporary variable.**  
+```c
+void swap(int *a, int *b) {
+    *a = *a ^ *b;
+    *b = *a ^ *b;
+    *a = *a ^ *b;
+}
+```
+
+**Q16: Implement a simple CRC32 checksum calculation for data integrity in an embedded system.**  
+```c
+#include <stdint.h>
+uint32_t crc32(uint32_t crc, const uint8_t *data, size_t len) {
+    crc = ~crc;
+    for (size_t i = 0; i < len; i++) {
+        crc ^= data[i];
+        for (int j = 0; j < 8; j++)
+            crc = (crc >> 1) ^ (0xEDB88320U & -(crc & 1));
+    }
+    return ~crc;
+}
+```
+- Used in **secure bootloaders** for verifying firmware integrity.  
+
+---
+
+### **Conclusion**  
+These C programming questions cover core concepts, embedded security risks, and secure coding practices essential for an **IoT/Embedded Security Engineer**. Would you like me to add scenario-based C programming problems for real-world security challenges? 🚀

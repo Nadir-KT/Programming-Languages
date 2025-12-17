@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <string.h>
+
+// Function prototypes
+void sourceFunction(void);
+void destinationFunction(void* data, size_t size);
+
+int main() {
+    sourceFunction();
+    return 0;
+}
+
+void sourceFunction(void) {
+    // Local typedef structure
+    typedef struct {
+        int id;
+        char name[20];
+        float score;
+    } Student;
+
+    // Create and initialize a Student structure
+    Student student = {
+        .id = 1,
+        .name = "John Doe",
+        .score = 95.5
+    };
+
+    // Call destinationFunction and pass the structure
+    destinationFunction(&student, sizeof(Student));
+}
+
+void destinationFunction(void* data, size_t size) {
+    // Local typedef structure (same as in sourceFunction)
+    typedef struct {
+        int id;
+        char name[20];
+        float score;
+    } Student;
+
+    // Create a new Student structure
+    Student receivedStudent;
+
+    // Copy the data from the void pointer to the new structure
+    memcpy(&receivedStudent, data, size);
+
+    // Print the received data
+    printf("Received Student:\n");
+    printf("ID: %d\n", receivedStudent.id);
+    printf("Name: %s\n", receivedStudent.name);
+    printf("Score: %.2f\n", receivedStudent.score);
+}

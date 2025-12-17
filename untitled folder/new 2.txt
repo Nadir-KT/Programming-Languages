@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+typedef struct {
+  int x;
+  float y;
+  char name[20];
+} MyStruct;
+
+void copy_struct(MyStruct *dest, MyStruct src) {
+  dest->x = src.x;
+  dest->y = src.y;
+  strcpy(dest->name, src.name); // Assuming name is a null-terminated string
+}
+
+int main() {
+  MyStruct source = {10, 3.14, "Example"};
+  MyStruct destination;
+
+  copy_struct(&destination, source);
+
+  printf("Source: x = %d, y = %f, name = %s\n", source.x, source.y, source.name);
+  printf("Destination: x = %d, y = %f, name = %s\n", destination.x, destination.y, destination.name);
+
+  return 0;
+}

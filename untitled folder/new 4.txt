@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <string.h>
+
+typedef struct MyStruct {
+    int num;
+    char str[20];
+} MyStruct;
+
+void copyStruct(MyStruct *src, MyStruct *dest) {
+    memcpy(dest, src, sizeof(MyStruct));
+}
+
+void displayStruct(MyStruct structToDisplay) {
+    printf("Number: %d\n", structToDisplay.num);
+    printf("String: %s\n", structToDisplay.str);
+}
+
+int main() {
+    MyStruct struct1 = {5, "Hello, World!"};
+    MyStruct struct2;
+
+    copyStruct(&struct1, &struct2);
+
+    printf("Original struct:\n");
+    displayStruct(struct1);
+
+    printf("Copied struct:\n");
+    displayStruct(struct2);
+
+    return 0;
+}

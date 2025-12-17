@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+
+typedef struct {
+  int x;
+  float y;
+  char name[20];
+} MyStruct;
+
+void copy_struct(MyStruct *dest, MyStruct src) {
+  memcpy(dest, &src, sizeof(MyStruct));
+}
+
+int main() {
+  // ... Same code as method 1 ...
+  return 0;
+}

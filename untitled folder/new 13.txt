@@ -1,0 +1,210 @@
+Here are some **C programming questions and answers** specifically tailored for the **IoT/Embedded Security Engineer** role:  
+
+---
+
+### **1. Basics of C Programming**  
+
+**Q1: What are volatile variables in C, and why are they important in embedded systems?**  
+**A1:** A `volatile` variable tells the compiler that its value may change at any time without any action from the program. This is crucial in embedded systems where hardware registers, memory-mapped peripherals, or interrupt service routines (ISR) modify a variable asynchronously. Without `volatile`, the compiler may optimize out necessary reads/writes, leading to unexpected behavior.  
+
+**Example:**  
+```c
+volatile int sensor_value;  // Prevent compiler optimization
+```
+
+---
+
+**Q2: What is the difference between `const`, `static`, and `volatile` in C?**  
+**A2:**  
+- `const`: Defines a read-only variable whose value cannot be changed after initialization.  
+- `static`: Keeps a variable's scope limited to a function or file but retains its value between function calls.  
+- `volatile`: Prevents compiler optimizations on a variable that may change asynchronously.  
+
+**Example:**  
+```c
+const int threshold = 100;  // Read-only variable
+static int counter = 0;     // Retains value between function calls
+volatile int status_flag;    // Prevents optimization in embedded systems
+```
+
+---
+
+### **2. Memory Management and Embedded Considerations**  
+
+**Q3: What are memory sections in embedded C, and how are they used?**  
+**A3:** In an embedded system, memory is typically divided into:  
+1. **Text Segment:** Stores code instructions.  
+2. **Data Segment:** Stores initialized global and static variables.  
+3. **BSS Segment:** Stores uninitialized global/static variables.  
+4. **Heap:** Used for dynamic memory allocation (`malloc`, `free`).  
+5. **Stack:** Stores local variables and function call context.  
+
+**Example:**  
+```c
+int global_var = 10;  // Stored in data segment
+static int static_var; // Stored in BSS
+void func() {
+    int local_var;  // Stored in stack
+}
+```
+
+---
+
+**Q4: What are memory leaks, and how can they be avoided in C?**  
+**A4:** A memory leak occurs when dynamically allocated memory is not freed, causing unnecessary memory consumption.  
+
+**Prevention:**  
+- Always `free()` memory after using `malloc()`, `calloc()`, or `realloc()`.  
+- Use static analysis tools like Valgrind to detect leaks.  
+- In embedded systems, minimize dynamic memory usage since heap fragmentation can lead to unpredictable behavior.  
+
+**Example:**  
+```c
+char *ptr = (char *)malloc(100);  
+if (ptr) {
+    // Use memory
+    free(ptr);  // Prevent memory leak
+}
+```
+
+---
+
+### **3. Pointers and Security Issues**  
+
+**Q5: What are dangling pointers, and how do you prevent them?**  
+**A5:** A **dangling pointer** is a pointer that refers to a memory location that has been freed or is invalid.  
+
+**Prevention:**  
+- Set pointers to `NULL` after `free()`.  
+- Avoid returning addresses of local variables from functions.  
+- Use tools like AddressSanitizer to detect dangling pointers.  
+
+**Example:**  
+```c
+int *ptr = (int *)malloc(sizeof(int));
+free(ptr);
+ptr = NULL;  // Prevents dangling pointer
+```
+
+---
+
+**Q6: How do buffer overflows occur, and how can they be prevented?**  
+**A6:** A **buffer overflow** occurs when data is written beyond the allocated memory, potentially leading to memory corruption, crashes, or security vulnerabilities (e.g., stack smashing).  
+
+**Prevention:**  
+- Use `snprintf()` instead of `sprintf()`.  
+- Implement boundary checks.  
+- Use stack canaries and memory-safe functions.  
+- Enable compiler protections (`-fstack-protector`, `-D_FORTIFY_SOURCE=2`).  
+
+**Example (Unsafe Code - Vulnerable to Overflow):**  
+```c
+char buffer[10];
+strcpy(buffer, "This is a very long string");  // Overflow occurs
+```
+**Example (Safe Code - Prevents Overflow):**  
+```c
+char buffer[10];
+snprintf(buffer, sizeof(buffer), "Safe String");  // Prevents overflow
+```
+
+---
+
+### **4. Embedded Security & Cryptography**  
+
+**Q7: How do you implement secure firmware updates in C?**  
+**A7:** Secure firmware updates ensure authenticity and integrity using cryptographic techniques.  
+
+**Steps:**  
+1. **Digital Signature Verification** using RSA/ECDSA.  
+2. **Integrity Check** using SHA-256 hash.  
+3. **Secure Bootloader** that verifies firmware before executing.  
+4. **AES Encryption** to prevent tampering during transfer.  
+
+**Example (SHA-256 Hashing):**  
+```c
+#include <openssl/sha.h>
+unsigned char hash[SHA256_DIGEST_LENGTH];
+SHA256((unsigned char *)firmware_data, firmware_size, hash);
+```
+
+---
+
+**Q8: What is the difference between symmetric and asymmetric encryption, and when would you use each in an IoT device?**  
+**A8:**  
+- **Symmetric Encryption (AES, DES)**: Uses the same key for encryption and decryption. Faster but requires secure key distribution. Used for **secure communication between IoT devices**.  
+- **Asymmetric Encryption (RSA, ECC)**: Uses a public key for encryption and a private key for decryption. Used for **firmware signing and key exchange**.  
+
+**Example (AES Encryption in C using OpenSSL):**  
+```c
+#include <openssl/aes.h>
+AES_KEY enc_key;
+unsigned char key[16] = "1234567890abcdef";
+unsigned char plaintext[16] = "Hello IoT!";
+unsigned char ciphertext[16];
+
+AES_set_encrypt_key(key, 128, &enc_key);
+AES_encrypt(plaintext, ciphertext, &enc_key);
+```
+
+---
+
+### **5. Multithreading and Real-Time Systems**  
+
+**Q9: How does a watchdog timer work in embedded systems, and how do you implement it in C?**  
+**A9:** A watchdog timer (WDT) is a hardware timer that resets the system if the software fails to "pet" it periodically, preventing system hangs.  
+
+**Implementation (Pseudocode):**  
+```c
+void watchdog_init() {
+    WDT_ENABLE();  // Enable watchdog timer
+}
+
+void watchdog_feed() {
+    WDT_RESET();  // Reset watchdog timer
+}
+
+void main() {
+    watchdog_init();
+    while (1) {
+        watchdog_feed();  // Keep feeding to prevent reset
+    }
+}
+```
+
+---
+
+**Q10: What are race conditions in embedded systems, and how do you prevent them in C?**  
+**A10:** A **race condition** occurs when multiple threads access shared resources without synchronization, leading to unpredictable behavior.  
+
+**Prevention:**  
+- Use **mutexes** or **semaphores** to protect shared resources.  
+- Implement **atomic operations** when modifying critical variables.  
+
+**Example (Using Mutex):**  
+```c
+#include <pthread.h>
+
+pthread_mutex_t lock;
+int shared_resource = 0;
+
+void *thread_function(void *arg) {
+    pthread_mutex_lock(&lock);
+    shared_resource++;
+    pthread_mutex_unlock(&lock);
+}
+
+int main() {
+    pthread_mutex_init(&lock, NULL);
+    pthread_t t1, t2;
+    pthread_create(&t1, NULL, thread_function, NULL);
+    pthread_create(&t2, NULL, thread_function, NULL);
+    pthread_join(t1, NULL);
+    pthread_join(t2, NULL);
+    pthread_mutex_destroy(&lock);
+}
+```
+
+---
+
+These questions cover **core C programming**, **embedded system security**, and **real-world problem-solving**, making them highly relevant for an **IoT/Embedded Security Engineer** role. 🚀 Let me know if you need additional questions!

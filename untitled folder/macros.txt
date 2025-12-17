@@ -1,0 +1,26 @@
+/**
+ * C program to add two numbers using macros
+ https://www.simplilearn.com/tutorials/c-tutorial/what-is-macros-in-c
+ https://www.geeksforgeeks.org/macros-and-its-types-in-c-cpp/
+ https://www.ibm.com/docs/en/i/7.3?topic=directive-function-like-macros
+ https://stackoverflow.com/questions/15575485/function-like-macros-in-c
+ */
+
+#include <stdio.h>
+
+// Define macro to find sum of two numbers
+#define SUM(x, y) (x + y)
+
+int main()
+{
+    int num1, num2;
+
+    // Input two numbers from user
+    printf("Enter any two numbers: ");
+    scanf("%d%d", &num1, &num2);
+
+    // Calculate and print sum using macro
+    printf("Sum(%d, %d) = %d\n", num1, num2, SUM(num1, num2));
+
+    return 0;
+}

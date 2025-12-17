@@ -1,0 +1,604 @@
+https://leetcode.com/problems/
+https://www.hackerrank.com/dashboard
+https://www.hackerrank.com/contests/test/challenges
+
+Program - Pending 7,8,9, linked list psuedo code, c++ 14 vs 21, correct typedef struct by refering linked list
+-------
+1. Bitwise operator; Toggle a bit in an integer, toggle alternative bits,
+2. Program to count the number of bits set in a number
+3. Allocate memory to 2d array using dynamic memory allocation put some values and print
+4. String Reverse Challenges, program reversing a string using pointers (input: abcd efgh output: dcba hgfe)
+5. Take a number find if it is a prime if not find the next prime number
+6. Allocate a dynamic memory
+7. Create a list dynamically. In that structure, we have member as roll_no, name.
+8. call back function by using array of function pointers
+A callback function is a function that is passed as an argument to another function and is executed at a later time, typically when a certain condition or event occurs. In C, you can implement callback functions using function pointers.
+
+9. Merge Two Sorted Linked Lists.
+List 1 : 1->3->4->6
+List 2 :  2->5
+Output List : 1->2->3->4->5->6
+
+Questions
+---------
+Thread. join(); name comes from the concept of the calling thread waiting until the specified thread joins it.
+reentrant function in RTOS, deadlock prevention, ipc overhead, RTOS Kernal functions, 2 pthreads 1 to print odd other to even, semaphore vs queue vs mailbox, how can-bus arbitration works, arbitration of different embedded communication protocols, Address Space: max & minimum values of address space.
+how to find there is a memory leak, SPI Modes, use of break, continue, goto statement, control bit in i2c, bit stuffing, extern functions
+, Motion Sensor(Passive Infrared (PIR)), RTOS time slice
+string operations: strcat(str1, str2);  // Concatenates str2 to str1, strcpy(str1, "name"); memcpy(dest, src, size)
+size of long, double etc..., enum, strstr(), strncpy(), strcpy(), snprintf()
+static int j = i++; //error: initializer element is not constant  
+callig main from other functions is illegal
+
+#include <stdio.h>
+
+int main() {
+    int num = 1;
+
+start:
+    printf("Iteration: %d\n", num);
+    num++;
+
+    if (num <= 5)
+        goto start;  // Jump back to `start` if num ≤ 5
+
+    printf("Loop ended!\n");
+
+    return 0;
+}
+
+Common Issues in RTOS IPC
+1. Priority Inversion – A low-priority task holds a resource needed by a high-priority task.  
+   - Solution: Use priority inheritance.  
+2. Deadlocks – Circular resource dependencies between tasks.  
+   - Solution: Use timeouts and resource ordering.  
+3. Race Conditions – Multiple tasks accessing shared data without proper synchronization.  
+   - Solution: Use mutexes or critical sections.  
+4. Message Queue Overflow – Too many messages causing loss of data.  
+   - Solution: Implement queue size limits and message discarding strategies.  
+5. High Latency – Delays in message delivery due to blocking IPC mechanisms.  
+   - Solution: Use non-blocking IPC methods where possible.  
+
+Conditional Lock: Task locks a resource only when a condition(if,else,etc..) is met, preventing unnecessary blocking.
+Preemption Priority: A high-priority task interrupts (preempts) a currently running lower-priority task before it completes execution.
+Priority Inheritance: Mechanism used to prevent priority inversion by temporarily increasing the priority of a lower-priority task that holds a resource needed by a higher-priority task.
+Deadlocks: Processes stuck in a circular wait for resources.
+Concurrency: Multiple processes or threads making progress simultaneously.
+Race Conditions: Multiple tasks accessing shared resources without proper synchronization.
+Thread-Safe: Code or functions that operate correctly in the presence of multiple threads without introducing race conditions.
+Priority Inversion: A higher-priority task waits for a lower-priority one to release resources.
+Starvation: A process/thread is perpetually denied access to resources due to other higher-priority threads/processes.
+Spinning: Situation where a thread or process continuously checks for a condition (e.g., waiting for a lock to be released) without releasing the CPU.
+Latency: High overhead in message-passing mechanisms.
+
+FuSa RPN(Risk Priority Number)=Severity×Occurrence×Detection
+ASIL Level:	Severity (S)	Exposure (E)	Controllability (C)	
+
+BLE: GATT & GAP
+GATT (Generic Attribute Profile): Defines how devices exchange data using services and characteristics.
+GAP (Generic Access Profile): Handles device visibility, pairing, and connection management.
+
+---
+Communication Techniques
+- Synchronous Communication: Sender and receiver operate in lockstep (e.g., I2C).  
+- Asynchronous Communication: Sender and receiver work independently using buffers and acknowledgments (e.g., UART, TCP).  
+- Broadcasting: Sending data to all nodes on the network.  
+- Multicasting: Sending data to a group of nodes.  
+- Point-to-Point Communication: Direct communication between two devices (e.g., TCP sockets).
+---
+https://en.wikipedia.org/wiki/OSI_model
+Working of Networking Systems:- Networking systems operate using the OSI model:  
+1. **Physical Layer:** Transmits raw bits over physical media.  
+2. **Data Link Layer:** Error detection, framing (e.g., Ethernet).  
+3. **Network Layer:** Routing and addressing (e.g., IP).  
+4. **Transport Layer:** Reliable data delivery (e.g., TCP).  
+5. **Session Layer:** Manages sessions (e.g., TLS).  
+6. **Presentation Layer:** Data encoding (e.g., encryption).  
+7. **Application Layer:** User-facing protocols (e.g., HTTP, MQTT).
+---
+operationas of L2, L3, L4 protocols, switching, routing, gateway and service discovery:
+1. L2 (Data Link): Frame transmission (e.g., Ethernet, Wi-Fi).
+2. L3 (Network): Routing and IP addressing.
+3. L4 (Transport): Data transfer using TCP/UDP.
+---
+operationas of L2, L3 and L4 level security:
+1. L2: MAC address filtering, VLANs.
+2. L3: IPsec for encryption.
+3. L4: Secure transport protocols like TLS/DTLS.
+---
+OSI Model Security Implementation:
+1. Physical Layer: Secure physical access, encrypted transmission. (e.g., firewalls).  
+2. Data Link Layer: MAC filtering, encryption, access control. (e.g., WPA, MAC address filtering, VLANs).
+3. Network Layer: IPsec (Internet Protocol Security), NAT (Network Address Translation), firewalls. (e.g., VPN, ). 
+4. Transport Layer: TLS/SSL (Transport Layer Security/Secure Sockets Layer), session security. (e.g., HTTPS, SFTP). 
+5. Session Layer: Session protection, authentication. (e.g., Secure session tokens)
+6. Presentation Layer: Encryption, data integrity checks.
+7. Application Layer: Web security, application firewalls, authentication. (e.g., OAuth, JWT (JSON Web Tokens)). 
+---
+What is NAT in networking ?
+NAT (Network Address Translation): Translates private IP addresses to a single public IP address for devices to communicate over the internet.
+---
+implementing RFCs (Request for Comments):
+- Official documents for implementing internet standards, protocols, and procedures.
+--
+What is socket n how to program
+Socket Programming:
+- Example of TCP socket communication:
+   ```c
+   int sock = socket(AF_INET, SOCK_STREAM, 0);
+   connect(sock, (struct sockaddr*)&server, sizeof(server));
+   send(sock, "Hello", strlen("Hello"), 0);
+
+Over-The-Air (OTA): Allows firmware updates wirelessly, commonly used in IoT devices. Requires secure transfer and verification mechanisms.
+
+(1) Explain I2C, SPI protocols which one is faster
+I2C: Slower, supports multiple devices using addressing.
+SPI: Faster, full-duplex communication but requires more pins.
+
+Bitwise operators: & (AND), | (OR), ^ (XOR), ~ (NOT), << (left shift), >> (right shift).
+
+What is Embedded C Programming? How is Embedded C different from C language?
+Embedded C: A variant of C optimized for programming microcontrollers and embedded systems.
+Difference: Embedded C interacts directly with hardware, while standard C is more general-purpose.
+
+Different scheduling algorithm
+FCFS (First-Come, First-Served), SJF (Shortest Job First), Round Robin, Priority Scheduling
+
+context switching
+Process of saving the state of a CPU (registers, program counter) and loading the state of another process.
+
+Thread-Safe: Ensures multiple threads can access shared resources without conflict.
+
+8.	Data Types vs Storage Class vs Type Qualifiers
+
+A1.	Data Types in C: Primitive Data Types, Derived Types, User Defined Data Types.
+	Basic Data Type(Primitive Data Types): int, char, float, double, void
+	Derived Data Type(derived from the primitive or built-in datatypes): array, pointer, function
+	User-defined data types in C (4 types): Structure, Union, Enum & Typedef.
+	
+A2.	storage classes:
+	Auto: Automatically allocates storage when the block surrounding the variables is entered. 
+	Extern: Makes the variable accessible from another file. 
+	Register: Suggests placing the variable in the fast register memory. 
+	static: static variable preserves its previous value between calls to different functions and is not initialized again in the recrusive functions.
+	#include <stdio.h>
+
+	void counter() {
+		static int count;  // Static variable
+		count++;  // Increment the counter
+		printf("Count: %d\n", count);
+		counter();
+	}
+
+	int main() {
+		// Call the counter function multiple times
+		counter();
+		
+		return 0;
+	}
+
+	Static functions: Unlike global functions in C, access to static functions is restricted to the file where they are declared. Ex: static int func();
+
+A3.	type qualifiers:
+	Const: Places the variable in the constant data area of memory, making it unmodifiable. 
+	Volatile: Tells the compiler that the value can be modified outside the program's control.
+
+8.	Structure and union difference 
+A.	Both struct and union are user-defined data types in C that allow grouping of variables of different types under one name.
+	In Structure each member has its own storage. Total size = sum of sizes of all members, All members can be accessed simultaneously as they are stored in separate memory.
+	In Union All members share the same memory location. Total size = size of the largest member, Only one member can be accessed at a time, as they share memory.
+	
+Difference b/w Array and linked list
+Array: Fixed size, contiguous memory, fast access (O(1)), inefficient insertion/deletion.
+Linked List: Dynamic size, non-contiguous memory, slower access (O(n)), efficient insertion/deletion.
+
+The most basic difference between an array and a structure is that an Array can contain the elements of same datatype, while a Structure is a collection that can contain the elements of dissimilar datatypes.
+Structures do not require the data to be stored in consecutive memory locations. Arrays store data in contiguous memory locations, meaning that memory blocks are assigned consecutively.
+
+Little Endian: Stores the least significant byte at the smallest memory address.
+byte[0]+(byte[1]*256) : byte[LSB]+(byte[MSB]*256)
+Big Endian: Stores the most significant byte at the smallest memory address.
+byte[1]+(byte[0]*256) : byte[MSB]+(byte[LSB]*256)
+
+10.	Memory management in C: 
+In C, memory management refers to the process of dynamically allocating, deallocating, and managing memory during the execution of a program.
+Optimizing Memory: Use efficient data structures and minimize memory fragmentation.
+
+Memory allocation in c and c++
+In C, Memory Allocation Functions malloc(),calloc(),realloc(),free() are used for dynamic memory management.
+In C++, new and delete are used, and they handle memory allocation and deallocation more safely, as they also call constructors and destructors for objects.
+
+Q. Memory leak
+A. Memory Leaks: Occur when allocated memory is not freed, causing the program to consume more memory over time.
+		A memory leak occurs when a program allocates memory dynamically (e.g., using malloc, calloc, realloc, or similar functions in C) but fails to release it using free, resulting in memory that cannot be reused by the program or the operating system. Over time, memory leaks can lead to reduced performance or cause the program to crash due to memory exhaustion.
+		void leak() {
+			int *ptr = malloc(sizeof(int) * 100); // Allocated memory
+			// No free(ptr); Memory is leaked
+		}
+		
+		Fix/Prevention - Ensure all allocated memory is freed.
+		
+5.	What is Segmentation Fault in C ?
+A.	A Segmentation Fault (often abbreviated as segfault) occurs when a program tries to access a memory location that it is not allowed to access. It is a runtime error related to memory access violations.
+Cause	- Dereferencing invalid or null pointers. - Accessing freed memory.
+int *ptr = NULL;
+*ptr = 5; // Dereferencing a NULL pointer leads to a segmentation fault.
+
+	Buffer Overflow: Writing data beyond the bounds of allocated memory. Cause - Writing beyond or before the boundaries of an array.
+	char buffer[10];
+	strcpy(buffer, "This string is too long!"); // Overflows buffer
+
+	Buffer Overflow Prevention: Always ensure memory operations stay within bounds using functions like memcpy() or strncpy() with proper size checks.
+	Fix/Prevention - Always validate buffer boundaries. - Use secure functions like strncpy instead of strcpy. - Enable compiler warnings.
+	
+	Double Free: Freeing the same memory block twice, which can lead to undefined behavior.
+
+	Limit Heap Usage (Dynamic Memory Allocation) in Embedded Systems: Heap memory can be unpredictable and lead to fragmentation in resource-constrained systems.
+	Prefer Stack for Temporary Data: Use stack memory for temporary variables as it is automatically managed and faster than heap allocation.
+	
+Stack Overflow: When a program's call stack exceeds its limit, causing the program to crash.
+Cause - Excessive recursion. - Very deep or infinite loops using local variables. - Creating too many local variables or very large ones.
+Fix/Prevention - Avoid deep recursion. - Optimize the use of stack memory. - Increase stack size if necessary.
+void recursive() {
+    recursive(); // Infinite recursion leads to stack overflow
+}
+Fixes/Prevention	- Check pointers for null before dereferencing. - Avoid using dangling pointers.
+	
+9. Dangling pointer
+A2.	Dangling pointer is a pointer that points to a memory location that has already been deallocated or released. 
+	The memory it refers to is no longer valid, leading to undefined behavior if accessed.
+	How Dangling Pointer Occurs:
+		Deleting a memory block (e.g., using free() or delete) without setting the pointer to NULL.
+		Returning the address of a local variable from a function.
+		Overwriting a pointer's value without proper cleanup.
+	Issue: If you try to dereference a dangling pointer, it results in undefined behavior, which could cause a crash or corrupt data.
+
+10.	NULL Pointer
+A1.	NULL pointer is a pointer that does not point to any memory location; 
+	Dereferencing a NULL pointer leads to a runtime error (segmentation fault in many systems); NULL pointer is used intentionally to represent an invalid or empty pointer.
+	
+How memory will be allocate in linked list and advantage
+	memory for each node is allocated dynamically, which means each node is created and stored in the heap memory as the list grows. A linked list doesn't require memory to be contiguous (unlike arrays), so each node can be placed anywhere in memory.
+	Each node of a linked list typically contains:
+		Data: The actual data that the node holds (e.g., integer, string).
+		Next Pointer: A pointer that references the next node in the list.
+	Advantages of Linked List Memory Allocation:
+		Dynamic Memory: The size of a linked list can grow and shrink dynamically, without needing to allocate memory ahead of time.
+		No Fragmentation: Since nodes are allocated separately, there is no need for contiguous memory blocks (as in arrays).
+		Efficient Memory Usage: Only as much memory as needed for the nodes is used, whereas in arrays, memory might be wasted if the array isn't fully populated.
+
+Difference between static memory and heap( dynamic memory)
+1. Static Memory:  
+   - Allocated at compile-time.  
+   - Fixed size.  
+   - Stored in the **stack** or **data segment**.  
+   - Fast but limited memory.
+
+2. Heap (Dynamic Memory):  
+   - Allocated at runtime using `malloc`, `calloc`, or `new`.  
+   - Flexible size.  
+   - Stored in the **heap segment**.  
+   - Slower but allows efficient use of memory.  
+
+Dynamic memory location in c (malloc,calloc)
+dynamic memory allocation functions malloc() and calloc() allow memory to be allocated from the heap during runtime. This memory remains allocated until it is explicitly freed using free().
+	
+(4) If, we allocate a dynamic memory where it will store in Memory segment
+A. heap memory segment
+(5) If, we create a variable in function, where it will store in Memory segment
+A. Stack Memory Segment
+Q.	Can we have static n extern for a variable
+A.	No, we cannot use both static and extern for a variable at the same time because their purposes conflict.
+(6) MakeFile
+A. Makefile is a file used with the make utility to automate the building and management of projects, particularly when the project has multiple source files.
+(6) Compiler flags
+A. Compiler flags are options passed to the compiler to control various aspects of the compilation process, such as optimization, debugging, warnings, or linking. These flags provide developers with flexibility and control over how the compiler generates the output (e.g., executables, libraries).
+(8) If, we create a one function, We have a variable as int a = 10. Now, the function return to calling function or main function. In that case, what happen to the variable of "a". It store in memory segment or any garbage value occurs
+A. 
+int* func() {
+    int a = 10;
+    return &a; // Returning address of a local variable
+}
+When the function returns, its stack frame is destroyed. The memory previously allocated for the local variable a becomes invalid.
+Accessing this memory results in garbage values or a crash.
+
+(9) Function Pointer Example and why we use
+A. function pointer is a pointer that points to the address of a function. Using function pointers, you can call a function indirectly and achieve dynamic behavior, such as calling different functions at runtime or passing functions as arguments to other functions. it can also help to achieve behavior similar to polymorphism in object-oriented languages.
+
+startup code?
+A. startup code initializes the stack(stack pointer), memory sections, sets up interrupt vectors, performs hardware initialization, and then jumps to the main() function to start the application.
+
+Types of Optimization in Computation: 
+	1. Process Optimization
+	2. Memory Optimization
+
+Void Pointer in Embedded C and why is it used?
+A. A void pointer in Embedded C is a pointer that can point to any data type, but it does not have a type associated with it. It is defined as void *pointer_name. They are often used in embedded systems to access memory or hardware peripherals without needing to know the specific data type ahead of time.
+
+Concatenation Operator in Embedded C
+string concatenation is possible through manual methods such as using strcat() from the standard library or manually copying characters.
+
+variable defined in source file1 inside source file2?
+To access a variable defined in source file1 inside source file2, you need to declare it extern in source file2
+
+1.	Explain what is a Watchdog Timer ? List out various uses of timers in embedded system ?
+A.	Watchdog Timer reset the system in case the software becomes unresponsive or hangs; the general use of timers in embedded systems include generation of interval & PWM timers.
+2.	What is the difference between Little-Endian and Big-Endian in Embedded Systems ?
+A.	In Little-Endian the least significant byte (LSB) is stored at the lowest memory address & in Big-Endian the most significant byte (MSB) is stored at the lowest memory address.
+3.	Explain pointers with an application example.
+A.	Pointer is a variable that holds the memory address of another variable; Example: Accessing hardware registers, share data b/w functions.
+4.	What are exceptions in Embedded Systems? Give at least 3 examples?
+A.	Exceptions are events that interrupt normal program flow. Ex: Division by Zero, Accessing invalid memory locations, Hardware Interrupts.
+6.	What is the use of ‘Volatile’ in C programming in Embedded Systems?
+A.	Volatile prevents the compiler from optimizing out variable accesses.
+7.	What is Single Event Upset (SEU) and Multiple Bit Upset (MBU) in Embedded Systems ?
+A.	SEU/MBU is a change in the state of a single/multiple bit in memory or logic, caused by radiation or electrical interference. and require error correction techniques.
+10. How is CPU and Memory utilization measured in an embedded system?
+A. CPU usage is measured using idle time, RTOS APIs, and performance counters, while memory usage is measured using stack/heap analysis, RTOS APIs, and debugging tools.
+
+9.	macro functions vs inline functions vs regular functions
+A.	Macro Functions: Simple, repetitive code when performance is critical, and type checking is not a concern.
+	The inline keyword suggests the compiler replace the function call with the function's code at the call site; Useful for small, frequently called functions that benefit from avoiding call overhead with type safety and debugging support.
+	#include <stdio.h>
+
+	inline int square(int x) {
+		return x * x;
+	}
+
+	int main() {
+		int num = 5;
+		printf("Square of %d: %d\n", num, square(num));
+		return 0;
+	}
+
+	Regular Functions: For most cases, especially when function call overhead is negligible or when the function logic is complex.
+
+11.	Call by Value vs Call by Reference
+	In Call by Value, a copy of the variable is created in a new memory location; Original variable remains unchanged.	
+	void modify(int x)
+	In Call by Reference, No copy is created; the actual variable is used; Original variable may be modified.
+	#include <stdio.h>
+	
+	void modify(int *x) { // Using a reference
+		*x = 10; // Modifies the original variable
+	}
+
+	int main() {
+		int a = 5;
+		modify(&a);
+		printf("%d",a); // Output: 10 (original variable is changed)
+		return 0;
+	}
+
+linux
+-----
+Linux kernel modules, system calls, and memory management.
+
+Linux Device Drivers
+	1. Application to read from a driver: Use file operations like `open()`, `read()`, and `ioctl()` to communicate with device drivers.
+	2. Linux System Control Drivers: Implemented using `sysfs`, `procfs`, or `ioctl` for user-space communication with kernel drivers.
+
+Threads:
+	1. How to create a thread: Use `pthread_create()` in Linux.
+	   ```c
+	   pthread_t thread_id;
+	   pthread_create(&thread_id, NULL, thread_function, NULL);
+	   ```
+	2. How to communicate within threads: Use shared memory, mutexes, semaphores, or condition variables.
+	
+#include <stdio.h>
+#include <pthread.h>
+
+#define MAX_NUM 10  // Change this to print more numbers
+
+pthread_mutex_t lock;
+pthread_cond_t cond;
+int counter = 1;  // Shared counter
+
+void *print_odd(void *arg) {
+    while (counter < MAX_NUM) {
+        pthread_mutex_lock(&lock);
+        while (counter % 2 == 0)  // Wait if it's not an odd number
+            pthread_cond_wait(&cond, &lock);
+
+        printf("Odd: %d\n", counter++);
+        pthread_cond_signal(&cond);  // Wake up the even thread
+        pthread_mutex_unlock(&lock);
+    }
+    return NULL;
+}
+
+void *print_even(void *arg) {
+    while (counter <= MAX_NUM) {
+        pthread_mutex_lock(&lock);
+        while (counter % 2 != 0)  // Wait if it's not an even number
+            pthread_cond_wait(&cond, &lock);
+
+        printf("Even: %d\n", counter++);
+        pthread_cond_signal(&cond);  // Wake up the odd thread
+        pthread_mutex_unlock(&lock);
+    }
+    return NULL;
+}
+
+int main() {
+    pthread_t t1, t2;
+
+    pthread_mutex_init(&lock, NULL);
+    pthread_cond_init(&cond, NULL);
+
+    pthread_create(&t1, NULL, print_odd, NULL);
+    pthread_create(&t2, NULL, print_even, NULL);
+
+    pthread_join(t1, NULL);
+    pthread_join(t2, NULL);
+
+    pthread_mutex_destroy(&lock);
+    pthread_cond_destroy(&cond);
+
+    return 0;
+}
+
+
+System Calls:
+- Interface for user-space applications to request services from the kernel (e.g., `read`, `write`, `fork`, `exec`).
+- How to switch any application to kernel: Use system calls to interface with the kernel.
+
+Virtual Memory in Embedded C and how can it be implemented?
+Virtual memory allows programs to address more memory than what is physically available in the system by using a technique called paging or segmentation. It allows the operating system to provide an illusion of a large, continuous memory space even though physical memory may be limited.
+
+---
+Linux Kernel Modules:
+- Dynamically loadable pieces of code to extend kernel functionality.  
+  Example: Writing a simple `hello` module.
+   ```c
+   static int __init hello_init(void) { printk("Hello Kernel!"); return 0; }
+   static void __exit hello_exit(void) { printk("Goodbye Kernel!"); }
+   ```
+---
+Linux Kernel Networking:
+- Covers packet filtering, routing, and netfilter modules (e.g., `iptables`).
+
+OOPS
+----
+C, C++ difference 
+- C: Procedural, no OOP, no STL, supports structures.  
+- C++: Supports OOP, classes, objects, STL, and advanced memory management.
+
+ALL OOPS Concepts:
+1. Encapsulation: Wrapping data and methods in a class.
+2. Inheritance: Deriving new classes from existing ones.  
+   Example:
+   ```cpp
+   class Base {
+       public: void show() { cout << "Base"; }
+   };
+   class Derived : public Base {};
+   ```
+3. Polymorphism: Same interface, different implementation (overloading/overriding).  
+4. Abstraction: Hiding details and exposing only essentials.
+
+Constructors and Destructors:
+1. Constructor: Initializes class objects.
+   ```cpp
+   class A { A() { cout << "Constructor"; } };
+   ```
+2. Destructor: Cleans up resources when the object goes out of scope.
+
+What is a Class and an Object?
+- **Class:** A blueprint for creating objects. It defines properties (data members) and behaviors (methods).  
+   Example:
+   ```cpp
+   class Car {
+       public:
+           string brand;
+           void start() { cout << "Car started"; }
+   };
+   ```
+- **Object:** An instance of a class that holds specific values.  
+   Example:
+   ```cpp
+   Car myCar;
+   myCar.brand = "Tesla";
+   myCar.start(); // Outputs: Car started
+   ```
+
+Programming
+-----------
+*******
+//p in function is a copy of the pointer from main. Changing p inside fun does not affect the original pointer in main.
+void fun(int *p)
+{ 
+  int q = 10; 
+  p = &q; 
+}     
+int main() 
+{ 
+  int r = 20; 
+  int *p = &r; 
+  fun(p); 
+  printf("%d", *p); 
+  return 0; 
+}
+*******
+//Inside function *pptr is set to the address of local variable q, When fun ends, q is destroyed (goes out of scope) leaving p pointing to invalid memory thus accessing *p causes undefined behavior.
+void fun(int **pptr)
+{
+  int q = 10;
+  *pptr = &q; 
+}
+int main()
+{
+  int r = 20;
+  int *p = &r;
+  fun(&p);
+  printf("%d", *p);
+  return 0;
+}
+*******
+//q is declared as static, so it persists in memory even after fun exits. *pptr is assigned the address of q, and since q is valid, *p in main points to q.
+void fun(int **pptr)
+{
+  static int q = 10;
+  *pptr = &q;
+}
+int main()
+{
+  int r = 20;
+  int *p = &r;
+  fun(&p);
+  printf("%d", *p);
+  return 0;
+}
+*******
+{ 
+char a ='A', b ='B';
+    const char *ptr = &a;
+ptr = &b;
+}
+
+  {
+char a ='A', b ='B';
+    char *const ptr;
+ptr = &a;
+ptr = &b; 
+*ptr = 'C'; 
+}
+*******
+/******************************************************************************
+
+find all possible ways to add elements of a given 1D array to reach a target value and storing those combinations in a 2D array.
+constraints: elements should not repeat
+
+Input:
+int arr[] = {2, 3, 5, 7};  // Example array
+int size = sizeof(arr) / sizeof(arr[0]);
+int target = 7; // Target value
+int result[size][size]; // Stores all valid combinations
+
+Output:
+All possible combinations to get target 7:
+[ 2 5 ]
+[ 7 ]
+
+*******************************************************************************/
+#include <stdio.h>
+
+// Recursive function to find combinations
+void findCombinations(){
+    
+}
+
+
+int main()
+{
+    
+    int arr[] = {7, 2, 3, 5, 7, 8};  // Example array
+    int size = sizeof(arr) / sizeof(arr[0]);
+    int target = 7; // Target value
+
+    findCombinations();
+
+    return 0;
+}
+*******

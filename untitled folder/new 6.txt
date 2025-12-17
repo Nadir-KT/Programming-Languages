@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Define a typedef structure
+typedef struct {
+    int id;
+    char name[50];
+    float value;
+} MyStruct;
+
+// Function to copy the structure
+void copyStruct(MyStruct *dest, const MyStruct *src) {
+    dest->id = src->id;
+    strcpy(dest->name, src->name);
+    dest->value = src->value;
+}
+
+// Function to use the structure
+void useStruct() {
+    // Declare a local instance of the structure
+    MyStruct local;
+    local.id = 1;
+    strcpy(local.name, "John Doe");
+    local.value = 3.14;
+
+    // Copy the local structure to another variable
+    MyStruct copy;
+    copyStruct(&copy, &local);
+
+    // Print the copied structure
+    printf("Copied structure:\n");
+    printf("ID: %d\n", copy.id);
+    printf("Name: %s\n", copy.name);
+    printf("Value: %.2f\n", copy.value);
+}
+
+int main() {
+    useStruct();
+    return 0;
+}

@@ -1,0 +1,124 @@
+Stack memory is a sort of memory allocation that the OS continuously manages and uses to store local variables in a LIFO order. On the other hand, heap memory is a type of dynamic memory allocation used for storing objects and data structures that require a longer lifespan than stack memory.
+
+ThreadX provides two main types of memory pools: Byte Pools and Block Pools. These are useful for managing memory efficiently in embedded systems, where memory fragmentation and real-time performance are critical considerations. Below are examples demonstrating how to use both types of pools in a ThreadX environment on an STM32 microcontroller.
+
+### Example 1: Byte Pool
+
+A Byte Pool in ThreadX allows you to allocate fixed-size blocks of memory as byte arrays. Here’s how you can create and use a Byte Pool:
+
+```c
+#include "tx_api.h"
+
+#define POOL_SIZE   1024  // Total size of the byte pool
+#define BLOCK_SIZE  64    // Size of each memory block
+
+UCHAR byte_pool_memory[POOL_SIZE];
+TX_BYTE_POOL byte_pool;
+
+void initialize_byte_pool(void) {
+    tx_byte_pool_create(&byte_pool, "My Byte Pool", byte_pool_memory, POOL_SIZE);
+}
+
+void* allocate_from_byte_pool(void) {
+    void* ptr;
+    if (tx_byte_allocate(&byte_pool, &ptr, BLOCK_SIZE, TX_NO_WAIT) == TX_SUCCESS) {
+        return ptr;
+    } else {
+        return NULL;  // Allocation failed
+    }
+}
+
+void release_to_byte_pool(void* ptr) {
+    tx_byte_release(ptr);
+}
+
+void application_thread_entry(ULONG initial_input) {
+    initialize_byte_pool();
+
+    void* ptr1 = allocate_from_byte_pool();
+    if (ptr1 != NULL) {
+        // Use allocated memory
+        // Example: memset(ptr1, 0, BLOCK_SIZE);
+        
+        release_to_byte_pool(ptr1);
+    }
+
+    // Continue with other operations or threads
+}
+```
+
+### Example 2: Block Pool
+
+A Block Pool in ThreadX is used for allocating fixed-size blocks of memory. Here’s an example demonstrating its usage:
+
+```c
+#include "tx_api.h"
+
+#define POOL_SIZE   1024  // Total size of the block pool
+#define BLOCK_SIZE  64    // Size of each memory block
+
+UCHAR block_pool_memory[POOL_SIZE];
+TX_BLOCK_POOL block_pool;
+
+void initialize_block_pool(void) {
+    tx_block_pool_create(&block_pool, "My Block Pool", BLOCK_SIZE, block_pool_memory, POOL_SIZE);
+}
+
+void* allocate_from_block_pool(void) {
+    void* ptr;
+    if (tx_block_allocate(&block_pool, &ptr, TX_NO_WAIT) == TX_SUCCESS) {
+        return ptr;
+    } else {
+        return NULL;  // Allocation failed
+    }
+}
+
+void release_to_block_pool(void* ptr) {
+    tx_block_release(ptr);
+}
+
+void application_thread_entry(ULONG initial_input) {
+    initialize_block_pool();
+
+    void* ptr1 = allocate_from_block_pool();
+    if (ptr1 != NULL) {
+        // Use allocated memory
+        // Example: memset(ptr1, 0, BLOCK_SIZE);
+        
+        release_to_block_pool(ptr1);
+    }
+
+    // Continue with other operations or threads
+}
+```
+
+### Explanation:
+
+1. **Byte Pool**:
+   - `tx_byte_pool_create` creates a byte pool (`byte_pool`) using the `byte_pool_memory` array with a total size of `POOL_SIZE`.
+   - `tx_byte_allocate` allocates a block of `BLOCK_SIZE` bytes from the byte pool.
+   - `tx_byte_release` releases the allocated memory block back to the byte pool.
+
+2. **Block Pool**:
+   - `tx_block_pool_create` creates a block pool (`block_pool`) with blocks of size `BLOCK_SIZE`, using the `block_pool_memory` array with a total size of `POOL_SIZE`.
+   - `tx_block_allocate` allocates a block of memory from the block pool.
+   - `tx_block_release` releases the allocated memory block back to the block pool.
+
+### Considerations:
+
+- **Memory Management**: Both pools allocate memory statically from a pre-allocated buffer (`byte_pool_memory` or `block_pool_memory`).
+- **Concurrency**: Ensure proper synchronization if multiple threads are accessing the same pool.
+- **Error Handling**: Check return codes (`TX_SUCCESS`, `TX_NO_WAIT`) to handle allocation failures or timeouts (`TX_WAIT_FOREVER` can be used for blocking waits).
+
+### Conclusion:
+
+Using ThreadX memory pools (`TX_BYTE_POOL` and `TX_BLOCK_POOL`) allows for efficient memory management in STM32 microcontroller applications. These examples demonstrate how to initialize, allocate, and release memory from both byte and block pools, providing flexibility and control over memory usage in embedded systems programming. Adjust the pool sizes and allocation strategies based on your specific application requirements for optimal performance and reliability.
+
+Refernce:
+https://en.wikipedia.org/wiki/Memory_pool
+https://community.renesas.com/mcu-mpu/embedded-system-platform/f/forum/33330/runtime-allocation-to-reduce-ram
+https://community.renesas.com/mcu-mpu/embedded-system-platform/f/forum/8841/threadx-byte-block-pool-memory-alloc-free-usage
+https://www.digikey.com/en/maker/projects/introduction-to-rtos-solution-to-part-4-memory-management/6d4dfcaa1ff84f57a2098da8e6401d9c
+https://www.chibios.org/dokuwiki/doku.php?id=chibios:documentation:books:rt:oslib_memory_allocators
+https://forums.freertos.org/t/memory-pools-and-allocation-strategy/19514
+https://barrgroup.com/blog/how-allocate-dynamic-memory-safely 

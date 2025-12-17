@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <string.h>
+
+// Define a local typedef structure
+typedef struct {
+    int id;
+    char name[32];
+} person_t;
+
+// Function to copy the person_t structure
+void copy_person(person_t *dest, const person_t *src) {
+    dest->id = src->id;
+    strncpy(dest->name, src->name, sizeof(dest->name) - 1);
+    dest->name[sizeof(dest->name) - 1] = '\0'; // Ensure null termination
+}
+
+// Function to demonstrate the usage of the copy_person function
+void example_function() {
+    // Declare a local person_t structure
+    person_t person1 = {
+        .id = 1,
+        .name = "John Doe"
+    };
+
+    // Copy the person1 structure to a new structure
+    person_t person2;
+    copy_person(&person2, &person1);
+
+    // Print the copied structure
+    printf("Person 1: id=%d, name=%s\n", person1.id, person1.name);
+    printf("Person 2: id=%d, name=%s\n", person2.id, person2.name);
+}
+
+int main() {
+    example_function();
+    return 0;
+}

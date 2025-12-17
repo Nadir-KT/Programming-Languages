@@ -1,0 +1,545 @@
+Overview
+--------
+The Inter-Processor Communication Module (IPCM) in the RZN1 series facilitates communication between two asynchronously running Cortex-A7 and Cortex-M3 cores using mailboxes. Each IPCM contains three mailboxes, each comprising seven 32-bit data registers. The mailboxes has its own set of control registers and interrupt generation logic to enable message passing between the cores.
+
+High-Level Design for IPCM Driver
+---------------------------------
+
++-----------------------------------+
+|          IPCM Driver              |
++-----------------------------------+
+| - ipcm_init()                     |
+| - ipcm_send_message()             |
+| - ipcm_interrupt_callback()       |
+| - ipcm_receive_message()          |
+| - ipcm_release_mailbox()          |
+| - ipcm_acknowledge_message()      |
++-----------------------------------+
+| - mailboxes[3]                    |
+| - source_core                     |
+| - dest_core                       |
+| - message_buffer[20]              |
++-----------------------------------+
+
++-------------------------------------------+
+|       Mailbox       						|
++-------------------------------------------+
+| - source: ipcm_core_t 					|
+| - destination: ipcm_core_t 				|
+| - mailbox_index: struct 					|
+| - data: uint32_t[5]   					|
+| - status: uint8_t     					|
++-------------------------------------------+
+
+Sequence Diagram
+----------------
+
+Core A (Sender)                  IPCM Driver                  Core B (Receiver)
+    |                                |                                |
+    |--- ipcm_init() --------------> |                                |
+    |                                |                                |
+    |--- ipcm_alloc_mailbox() -----> |                                |
+    |                                |                                |
+    |--- ipcm_send_message() ------> |                                |
+    |                                |--- Interrupt Triggered ------->|
+    |                                |                                |
+    |                                |<--- ipcm_receive_message() ----|
+    |                                |                                |
+    |                                |--- Acknowledge Message ------->|
+    |                                |                                |
+    |--- ipcm_release_mailbox() ---> |                                |
+	
+
+Constraints and Considerations
+------------------------------
+
+1.	Mailbox Allocation: The driver needs to manage the three available mailboxes and ensure proper arbitration. Only one core can allocate a mailbox at a time. The driver must ensure that mailboxes are properly allocated and released. Given that each data register is 32-bits (4 bytes), this will require using 5 data registers for messages up to 20 bytes in size. //uint32_t data[5]; // 5 * 4 bytes = 20 bytes.
+
+2.	Asynchronous Communication: The cores operate asynchronously, so the driver must handle potential race conditions and ensure data integrity.
+  IPCM_CORE_0,  // Example: Cortex-A7 
+  IPCM_CORE_1,  // Example: Cortex-M3 // these cores may run in different clock speeds
+
+3.	Synchronization: For more complex communication scenarios, this might need to add more sophisticated synchronization mechanisms, such as mutexes or semaphores. However, in a baremetal environment, It will need to handle interrupts efficiently and use atomic operations or spinlocks for synchronization.
+The interrupt handler will be responsible for reading the message from the mailbox and notifying the application. The handler will use the `IPCMMIS[n]` register to determine which mailbox generated the interrupt.
+
+4.	Register Definitions: The driver will define symbolic names for all the relevant IPCM registers, based on the register map in the document (rzn1-ipc.pdf).
+
+5.	Error Handling: Basic error handling will be included to catch common issues.
+
+Driver Structure
+----------------
+The driver consist of the following main components:
+Header File (`ipcm_driver.h`):  This file will contain the API definitions, register definitions, and data structures used by the driver.
+Source File (`ipcm_driver.c`):  This file will contain the implementation of the driver functions.
+Configuration File (`ipcm_config.h`): This file will allow the user to configure the driver.
+
+API Functions
+-------------
+The API functions cover mailbox allocation, setting destinations, sending and receiving messages with a 20-byte maximum data size, interrupt management, and acknowledging messages.
+
+1. Initialization Function
+   void ipcm_init(void);
+   - Description: Initializes the IPCM by configuring the necessary registers and setting up the mailbox.
+   - Parameters: None.
+   - Returns: None.
+
+2. Send Message Function
+   int - `ipcm_send_message()`: Sends a message to another core.
+   int ipcm_send_message(uint8_t mailbox_index, uint32_t data[], uint8_t length, uint32_t source_id, uint32_t dest_id);
+		uint8_t ipcm_send_message(uint8_t mailbox_index, uint32_t data[], uint8_t length, uint32_t source_id, uint32_t dest_id) {
+			if (mailbox_index >= 3) {
+				return false; // Invalid mailbox index
+			}
+			for (int i = 0; i < length; ++i) {
+				IPCM->mailboxes[mailbox_index].DR[i] = data[i]; // use upto uint32_t data[5] for 20 bytes
+			}
+			IPCM->mailboxes[mailbox_index].SOURCE = source_id; //part of struct
+			IPCM->mailboxes[mailbox_index].DSET = dest_id;
+			IPCM->mailboxes[mailbox_index].SEND = 0x01; // Trigger interrupt to destination
+			return (IPCM->mailboxes[mailbox_index].SOURCE == source_id);
+		}
+   - Description: Sends data to the specified destination core.
+   - Parameters: 
+     - `data`: Pointer to the data buffer (max 20 bytes).
+     - `length`: Length of the data to send (up to 20 bytes).
+     - `mailbox_index`: Identifier for the mailbox_index.
+   
+
+3. Interrupt Handler & Receive Message Function
+   - `ipcm_interrupt_callback()`: Register a callback function for each mailbox.  This function will be called when an interrupt is received on that mailbox.
+   - Description: Handles incoming IPCM interrupts.
+   - Parameters: None.
+   - Returns: None.
+   
+   - `ipcm_receive_message()`: Receives a message from another core.
+	int ipcm_read_message(uint8_t mailbox_index, uint32_t data[], uint8_t *length) {
+		if (mailbox_index >= 3) {
+				return -1; // Invalid mailbox index
+			}
+		for (int i = 0; i < 7; ++i) {
+			data[i] = IPCM->mailboxes[mailbox_index].DR[i];
+		}
+		return 0;
+	}
+   - Description: Receives data from the mailbox.
+   - Parameters: 
+     - `data`: Pointer to the buffer where received data will be stored.
+     - `length`: Pointer to a variable where the length of received data will be stored.
+   - Returns: 
+     - `0`: Data received successfully.
+     - `-1`: Error (e.g., no data available).
+   
+4. Acknowledging & Mailbox Release Function
+- `ipcm_acknowledge_message()`: Acknowledging messages.
+	void ipcm_acknowledge_message(uint8_t mailbox_index) {
+		IPCM->mailboxes[mailbox_index].SEND = 0x02; // Trigger interrupt to source
+	}
+
+- `ipcm_release_mailbox()`: Releases the mailbox.
+	void ipcm_release_mailbox(uint8_t mailbox_index, uint32_t dest_id) {
+		IPCM->mailboxes[mailbox_index].DCLEAR = dest_id;
+	}
+	
+
+Example Code 1
+--------------
+#include <stdint.h>
+#include <stdbool.h>
+
+#define IPCM_BASE_ADDRESS 0x4000B000
+#define IPCM_MAILBOX_OFFSET 0x40
+#define IPCM_DR_OFFSET 0x24
+#define IPCM_SOURCE_OFFSET 0x00
+#define IPCM_DSET_OFFSET 0x04
+#define IPCM_DCLEAR_OFFSET 0x08
+#define IPCM_DSTATUS_OFFSET 0x0C
+#define IPCM_SEND_OFFSET 0x20
+
+typedef struct {
+    uint32_t SOURCE;
+    uint32_t DSET;
+    uint32_t DCLEAR;
+    uint32_t DSTATUS;
+    uint32_t MODE;
+    uint32_t MSET;
+    uint32_t MCLEAR;
+    uint32_t MSTATUS;
+    uint32_t SEND;
+    uint32_t DR[7];
+} IPCM_Mailbox;
+
+typedef struct {
+    IPCM_Mailbox mailboxes[3];
+} IPCM;
+
+#define IPCM ((IPCM *)IPCM_BASE_ADDRESS)
+
+bool ipcm_allocate_mailbox(uint8_t mailbox_index, uint32_t source_id) {
+    if (mailbox_index >= 3) {
+        return false; // Invalid mailbox index
+    }
+    IPCM->mailboxes[mailbox_index].SOURCE = source_id;
+    return (IPCM->mailboxes[mailbox_index].SOURCE == source_id);
+}
+
+void ipcm_set_destination(uint8_t mailbox_index, uint32_t dest_id) {
+    IPCM->mailboxes[mailbox_index].DSET = dest_id;
+}
+
+void ipcm_clear_destination(uint8_t mailbox_index, uint32_t dest_id) {
+    IPCM->mailboxes[mailbox_index].DCLEAR = dest_id;
+}
+
+void ipcm_send_message(uint8_t mailbox_index, uint32_t data[7]) {
+    for (int i = 0; i < 7; ++i) {
+        IPCM->mailboxes[mailbox_index].DR[i] = data[i];
+    }
+    IPCM->mailboxes[mailbox_index].SEND = 0x01; // Trigger interrupt to destination
+}
+
+void ipcm_read_message(uint8_t mailbox_index, uint32_t data[7]) {
+    for (int i = 0; i < 7; ++i) {
+        data[i] = IPCM->mailboxes[mailbox_index].DR[i];
+    }
+}
+
+void ipcm_acknowledge_message(uint8_t mailbox_index) {
+    IPCM->mailboxes[mailbox_index].SEND = 0x02; // Trigger interrupt to source
+}
+
+
+Example Code 2
+--------------
+```c
+#include "ipcm_driver.h"
+
+// Global array to store callback functions for each mailbox
+static void (*ipcm_callbacks[3])(ipcm_message_t *) = {NULL, NULL, NULL};
+
+//Static function to write data to the data registers of the specified mailbox
+static ipcm_status_t ipcm_write_data(ipcm_mailbox_t mailbox, const uint32_t *data, uint32_t size);
+
+//Static function to read data from the data registers of the specified mailbox
+static ipcm_status_t ipcm_read_data(ipcm_mailbox_t mailbox, uint32_t *data, uint32_t size);
+
+//Static function to lock mailbox
+static ipcm_status_t ipcm_lock_mailbox(ipcm_mailbox_t mailbox, ipcm_core_t source_core);
+
+//Static function to unlock mailbox
+static ipcm_status_t ipcm_unlock_mailbox(ipcm_mailbox_t mailbox);
+
+//Static function to send interrupt
+static ipcm_status_t ipcm_send_interrupt(ipcm_mailbox_t mailbox, ipcm_core_t dest_core);
+
+//Static function to configure mailbox mode
+static ipcm_status_t ipcm_configure_mailbox_mode(ipcm_mailbox_t mailbox, const ipcm_config_t *config);
+
+ipcm_status_t ipcm_init(const ipcm_config_t *config) {
+    //1. Check for null pointer
+    if (config == NULL) {
+        return IPCM_STATUS_INVALID_PARAM;
+    }
+
+    //2. Configure Mailbox mode
+    for (int i = IPCM_MAILBOX_0; i <= IPCM_MAILBOX_2; i++) {
+        ipcm_configure_mailbox_mode(i, config);
+    }
+
+    return IPCM_STATUS_OK;
+}
+
+ipcm_status_t ipcm_send(const ipcm_message_t *message) {
+    volatile uint32_t *ipcm_source_reg, *ipcm_dest_set_reg, *ipcm_send_reg;
+    uint32_t source_core_mask = (1 << message->source_core);
+
+    // 1. Input Validation
+    if (message == NULL) {
+        return IPCM_STATUS_INVALID_PARAM;
+    }
+
+    if (message->size > 20) {
+        return IPCM_STATUS_INVALID_PARAM;
+    }
+
+    //2. Lock the mailbox
+    ipcm_status_t lock_status = ipcm_lock_mailbox(message->mailbox, message->source_core);
+    if (lock_status != IPCM_STATUS_OK) {
+        return lock_status;
+    }
+
+    //3. Write data to mailbox
+    ipcm_status_t write_status = ipcm_write_data(message->mailbox, message->data, message->size);
+    if (write_status != IPCM_STATUS_OK) {
+        ipcm_unlock_mailbox(message->mailbox);
+        return write_status;
+    }
+
+    //4. Set destination core.
+    switch (message->mailbox) {
+        case IPCM_MAILBOX_0:
+            ipcm_dest_set_reg = (uint32_t *)IPCM0_DSET;
+            break;
+        case IPCM_MAILBOX_1:
+            //ipcm_dest_set_reg = IPCM1_DSET; //(uint32_t *)
+            break;
+        case IPCM_MAILBOX_2:
+            //ipcm_dest_set_reg = IPCM2_DSET; //(uint32_t *)
+            break;
+        default:
+            ipcm_unlock_mailbox(message->mailbox);
+            return IPCM_STATUS_INVALID_PARAM;
+    }
+
+    // Set the destination core
+    *ipcm_dest_set_reg = (1 << message->dest_core);
+
+    //5. Send Interrupt
+    ipcm_status_t send_status = ipcm_send_interrupt(message->mailbox, message->dest_core);
+    if (send_status != IPCM_STATUS_OK) {
+        ipcm_unlock_mailbox(message->mailbox);
+        return send_status;
+    }
+
+    return IPCM_STATUS_OK;
+}
+
+ipcm_status_t ipcm_receive(ipcm_mailbox_t mailbox, ipcm_message_t *message) {
+    //1. Check for Null pointer
+    if (message == NULL) {
+        return IPCM_STATUS_INVALID_PARAM;
+    }
+
+    //2. Read the data
+    ipcm_status_t read_status = ipcm_read_data(mailbox, message->data, message->size);
+    if (read_status != IPCM_STATUS_OK) {
+        return read_status;
+    }
+
+    //3. Unlock the mailbox
+    ipcm_status_t unlock_status = ipcm_unlock_mailbox(mailbox);
+    if (unlock_status != IPCM_STATUS_OK) {
+        return unlock_status;
+    }
+
+    return IPCM_STATUS_OK;
+}
+
+ipcm_status_t ipcm_register_callback(ipcm_mailbox_t mailbox, void (*callback)(ipcm_message_t *)) {
+    //1. Check for Null pointer
+    if (callback == NULL) {
+        return IPCM_STATUS_INVALID_PARAM;
+    }
+
+    //2. Register callback
+    ipcm_callbacks[mailbox] = callback;
+    return IPCM_STATUS_OK;
+}
+
+ipcm_status_t ipcm_clear_interrupt(ipcm_mailbox_t mailbox) {
+    volatile uint32_t *ipcm_dclear_reg;
+
+    //1. Select the correct register
+    switch (mailbox) {
+        case IPCM_MAILBOX_0:
+            ipcm_dclear_reg = (uint32_t *)IPCM0_DCLEAR;
+            break;
+        case IPCM_MAILBOX_1:
+            //ipcm_dclear_reg = IPCM1_DCLEAR; //(uint32_t *)
+            break;
+        case IPCM_MAILBOX_2:
+            //ipcm_dclear_reg = IPCM2_DCLEAR; //(uint32_t *)
+            break;
+        default:
+            return IPCM_STATUS_INVALID_PARAM;
+    }
+
+    //2. Clear the interrupt
+    *ipcm_dclear_reg = 0x07; // Clear all destination bits (assuming max 3 cores)
+
+    return IPCM_STATUS_OK;
+}
+
+static ipcm_status_t ipcm_write_data(ipcm_mailbox_t mailbox, const uint32_t *data, uint32_t size) {
+    volatile uint32_t *data_reg;
+
+    //1. Check for invalid parameters
+    if (data == NULL) {
+        return IPCM_STATUS_INVALID_PARAM;
+    }
+
+    //2. Select the correct mailbox and write to data registers.
+    switch (mailbox) {
+        case IPCM_MAILBOX_0:
+            data_reg = (uint32_t *)IPCM0_DR0;
+            break;
+        case IPCM_MAILBOX_1:
+            //data_reg = IPCM1_DR0; //(uint32_t *)
+            break;
+        case IPCM_MAILBOX_2:
+            //data_reg = IPCM2_DR0;//(uint32_t *)
+            break;
+        default:
+            return IPCM_STATUS_INVALID_PARAM;
+    }
+
+    //3. Write the data
+    for (int i = 0; i < 5; i++) {
+        *((volatile uint32_t *)(data_reg + (i * 4))) = data[i];
+    }
+
+    return IPCM_STATUS_OK;
+}
+
+static ipcm_status_t ipcm_read_data(ipcm_mailbox_t mailbox, uint32_t *data, uint32_t size) {
+    volatile uint32_t *data_reg;
+
+    //1. Check for invalid parameters
+    if (data == NULL) {
+        return IPCM_STATUS_INVALID_PARAM;
+    }
+
+    //2. Select the correct mailbox and write to data registers.
+    switch (mailbox) {
+        case IPCM_MAILBOX_0:
+            data_reg = (uint32_t *)IPCM0_DR0;
+            break;
+        case IPCM_MAILBOX_1:
+            //data_reg = IPCM1_DR0; //(uint32_t *)
+            break;
+        case IPCM_MAILBOX_2:
+            //data_reg = IPCM2_DR0;//(uint32_t *)
+            break;
+        default:
+            return IPCM_STATUS_INVALID_PARAM;
+    }
+
+    //3. Read the data
+    for (int i = 0; i < 5; i++) {
+        data[i] = *((volatile uint32_t *)(data_reg + (i * 4)));
+    }
+
+    return IPCM_STATUS_OK;
+}
+
+static ipcm_status_t ipcm_lock_mailbox(ipcm_mailbox_t mailbox, ipcm_core_t source_core) {
+    volatile uint32_t *ipcm_source_reg;
+    uint32_t source_core_mask = (1 << source_core);
+
+    //1. Select the correct register
+    switch (mailbox) {
+        case IPCM_MAILBOX_0:
+            ipcm_source_reg = (uint32_t *)IPCM0_SOURCE;
+            break;
+        case IPCM_MAILBOX_1:
+            //ipcm_source_reg = IPCM1_SOURCE; //(uint32_t *)
+            break;
+        case IPCM_MAILBOX_2:
+            //ipcm_source_reg = IPCM2_SOURCE; //(uint32_t *)
+            break;
+        default:
+            return IPCM_STATUS_INVALID_PARAM;
+    }
+
+    //2. Check if the mailbox is already in use
+    if (*ipcm_source_reg != 0) {
+        return IPCM_STATUS_MAILBOX_BUSY;
+    }
+
+    //3. Claim the mailbox
+    *ipcm_source_reg = source_core_mask;
+
+    return IPCM_STATUS_OK;
+}
+
+static ipcm_status_t ipcm_unlock_mailbox(ipcm_mailbox_t mailbox) {
+    volatile uint32_t *ipcm_source_reg;
+
+    //1. Select the correct register
+    switch (mailbox) {
+        case IPCM_MAILBOX_0:
+            ipcm_source_reg = (uint32_t *)IPCM0_SOURCE;
+            break;
+        case IPCM_MAILBOX_1:
+            //ipcm_source_reg = IPCM1_SOURCE; //(uint32_t *)
+            break;
+        case IPCM_MAILBOX_2:
+            //ipcm_source_reg = IPCM2_SOURCE; //(uint32_t *)
+            break;
+        default:
+            return IPCM_STATUS_INVALID_PARAM;
+    }
+
+    //2. Unlock the mailbox
+    *ipcm_source_reg = 0;
+
+    return IPCM_STATUS_OK;
+}
+
+static ipcm_status_t ipcm_send_interrupt(ipcm_mailbox_t mailbox, ipcm_core_t dest_core) {
+    volatile uint32_t *ipcm_send_reg;
+
+    //1. Select the correct register
+    switch (mailbox) {
+        case IPCM_MAILBOX_0:
+            ipcm_send_reg = (uint32_t *)IPCM0_SEND;
+            break;
+        case IPCM_MAILBOX_1:
+            //ipcm_send_reg = IPCM1_SEND; //(uint32_t *)
+            break;
+        case IPCM_MAILBOX_2:
+            //ipcm_send_reg = IPCM2_SEND; //(uint32_t *)
+            break;
+        default:
+            return IPCM_STATUS_INVALID_PARAM;
+    }
+
+    //2. Send the interrupt
+    *ipcm_send_reg |= IPCM_SEND_DEST;
+
+    return IPCM_STATUS_OK;
+}
+
+static ipcm_status_t ipcm_configure_mailbox_mode(ipcm_mailbox_t mailbox, const ipcm_config_t *config) {
+    volatile uint32_t *ipcm_mode_reg;
+    uint32_t mode_value = 0;
+
+     //1. Select the correct register
+    switch (mailbox) {
+        case IPCM_MAILBOX_0:
+            ipcm_mode_reg = (uint32_t *)IPCM0_MODE;
+            break;
+        case IPCM_MAILBOX_1:
+            //ipcm_mode_reg = IPCM1_MODE; //(uint32_t *)
+            break;
+        case IPCM_MAILBOX_2:
+            //ipcm_mode_reg = IPCM2_MODE; //(uint32_t *)
+            break;
+        default:
+            return IPCM_STATUS_INVALID_PARAM;
+    }
+
+    //2. Configure the mailbox mode
+    if (config->auto_ack_enabled) {
+        mode_value |= IPCM_MODE_AUTO_ACK;
+    }
+
+    *ipcm_mode_reg = mode_value;
+
+    return IPCM_STATUS_OK;
+}
+
+//ISR handler
+void __attribute__((interrupt)) ipcm0_isr(void) {
+    ipcm_message_t received_message;
+    ipcm_receive(IPCM_MAILBOX_0, &received_message);
+
+    // Check if a callback function is registered for this mailbox
+    if (ipcm_callbacks[IPCM_MAILBOX_0] != NULL) {
+        // Call the registered callback function
+        ipcm_callbacks[IPCM_MAILBOX_0](&received_message);
+    }
+
+    // Clear the interrupt
+    ipcm_clear_interrupt(IPCM_MAILBOX_0);
+}
+```

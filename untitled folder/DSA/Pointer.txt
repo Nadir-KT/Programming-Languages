@@ -1,0 +1,10 @@
+https://www.w3schools.com/c/c_pointers.php
+https://www.javatpoint.com/const-pointer-in-c
+https://www.scaler.com/topics/c/constant-pointer-in-c/
+https://learn.microsoft.com/en-us/cpp/cpp/const-and-volatile-pointers?view=msvc-170
+https://fastbitlab.com/microcontroller-embedded-c-programming-lecture-143-usage-of-const-and-volatile-together/
+https://www.embedded.com/combining-cs-volatile-and-const-keywords/?nab=0
+https://developerinsider.co/what-is-the-difference-between-const-int-and-int-const/
+https://www.geeksforgeeks.org/difference-between-const-int-const-int-const-and-int-const/
+https://stackoverflow.com/questions/1143262/what-is-the-difference-between-const-int-const-int-const-and-int-const
+https://stackoverflow.com/questions/9935190/why-is-a-point-to-volatile-pointer-like-volatile-int-p-useful

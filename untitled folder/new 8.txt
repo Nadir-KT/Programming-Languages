@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+// Define the structure
+typedef struct {
+    int id;
+    char name[50];
+} Employee;
+
+// Function to initialize the structure
+Employee init_employee() {
+    Employee emp;
+    emp.id = 1001;
+    snprintf(emp.name, sizeof(emp.name), "John Doe");
+    return emp;
+}
+
+// Function to print the structure
+void print_employee(Employee emp) {
+    printf("Employee ID: %d\n", emp.id);
+    printf("Employee Name: %s\n", emp.name);
+}
+
+// Main function
+int main() {
+    Employee emp = init_employee();
+    print_employee(emp);
+    return 0;
+}
