@@ -21,6 +21,7 @@ int main()
     int (*ptrfunc) (int, int);
     ptrfunc = add;
     int x = ptrfunc(10,12);
+    printf("%d",ptrfunc(10,12));
     ptrfunc = sub;
     int y =  ptrfunc(10,12);
     printf("%d %d",x,y);
