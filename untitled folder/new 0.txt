@@ -2,7 +2,7 @@
 Create structure and pass it in function and use the elements inside function. ( use pointer )
 */
 
-typedef srtuct {
+typedef struct {
 	int ele1;
 	int ele2;
 } stu;
