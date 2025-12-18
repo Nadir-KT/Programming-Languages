@@ -1,12 +1,15 @@
+/*
 Create structure and pass it in function and use the elements inside function. ( use pointer )
+*/
 
-typedef srtuct stu {
+typedef srtuct {
 	int ele1;
 	int ele2;
-}
+} study;
 
 void fun(int a);
 
+void main(){
 stu stu1;
 
 stu *stu2=&stu1;
@@ -14,10 +17,11 @@ stu *stu2=&stu1;
 stu2->ele1=12;
 stu2->ele2=13;
 
-fun(&stu2);
+fun(stu2);
+}
 
-void fun(int *a)
+void fun(stu *a)
 {
-	int b = a->ele1;
-	int c = a->ele2;
+	printf("%d",a->ele1);
+	printf("%d",a->ele2);
 }
