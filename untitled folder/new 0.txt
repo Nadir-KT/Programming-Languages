@@ -1,6 +1,7 @@
 /*
 Create structure and pass it in function and use the elements inside function. ( use pointer )
 */
+#include <stduo.h>
 
 typedef struct {
 	int ele1;
