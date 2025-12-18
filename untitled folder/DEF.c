@@ -6,7 +6,7 @@ Code, Compile, Run and Debug online from anywhere in world.
 *******************************************************************************/
 #include <stdio.h>
 
-void multiplication(int *a, int *b){
+void interchange(int *a, int *b){
     *a=*a+*b;
     *b=*a-*b;
     *a=*a-*b;
@@ -16,7 +16,7 @@ int main()
 {
     int a = 12;
     int b = 10;
-    multiplication(&a,&b);
+    interchange(&a,&b);
     printf("%d %d",a,b);
 
     return 0;
