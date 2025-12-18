@@ -5,9 +5,9 @@ Create structure and pass it in function and use the elements inside function. (
 typedef srtuct {
 	int ele1;
 	int ele2;
-} study;
+} stu;
 
-void fun(int a);
+void fun(stu *a);
 
 void main(){
 stu stu1;
